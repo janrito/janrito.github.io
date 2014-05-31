@@ -1,0 +1,20 @@
+// Functions
+
+@mixin grid-sizing($small: 12, $medium: 12, $large: 12) {
+    // grid-sizing is a shortcut for simple grid sizing classes.
+    // The three arguments are the columns for small, medium
+    // and large media sizes respectively
+    // call the mixin like:
+    // @include grid-sizing(1, 2, 3)
+    // for small-1 medium-2 large-3
+
+    @media #{$small-only} {
+        @include grid-column($small);
+    }
+    @media #{$medium-only} {
+        @include grid-column($medium);
+    }
+    @media #{$large-up} {
+        @include grid-column($large);
+    }
+}

@@ -1,4 +1,7 @@
 
+/* type */
+
+
 .serif {
   font-family: CharisSILW, serif;
 }
@@ -7,11 +10,29 @@
   font-family: 'Fira Sans', sans-serif;
 }
 
-/* type */
+
+/* structure */
+html {
+    height:100%;
+}
 
 body {
   @extend .serif;
+  height:100%;
+  background-color:#fefefe;
 }
+
+header, main, footer {
+  @include grid-row();
+}
+
+main {
+  section {
+    @include grid-sizing(12, 9, 9);
+  }
+}
+
+/* headings */
 
 h1, h2, h3 {
   @extend .sans-serif;

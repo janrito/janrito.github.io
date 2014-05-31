@@ -1,7 +1,17 @@
 
-@import '../vendor/foundation/scss/normalize.scss';
-@import '../vendor/foundation/scss/foundation.scss';
+@import '../vendor/foundation/scss/normalize';
+@import '../vendor/foundation/scss/foundation';
 @import 'charis.css';
 @import'../vendor/fira/fira.css';
 
-@import 'general.scss'
+
+
+@import 'functions';
+@import 'general';
+@import 'header';
+@import 'footer';
+@import 'page';
+@import 'post';
+
+// syntax highlighting CSS
+@import 'syntax.css';

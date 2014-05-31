@@ -6,6 +6,7 @@
  */
 @import url(charis.css);
 @import url(../vendor/fira/fira.css);
+@import url(syntax.css);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -5752,10 +5753,69 @@ th.hide-for-touch {
 
   th.show-for-print {
     display: table-cell !important; } }
+/* type */
 .serif, body {
   font-family: CharisSILW, serif; }
 
 .sans-serif, h1, h2, h3 {
   font-family: 'Fira Sans', sans-serif; }
 
-/* type */
+/* structure */
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  background-color: #fefefe; }
+
+header, main, footer {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5rem; }
+  header:before, header:after, main:before, main:after, footer:before, footer:after {
+    content: " ";
+    display: table; }
+  header:after, main:after, footer:after {
+    clear: both; }
+
+@media only screen and (max-width: 40em) {
+  main section {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left; } }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  main section {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 75%;
+    float: left; } }
+@media only screen and (min-width: 64.063em) {
+  main section {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 75%;
+    float: left; } }
+
+/* headings */
+@media only screen and (max-width: 40em) {
+  footer aside {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 25%;
+    float: left; } }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  footer aside {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 50%;
+    float: left; } }
+@media only screen and (min-width: 64.063em) {
+  footer aside {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left; } }
