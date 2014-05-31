@@ -1,0 +1,39 @@
+---
+author: janrito
+comments: true
+date: 2011-03-22 16:52:29+00:00
+layout: post
+slug: day-of-dh-2011
+title: Day of DH 2011
+wordpress_id: 1437
+categories:
+- Blog
+tags:
+- d3.js
+- dayofdh
+- dh
+- digital humanities
+- timeline
+- visualisation
+- visualization
+---
+
+I'm in the middle of writing a paper, and I needed a distraction. This year's [Day of DH](http://tapor.ualberta.ca/taporwiki/index.php/Day_in_the_Life_of_the_Digital_Humanities_2011) was last week. I have been playing with the data for the past couple of days. Also, I was curious about the `[D3.js](http://mbostock.github.com/d3/)` visualisation library, released by [Mike Bostocks](http://bost.ocks.org/mike/), the guy of `[protovis](http://vis.stanford.edu/protovis/)` fame. So, I wrote a visualisation using the library and the RSS feed of the Day of DH blogs.
+
+It contains two timelines: the first one displays all the posts, and the second one displays a subset. The subset is marked on the first timeline in blue. The two small grey handles control the extremes of the subset; drag them to limit or expand the selection. Each post is represented by a blue bubble. The size of the bubble changes according to the number of words in the post. If you hover the mouse over a bubble, the title and author of the post will appear. Also, the post will be marked in orange (in both timelines, if the post is within the selection).
+
+**Note:** _This visualisation is experimental. It takes advantage of some fairly new technology, which is, unfortunately, not available in legacy browsers, including every version of Internet Explorer._
+
+[if_embed src=http://vis.giacometti.me/embed/dayofdh_timeline height=500px /]
+
+After a bit of experimentation, and some head banging, I am very excited about the `D3.js` library. Most of the headaches were due to the lack of documentation. It is a fairly new project; so the headaches were knowingly self inflicted. The declarative nature of the library makes sense, once you get used to it.
+
+I recommend reading through the tutorials. I spent too much time fighting with the transitions, until I re-read the tutorial and I understood them better.
+
+
+
+## Update
+
+
+Today I reloaded the data to include the latest posts. Some people updated the first "Hello World" post, created by default by Wordpress. So I created a second visualisation which uses the updated time rather than the published time for the posts. Take a look:
+[if_embed src=http://vis.giacometti.me/embed/day_of_dh_timeline_updated height=500px /]

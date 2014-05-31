@@ -1,0 +1,19 @@
+---
+author: janrito
+comments: true
+date: 2009-10-29 13:25:59+00:00
+layout: post
+slug: field
+title: Field
+wordpress_id: 379
+categories:
+- Blog
+tags:
+- art
+- mac
+- programming
+- python
+- visualisations
+---
+
+[(Field)](http://openendedgroup.com/field/) is a mac development environment for digital art. It features a python text editor, graphical elements embedded in the editor and the possibility to use many available libraries and technologies like opengl and processing libraries.

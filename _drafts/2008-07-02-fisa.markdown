@@ -1,0 +1,21 @@
+---
+author: janrito
+comments: true
+date: 2008-07-02 15:55:00+00:00
+layout: post
+slug: fisa
+title: Fisa
+wordpress_id: 120
+categories:
+- Blog
+tags:
+- Articles
+- olbermann
+- politics
+- video
+---
+
+
+
+
+[Olbermann Special Comment: Obama's Second Chance On FISA - Media on The Huffington Post](http://www.huffingtonpost.com/2008/06/30/olbermann-special-comment_n_110114.html)

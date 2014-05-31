@@ -1,0 +1,20 @@
+---
+author: janrito
+comments: true
+date: 2008-02-04 13:51:16+00:00
+layout: post
+slug: creepy
+title: Creepy
+wordpress_id: 93
+categories:
+- Blog
+tags:
+- creepy
+- friend
+- photography
+---
+
+<blockquote>It's like they're looking at each other, creepy!</blockquote>
+
+
+[Justin Raden](http://noreasterincali.blogspot.com/2008/02/long-distance-dining.html)

@@ -1,0 +1,18 @@
+---
+author: janrito
+comments: true
+date: 2009-12-04 10:06:52+00:00
+layout: post
+slug: pompeii
+title: Pompeii
+wordpress_id: 377
+categories:
+- Blog
+tags:
+- archaeology
+- google
+- map
+- street view
+---
+
+The ruins of the city of [Pompeii](http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=pompeii,+italy+ruins&sll=40.716428,14.537315&sspn=0.061672,0.132351&ie=UTF8&hq=pompeii,+italy+ruins&hnear=&t=h&layer=c&cbll=40.748902,14.484834&panoid=1e-bu_kis-dL1BnVGZhDdw&cbp=12,230.9,,0,10.09&ll=40.748902,14.484834&spn=0,359.988638&z=17&iwloc=A) were added to Google Street View
