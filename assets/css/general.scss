@@ -1,0 +1,18 @@
+
+.serif {
+  font-family: CharisSILW, serif;
+}
+
+.sans-serif {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+/* type */
+
+body {
+  @extend .serif;
+}
+
+h1, h2, h3 {
+  @extend .sans-serif;
+}
