@@ -1,5 +1,7 @@
 <ul class="main-menu">
-    {% for mi in site.data.menu %}
-    <li><a href="{{ mi.url }}" class="{% if mi.name == page.current %}active{% endif %}">{{ mi.name }}</a>{{mi.name}}{{ page.slug }}</li>
-    {% endfor %}
+  {% for mi in site.data.menu %}
+  <li class="{% if mi.name == page.title %}active{% endif %}">
+    <a href="{{ mi.url }}">{{ mi.name }}</a>
+  </li>
+  {% endfor %}
 </ul>
