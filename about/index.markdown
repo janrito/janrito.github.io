@@ -5,10 +5,9 @@ layout: page
 slug: about
 title: About
 ---
+![portrait][portrait]
 
-
-![portrait][graph.facebook.com/alejandro.giacometti/picture?type=large]  
-
+---
 
 I am a [Digital Humanities][] postgraduate student at [University College
 London][]. My current research is on the application of medical image
@@ -66,7 +65,7 @@ You can also find some of my pictures on [flickr][], follow me on
 
 
 
-[portrait]: |filename|/images/portrait.jpeg "This is me looking into the horizon with sunglasses."
+[portrait]: http://graph.facebook.com/alejandro.giacometti/picture?type=large
 [Digital Humanities]: http://en.wikipedia.org/wiki/Digital_humanities "Digital Humanities"
 [University College London]: http://www.ucl.ac.uk
 [Melissa Terras]: http://www.ucl.ac.uk/infostudies/melissa-terras/
