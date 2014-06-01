@@ -1,0 +1,19 @@
+/* Background color for the top bar */
+$topbar-bg: #fefefe;
+
+/* Controlling the styles for the title in the top bar */
+$topbar-title-weight: normal;
+// $topbar-title-font-size: rem-calc(17);
+
+/* Set the link colors and styles for top-level nav */
+$topbar-link-color: #333;
+$topbar-link-color-hover: #333;
+$topbar-link-color-active: #333;
+$topbar-link-color-active-hover: #333;
+// $topbar-link-weight: normal;
+// $topbar-link-font-size: rem-calc(13);
+// $topbar-link-hover-lightness: -10%; // Darken by 10%
+// $topbar-link-bg-hover: #fdfdfd;
+// //$topbar-link-bg-active: $primary-color;
+// //$topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
+// //$topbar-link-font-family: $body-font-family;
