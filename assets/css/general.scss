@@ -18,12 +18,15 @@ html {
 
 body {
   @extend .serif;
-  height:100%;
   background-color:#fefefe;
 }
 
 header, main, footer {
   @include grid-row();
+}
+
+header div {
+  @include grid-sizing(12, 12, 12);
 }
 
 main {

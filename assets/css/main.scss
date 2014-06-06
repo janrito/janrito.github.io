@@ -1,12 +1,17 @@
-@import 'variables';
-
+// reset
 @import '../vendor/foundation/scss/normalize';
+
+// settings
+@import 'settings';
+
+// import foundation
 @import '../vendor/foundation/scss/foundation';
+
+// import fonts
 @import 'charis.css';
 @import'../vendor/fira/fira.css';
 
-
-
+// modules
 @import 'functions';
 @import 'general';
 @import 'header';
