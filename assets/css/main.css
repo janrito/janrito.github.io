@@ -6,6 +6,7 @@
  */
 @import url(charis.css);
 @import url(../vendor/fira/fira.css);
+@import url(adobe-source-code-pro.css);
 @import url(syntax.css);
 html {
   font-family: sans-serif;
@@ -4361,7 +4362,7 @@ small {
   line-height: inherit; }
 
 code {
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-family: "Adobe Source Code Pro", "Liberation Mono", Courier, monospace;
   font-weight: bold;
   color: #bd260d; }
 
@@ -5781,35 +5782,38 @@ main, footer {
     clear: both; }
 
 @media only screen and (max-width: 40em) {
-  main section {
+  main section p, main section pre {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     width: 100%;
     float: left; } }
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  main section {
+@media only screen and (min-width: 40.063em) {
+  main section p, main section pre {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
-    width: 66.66667%;
-    float: left; } }
-@media only screen and (min-width: 64.063em) {
-  main section {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-    width: 66.66667%;
-    float: left; } }
+    width: 50%;
+    float: right;
+    float: left;
+    clear: right; } }
+main section h2, main section .byline, main section .side-note {
+  text-align: right; }
+  @media only screen and (max-width: 40em) {
+    main section h2, main section .byline, main section .side-note {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 100%;
+      float: left; } }
+  @media only screen and (min-width: 40.063em) {
+    main section h2, main section .byline, main section .side-note {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 16.66667%;
+      float: left;
+      margin-left: 16.66667% !important;
+      clear: left; } }
 main section h2 {
   border-top: 2px solid #333;
   font-size: 1rem; }
-@media only screen and (min-width: 40.063em) {
-  main section {
-    padding-left: 10rem; }
-    main section h2, main section .byline, main section .side-note {
-      clear: right;
-      float: left;
-      width: 8rem;
-      margin-left: -10rem;
-      text-align: right; } }
 
 /* headings */
 @media only screen and (max-width: 40em) {

@@ -25,28 +25,46 @@ main, footer {
   @include grid-row();
 }
 
+@mixin main-block() {
+  @media #{$small-only} {
+    @include grid-column(12);
+  }
+  @media #{$medium-up} {
+      @include grid-column(6,
+                           $last-column: true);
+
+      clear: right;
+  }
+}
+
+@mixin aside-block() {
+  @media #{$small-only} {
+    @include grid-column(12);
+  }
+  @media #{$medium-up} {
+      @include grid-column(2,
+                           $offset: 2,
+                           $float: left);
+      clear: left
+  }
+  text-align: right;
+}
+
 main {
 
   section {
-    @include grid-sizing(12, 8, 8);
+    p, pre {
+      @include main-block;
+    }
+
+    h2, .byline, .side-note {
+      @include aside-block;
+    }
+
 
     h2 {
       border-top: 2px solid #333;
       font-size: rem-calc(16);
-    }
-  }
-
-  @media #{$medium-up} {
-    section {
-      padding-left: 10rem;
-
-      h2, .byline, .side-note {
-        clear:right;
-        float:left;
-        width: 8rem;
-        margin-left: -10rem;
-        text-align: right
-      }
     }
   }
 }

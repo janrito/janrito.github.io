@@ -7,7 +7,8 @@
     "foundation": null,
     "font-awesome": null,
     "fira": null,
-    "charis-sil": "http://scripts.sil.org/cms/scripts/render_download.php?format=file&media_id=CharisSIL-4.114-web.zip&filename=CharisSIL-4.114-web.zip"
+    "charis-sil": "http://scripts.sil.org/cms/scripts/render_download.php?format=file&media_id=CharisSIL-4.114-web.zip&filename=CharisSIL-4.114-web.zip",
+    "adobe-source-code-pro": "http://softlayer-ams.dl.sourceforge.net/project/sourcecodepro.adobe/SourceCodePro_WebFontsOnly-1.017.zip"
   },
   "main": "assets/js/main.js",
   "ignore": [

@@ -5,11 +5,8 @@ comments: false
 slug: about
 title: About
 ---
-
-![portrait][portrait]
+![portrait][portrait] 
 {: .side-note}
-
-abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
 
 I am a [Digital Humanities][] postgraduate student at [University College
 London][]. My current research is on the application of medical image
@@ -48,6 +45,7 @@ London
 WC1E 6BT  
 United Kingdom  
 ~~~
+{: .side-note}
 
 ## mensapredia ##
 
@@ -63,7 +61,6 @@ emotional reactions.
 
 You can also find some of my pictures on [flickr][], follow me on
 [twitter][], and stalk me on [facebook][]
-
 
 
 [portrait]: http://graph.facebook.com/alejandro.giacometti/picture?type=large
