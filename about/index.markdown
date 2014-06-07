@@ -1,13 +1,15 @@
 ---
-comments: false
-date: 2008-09-11 03:42:40+00:00
 layout: page
+date: 2008-09-11 03:42:40+00:00
+comments: false
 slug: about
 title: About
 ---
-![portrait][portrait]
 
----
+![portrait][portrait]
+{: .side-note}
+
+abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
 
 I am a [Digital Humanities][] postgraduate student at [University College
 London][]. My current research is on the application of medical image
@@ -32,9 +34,8 @@ information. I irregularly [post][] relevant links and updates about my
 research.
 
 
-### Contact Info ###
 
-```
+~~~
 [alejandro@giacometti.me](mailto:alejandro.giacometti.me)  
 +44 7 838 562 819  
 +1 978 253 4289  
@@ -46,7 +47,7 @@ Gower Street
 London  
 WC1E 6BT  
 United Kingdom  
-```
+~~~
 
 ## mensapredia ##
 
