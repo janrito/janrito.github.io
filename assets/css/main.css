@@ -5796,7 +5796,8 @@ main, footer {
     float: left;
     clear: right; } }
 main section h2, main section .byline, main section .side-note {
-  text-align: right; }
+  text-align: right;
+  font-size: 0.75rem; }
   @media only screen and (max-width: 40em) {
     main section h2, main section .byline, main section .side-note {
       padding-left: 0.9375rem;

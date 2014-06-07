@@ -16,26 +16,18 @@ Studies][] and [Adam Gibson][] from the [Department of Medical Physics and
 Bioengineering][]. I am also affiliated to the [UCL Centre for Digital
 Humanities][].
 
+
+[alejandro@giacometti.me](mailto:alejandro.giacometti.me)  
++44 7 838 562 819  
++1 978 253 4289  
+{: .side-note}
+
 I recently finished my MA in [Humanities Computing][] under the supervision of
 [Stan Ruecker][] at the [University of Alberta][].  My research centred around
 an rich-prospect interface: the Texttiles Browser, an experiment in leveraging
 available metadata to visualise and browse medium sized text collections. My
 [thesis][] title is: *The Texttiles browser: an experiment in rich-prospect
 browsing for text collections*.
-
-My research interests are visualisations, image processing and analysis, and
-the role of semantic metadata in information sharing. I am also interested in
-the web as an application platform to build environments that enhance
-communication, foster institutional transparency, and enable the free flow of
-information. I irregularly [post][] relevant links and updates about my
-research.
-
-
-
-~~~
-[alejandro@giacometti.me](mailto:alejandro.giacometti.me)  
-+44 7 838 562 819  
-+1 978 253 4289  
 
 Dept. Medical Physics & Bioengineering  
 3.18 Malet Place Engineering Building  
@@ -44,8 +36,15 @@ Gower Street
 London  
 WC1E 6BT  
 United Kingdom  
-~~~
 {: .side-note}
+
+My research interests are visualisations, image processing and analysis, and
+the role of semantic metadata in information sharing. I am also interested in
+the web as an application platform to build environments that enhance
+communication, foster institutional transparency, and enable the free flow of
+information. I irregularly [post][] relevant links and updates about my
+research.
+
 
 ## mensapredia ##
 
