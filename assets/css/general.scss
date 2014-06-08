@@ -57,18 +57,27 @@ main, footer {
 main {
 
   section {
-    p, pre {
+    > p, > pre {
       @include main-block;
     }
 
-    h2, .byline, .side-note {
+    > header {
+      @include aside-block;
+      border-top: 2px solid #333;
+      @extend .sans-serif;
+
+      h1 {
+        font-size: rem-calc(16);
+      }
+    }
+
+    > .side-note {
       @include aside-block;
     }
 
-
-    h2 {
-      border-top: 2px solid #333;
-      font-size: rem-calc(16);
+    > h2, > h3, > h4, > h5, > h6 {
+      @include grid-column(8,
+                           $offset: 4);
     }
   }
 }

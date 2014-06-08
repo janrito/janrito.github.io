@@ -5758,7 +5758,7 @@ th.hide-for-touch {
 .serif, body {
   font-family: CharisSILW, serif; }
 
-.sans-serif, h1, h2, h3 {
+.sans-serif, main section > header, h1, h2, h3 {
   font-family: 'Fira Sans', sans-serif; }
 
 /* structure */
@@ -5782,39 +5782,62 @@ main, footer {
     clear: both; }
 
 @media only screen and (max-width: 40em) {
-  main section p, main section pre {
+  main section > p, main section > pre {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     width: 100%;
     float: left; } }
 @media only screen and (min-width: 40.063em) {
-  main section p, main section pre {
+  main section > p, main section > pre {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     width: 50%;
     float: right;
     float: left;
     clear: right; } }
-main section h2, main section .byline, main section .side-note {
+main section > header {
   text-align: right;
-  font-size: 0.75rem; }
+  font-size: 0.75rem;
+  border-top: 2px solid #333; }
   @media only screen and (max-width: 40em) {
-    main section h2, main section .byline, main section .side-note {
+    main section > header {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem;
       width: 100%;
       float: left; } }
   @media only screen and (min-width: 40.063em) {
-    main section h2, main section .byline, main section .side-note {
+    main section > header {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem;
       width: 16.66667%;
       float: left;
       margin-left: 16.66667% !important;
       clear: left; } }
-main section h2 {
-  border-top: 2px solid #333;
-  font-size: 1rem; }
+  main section > header h1 {
+    font-size: 1rem; }
+main section > .side-note {
+  text-align: right;
+  font-size: 0.75rem; }
+  @media only screen and (max-width: 40em) {
+    main section > .side-note {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 100%;
+      float: left; } }
+  @media only screen and (min-width: 40.063em) {
+    main section > .side-note {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 16.66667%;
+      float: left;
+      margin-left: 16.66667% !important;
+      clear: left; } }
+main section > h2, main section > h3, main section > h4, main section > h5, main section > h6 {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 66.66667%;
+  float: left;
+  margin-left: 33.33333% !important; }
 
 /* headings */
 @media only screen and (max-width: 40em) {
