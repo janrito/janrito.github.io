@@ -20,4 +20,4 @@ tags:
 Stan gave a TEDx talk in Juan De Fuca about Bubblelines, the Dynamic Table of Contexts, and Texttiles. The youtube video was published yesterday.
 
 
-[embed width="1024"  ]http://www.youtube.com/watch?v=Nd2h9U_H0n8[/embed]
+<iframe width="1024" height="576" src="//www.youtube.com/embed/Nd2h9U_H0n8" frameborder="0" allowfullscreen></iframe>

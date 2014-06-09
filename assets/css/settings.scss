@@ -1176,12 +1176,12 @@ $code-font-family: 'Adobe Source Code Pro', 'Liberation Mono', Courier, monospac
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-$topbar-bg-color: #e5e5e5;
+$topbar-bg-color: #fefefe;
 $topbar-bg: $topbar-bg-color;
 
 // Height and margin
 $topbar-height: rem-calc(32);
-// $topbar-margin-bottom: 0;
+// $topbar-margin-bottom: rem-calc(16);
 
 // Controlling the styles for the title in the top bar
 $topbar-title-weight: normal;
@@ -1202,12 +1202,12 @@ $topbar-link-color-hover: $topbar-link-color;
 $topbar-link-color-active: $topbar-link-color;
 $topbar-link-color-active-hover: $topbar-link-color;
 // $topbar-link-weight: $font-weight-normal;
-$topbar-link-font-size: rem-calc(14);
-// $topbar-link-hover-lightness: -10%; // Darken by 10%
+$topbar-link-font-size: rem-calc(12);
+$topbar-link-hover-lightness: -10%; // Darken by 10%
 $topbar-link-bg: $topbar-bg-color;
-$topbar-link-bg-color-hover: #fdfdfd;
-$topbar-link-bg-hover: #fdfdfd;
-$topbar-link-bg-active: #a7a7a7;
+$topbar-link-bg-color-hover: $topbar-bg-color;
+$topbar-link-bg-hover: $topbar-bg-color;
+$topbar-link-bg-active: $topbar-bg-color;
 $topbar-link-bg-active-hover: scale-color($topbar-link-bg-active, $lightness: -14%);
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;
@@ -1224,7 +1224,7 @@ $topbar-link-bg-active-hover: scale-color($topbar-link-bg-active, $lightness: -1
 
 // Top menu icon styles
 // $topbar-menu-link-transform: uppercase;
-// $topbar-menu-link-font-size: rem-calc(13);
+$topbar-menu-link-font-size: rem-calc(12);
 // $topbar-menu-link-weight: $font-weight-bold;
 // $topbar-menu-link-color: #fff;
 // $topbar-menu-icon-color: #fff;

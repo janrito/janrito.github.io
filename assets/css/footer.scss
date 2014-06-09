@@ -1,5 +1,5 @@
-footer {
+footer.main-footer {
     aside {
-        @include grid-sizing(3, 6, 12);
+        @include grid-sizing(12, 6, 3);
     }
 }

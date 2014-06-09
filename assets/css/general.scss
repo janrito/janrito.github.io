@@ -10,6 +10,13 @@
   font-family: 'Fira Sans', sans-serif;
 }
 
+.monospace {
+  font-family: 'Adobe Source Code Pro', monospace;
+  font-size: .7rem;
+  line-height: 150%;
+  font-weight: 400;
+}
+
 
 /* structure */
 html {
@@ -21,68 +28,51 @@ body {
   background-color:#fefefe;
 }
 
-main, footer {
-  @include grid-row();
-}
-
-@mixin main-block() {
-  @media #{$small-only} {
-    @include grid-column(12);
-  }
-  @media #{$medium-up} {
-      @include grid-column(6,
-                           $last-column: true);
-
-      clear: right;
-  }
-}
-
-@mixin aside-block() {
-  @media #{$small-only} {
-    @include grid-column(12);
-  }
-  @media #{$medium-up} {
-      @include grid-column(2,
-                           $offset: 2,
-                           $float: left);
-      clear: left
-  }
-  text-align: right;
-
-
-  font-size: rem-calc(12);
-
-}
-
-main {
-
-  section {
-    > p, > pre {
-      @include main-block;
-    }
-
-    > header {
-      @include aside-block;
-      border-top: 2px solid #333;
-      @extend .sans-serif;
-
-      h1 {
-        font-size: rem-calc(16);
-      }
-    }
-
-    > .side-note {
-      @include aside-block;
-    }
-
-    > h2, > h3, > h4, > h5, > h6 {
-      @include grid-column(8,
-                           $offset: 4);
-    }
-  }
-}
 /* headings */
 
 h1, h2, h3 {
   @extend .sans-serif;
 }
+
+code, kbd, pre, samp {
+  @extend .monospace;
+}
+
+
+main.main-content, footer.main-footer {
+  @include grid-row();
+}
+
+main.main-content {
+
+  > article, > section {
+    @include main-block;
+
+    .side-note {
+      @include aside-block;
+    }
+
+    > header {
+      @extend .sans-serif;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: rem-calc(16);
+
+    }
+
+    > .footnotes {
+      border-top: 1px solid #ddd;
+      font-size: rem-calc(12);
+    }
+
+    ul.posts {
+      @extend .no-bullet;
+
+      .date {
+        @extend .sans-serif;
+        font-size: rem-calc(12);
+        color: #999
+      }
+    }
+  }
+}
+

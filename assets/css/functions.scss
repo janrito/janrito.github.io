@@ -18,3 +18,41 @@
         @include grid-column($large);
     }
 }
+
+
+@mixin main-block() {
+  @media #{$small-only} {
+    @include grid-column(12);
+  }
+  @media #{$medium-up} {
+    @include grid-column(10,
+     $last-column: true,
+     $center: true);
+
+    > p, > h1, > h2, > h3, > h4, > h5, > h6, > ul, > ol, > pre, > img {
+      padding-right: 30%
+    }
+
+    > .full-width {
+      padding-right: 0;
+    }
+  }
+}
+
+@mixin aside-block() {
+  @media #{$small-only} {
+    @include grid-column(12);
+    background: #e5e5e5;
+  }
+  @media #{$medium-up} {
+    width: 30%;
+    float: right;
+    clear: right;
+    padding-right: 0;
+    padding-left: rem-calc(48);
+  }
+
+  @extend .clearfix;
+  font-size: rem-calc(12);
+
+}

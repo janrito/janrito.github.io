@@ -5,8 +5,23 @@ comments: false
 slug: about
 title: About
 ---
+
 ![portrait][portrait] 
-{: .side-note}
+{:.side-note}
+
+[alejandro@giacometti.me](mailto:alejandro.giacometti.me)  
++44 7 838 562 819  
++1 978 253 4289  
+{:.side-note}
+
+Dept. Medical Physics & Bioengineering  
+3.18 Malet Place Engineering Building  
+University College London  
+Gower Street  
+London  
+WC1E 6BT  
+United Kingdom  
+{:.side-note}
 
 I am a [Digital Humanities][] postgraduate student at [University College
 London][]. My current research is on the application of medical image
@@ -16,27 +31,12 @@ Studies][] and [Adam Gibson][] from the [Department of Medical Physics and
 Bioengineering][]. I am also affiliated to the [UCL Centre for Digital
 Humanities][].
 
-
-[alejandro@giacometti.me](mailto:alejandro.giacometti.me)  
-+44 7 838 562 819  
-+1 978 253 4289  
-{: .side-note}
-
 I recently finished my MA in [Humanities Computing][] under the supervision of
 [Stan Ruecker][] at the [University of Alberta][].  My research centred around
 an rich-prospect interface: the Texttiles Browser, an experiment in leveraging
 available metadata to visualise and browse medium sized text collections. My
 [thesis][] title is: *The Texttiles browser: an experiment in rich-prospect
 browsing for text collections*.
-
-Dept. Medical Physics & Bioengineering  
-3.18 Malet Place Engineering Building  
-University College London  
-Gower Street  
-London  
-WC1E 6BT  
-United Kingdom  
-{: .side-note}
 
 My research interests are visualisations, image processing and analysis, and
 the role of semantic metadata in information sharing. I am also interested in
@@ -48,7 +48,6 @@ research.
 
 ## mensapredia ##
 
-
 I grew up in Ecuador, and I sometimes like to [comment][] (in Spanish)
 on the media, and the quality of its discourse. I have a special
 [section][] on articles that have absolute disregard for journalistic
@@ -57,10 +56,8 @@ emotional reactions.
 
 ## Elsewhere ##
 
-
 You can also find some of my pictures on [flickr][], follow me on
 [twitter][], and stalk me on [facebook][]
-
 
 [portrait]: http://graph.facebook.com/alejandro.giacometti/picture?type=large
 [Digital Humanities]: http://en.wikipedia.org/wiki/Digital_humanities "Digital Humanities"

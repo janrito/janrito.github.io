@@ -1,5 +1,4 @@
 ---
-author: janrito
 comments: true
 date: 2010-09-27 16:37:53+00:00
 layout: post
@@ -22,7 +21,10 @@ tags:
 
 While on holiday in Cluj, Romania, I embarked on a small digitisation project. My girlfriend, Ruxandra, is from Cluj, and her family still lives here. Within their  library, her parents have kept this manuscript for about 60 years. The book was found in Făgăraş, a mountain town near the Carpathians between Sibiu and Braşov. Ruxandra's grandfather was an orthodox priest in Făgăraş. Sometime in the 1950's he found the book hidden on top of a beam of an old wooden house about to be demolished.
 
-[caption id="" align="alignnone" width="1024" caption="The spine is falling apart."] [![spine](http://farm5.static.flickr.com/4108/5030285836_a878065d51_b.jpg)](http://www.flickr.com/photos/janrito/5030285836/)[/caption]
+The spine is falling apart.
+{:.side-note}
+
+[![spine]][spine_link]
 
 The manuscript is not in terrible condition, but it does have some problems. The spine is falling apart, and the cover is almost loose.
 
@@ -41,3 +43,6 @@ Ruxandra's mother, Mariana, speaks both Romanian and Russian. More than academic
 I spent the day imaging every page of the manuscript. I only had a camera and a window as a source of light. I used a polystyrene board as a table. I didn't have a tripod, or a colour calibration target. In short, it was a very amateur digitisation project. But I got good high resolution images of every page. And I must say it is very pretty.
 
 I have some more shots of the book in a [flickr set](http://www.flickr.com/photos/janrito/sets/72157625045751730/).
+
+[spine]: http://farm5.static.flickr.com/4108/5030285836_a878065d51_b.jpg "The spine is falling apart."
+[spine_link]: http://www.flickr.com/photos/janrito/5030285836/ "The spine is falling apart."

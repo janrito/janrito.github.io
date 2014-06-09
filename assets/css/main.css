@@ -434,10 +434,10 @@ img {
 .right {
   float: right !important; }
 
-.clearfix:before, .clearfix:after {
+.clearfix:before, main.main-content > article .side-note:before, main.main-content > section .side-note:before, .clearfix:after, main.main-content > article .side-note:after, main.main-content > section .side-note:after {
   content: " ";
   display: table; }
-.clearfix:after {
+.clearfix:after, main.main-content > article .side-note:after, main.main-content > section .side-note:after {
   clear: both; }
 
 .hide {
@@ -4124,7 +4124,7 @@ table {
 .text-right {
   text-align: right !important; }
 
-.text-center {
+.text-center, article.post > footer.post-meta {
   text-align: center !important; }
 
 .text-justify {
@@ -4378,10 +4378,12 @@ dl {
 
 ul {
   margin-left: 1.1rem; }
-  ul.no-bullet {
+  ul.no-bullet, main.main-content > article ul.posts, main.main-content > section ul.posts {
     margin-left: 0; }
-    ul.no-bullet li ul,
-    ul.no-bullet li ol {
+    ul.no-bullet li ul, main.main-content > article ul.posts li ul, main.main-content > section ul.posts li ul,
+    ul.no-bullet li ol,
+    main.main-content > article ul.posts li ol,
+    main.main-content > section ul.posts li ol {
       margin-left: 1.25rem;
       margin-bottom: 0;
       list-style: none; }
@@ -4402,7 +4404,7 @@ ul.circle {
 ul.disc {
   list-style-type: disc;
   margin-left: 1.1rem; }
-ul.no-bullet {
+ul.no-bullet, main.main-content > article ul.posts, main.main-content > section ul.posts {
   list-style: none; }
 
 /* Ordered Lists */
@@ -4729,7 +4731,7 @@ meta.foundation-mq-topbar {
 /* Wrapped around .top-bar to contain to grid width */
 .contain-to-grid {
   width: 100%;
-  background: #e5e5e5; }
+  background: #fefefe; }
   .contain-to-grid .top-bar {
     margin-bottom: 0; }
 
@@ -4757,7 +4759,7 @@ meta.foundation-mq-topbar {
   height: 2rem;
   line-height: 2rem;
   position: relative;
-  background: #e5e5e5;
+  background: #fefefe;
   margin-bottom: 0; }
   .top-bar ul {
     margin-bottom: 0;
@@ -4801,7 +4803,7 @@ meta.foundation-mq-topbar {
     .top-bar .toggle-topbar a {
       color: #333333;
       text-transform: uppercase;
-      font-size: 0.8125rem;
+      font-size: 0.75rem;
       font-weight: bold;
       position: relative;
       display: block;
@@ -4834,7 +4836,7 @@ meta.foundation-mq-topbar {
     height: auto;
     background: transparent; }
     .top-bar.expanded .title-area {
-      background: #e5e5e5; }
+      background: #fefefe; }
     .top-bar.expanded .toggle-topbar a {
       color: #888888; }
       .top-bar.expanded .toggle-topbar a::after {
@@ -4854,7 +4856,7 @@ meta.foundation-mq-topbar {
     margin: 0; }
   .top-bar-section .divider,
   .top-bar-section [role="separator"] {
-    border-top: solid 1px #737373;
+    border-top: solid 1px #7f7f7f;
     clear: both;
     height: 1px;
     width: 100%; }
@@ -4867,11 +4869,11 @@ meta.foundation-mq-topbar {
       padding: 12px 0 12px 0;
       padding-left: 0.66667rem;
       font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-      font-size: 0.875rem;
+      font-size: 0.75rem;
       font-weight: normal;
       text-transform: none; }
       .top-bar-section ul li > a.button {
-        font-size: 0.875rem;
+        font-size: 0.75rem;
         padding-right: 0.66667rem;
         padding-left: 0.66667rem;
         background-color: #676776;
@@ -4906,7 +4908,7 @@ meta.foundation-mq-topbar {
         .top-bar-section ul li > a.button.alert:hover, .top-bar-section ul li > a.button.alert:focus {
           color: white; }
     .top-bar-section ul li > button {
-      font-size: 0.875rem;
+      font-size: 0.75rem;
       padding-right: 0.66667rem;
       padding-left: 0.66667rem;
       background-color: #676776;
@@ -4941,13 +4943,13 @@ meta.foundation-mq-topbar {
         .top-bar-section ul li > button.alert:hover, .top-bar-section ul li > button.alert:focus {
           color: white; }
     .top-bar-section ul li:hover:not(.has-form) > a {
-      background: #fdfdfd;
+      background: #fefefe;
       color: #333333; }
     .top-bar-section ul li.active > a {
-      background: #a7a7a7;
+      background: #fefefe;
       color: #333333; }
       .top-bar-section ul li.active > a:hover {
-        background: #909090;
+        background: #dadada;
         color: #333333; }
   .top-bar-section .has-form {
     padding: 0.66667rem; }
@@ -5023,7 +5025,7 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 40.063em) {
   .top-bar {
-    background: #e5e5e5;
+    background: #fefefe;
     overflow: visible; }
     .top-bar:before, .top-bar:after {
       content: " ";
@@ -5043,7 +5045,7 @@ meta.foundation-mq-topbar {
       position: relative;
       top: 7px; }
     .top-bar.expanded {
-      background: #e5e5e5; }
+      background: #fefefe; }
 
   .contain-to-grid .top-bar {
     max-width: 62.5rem;
@@ -5062,21 +5064,21 @@ meta.foundation-mq-topbar {
         .top-bar-section ul li .js-generated {
           display: none; }
     .top-bar-section li.hover > a:not(.button) {
-      background: #fdfdfd;
+      background: #fefefe;
       color: #333333; }
     .top-bar-section li:not(.has-form) a:not(.button) {
       padding: 0 0.66667rem;
       line-height: 2rem;
-      background: #e5e5e5; }
+      background: #fefefe; }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
-        background: #fdfdfd; }
+        background: #fefefe; }
     .top-bar-section li.active:not(.has-form) a:not(.button) {
       padding: 0 0.66667rem;
       line-height: 2rem;
       color: #333333;
-      background: #a7a7a7; }
+      background: #fefefe; }
       .top-bar-section li.active:not(.has-form) a:not(.button):hover {
-        background: #909090; }
+        background: #dadada; }
     .top-bar-section .has-dropdown > a {
       padding-right: 20.66667rem !important; }
       .top-bar-section .has-dropdown > a:after {
@@ -5129,7 +5131,7 @@ meta.foundation-mq-topbar {
         background: #333333; }
       .top-bar-section .dropdown li:not(.has-form):hover > a:not(.button) {
         color: #333333;
-        background: #fdfdfd; }
+        background: #fefefe; }
       .top-bar-section .dropdown li label {
         white-space: nowrap;
         background: #333333; }
@@ -5139,12 +5141,12 @@ meta.foundation-mq-topbar {
     .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
       border-bottom: none;
       border-top: none;
-      border-right: solid 1px #e8e8e8;
+      border-right: solid 1px #fefefe;
       clear: none;
       height: 2rem;
       width: 0; }
     .top-bar-section .has-form {
-      background: #e5e5e5;
+      background: #fefefe;
       padding: 0 0.66667rem;
       height: 2rem; }
     .top-bar-section .right li .dropdown {
@@ -5159,10 +5161,10 @@ meta.foundation-mq-topbar {
         left: 100%; }
 
   .no-js .top-bar-section ul li:hover > a {
-    background: #fdfdfd;
+    background: #fefefe;
     color: #333333; }
   .no-js .top-bar-section ul li:active > a {
-    background: #a7a7a7;
+    background: #fefefe;
     color: #333333; }
   .no-js .top-bar-section .has-dropdown:hover > .dropdown {
     display: block;
@@ -5758,8 +5760,14 @@ th.hide-for-touch {
 .serif, body {
   font-family: CharisSILW, serif; }
 
-.sans-serif, main section > header, h1, h2, h3 {
+.sans-serif, h1, h2, h3, main.main-content > article > header, main.main-content > section > header, main.main-content > article ul.posts .date, main.main-content > section ul.posts .date, article.post > footer.post-meta {
   font-family: 'Fira Sans', sans-serif; }
+
+.monospace, code, kbd, pre, samp {
+  font-family: 'Adobe Source Code Pro', monospace;
+  font-size: .7rem;
+  line-height: 150%;
+  font-weight: 400; }
 
 /* structure */
 html {
@@ -5768,93 +5776,92 @@ html {
 body {
   background-color: #fefefe; }
 
-main, footer {
+/* headings */
+main.main-content, footer.main-footer {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
   max-width: 62.5rem; }
-  main:before, main:after, footer:before, footer:after {
+  main.main-content:before, main.main-content:after, footer.main-footer:before, footer.main-footer:after {
     content: " ";
     display: table; }
-  main:after, footer:after {
+  main.main-content:after, footer.main-footer:after {
     clear: both; }
 
 @media only screen and (max-width: 40em) {
-  main section > p, main section > pre {
+  main.main-content > article, main.main-content > section {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     width: 100%;
     float: left; } }
 @media only screen and (min-width: 40.063em) {
-  main section > p, main section > pre {
+  main.main-content > article, main.main-content > section {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
-    width: 50%;
+    width: 83.33333%;
     float: right;
     float: left;
-    clear: right; } }
-main section > header {
-  text-align: right;
-  font-size: 0.75rem;
-  border-top: 2px solid #333; }
-  @media only screen and (max-width: 40em) {
-    main section > header {
-      padding-left: 0.9375rem;
-      padding-right: 0.9375rem;
-      width: 100%;
-      float: left; } }
-  @media only screen and (min-width: 40.063em) {
-    main section > header {
-      padding-left: 0.9375rem;
-      padding-right: 0.9375rem;
-      width: 16.66667%;
-      float: left;
-      margin-left: 16.66667% !important;
-      clear: left; } }
-  main section > header h1 {
-    font-size: 1rem; }
-main section > .side-note {
-  text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important; }
+    main.main-content > article > p, main.main-content > article > h1, main.main-content > article > h2, main.main-content > article > h3, main.main-content > article > h4, main.main-content > article > h5, main.main-content > article > h6, main.main-content > article > ul, main.main-content > article > ol, main.main-content > article > pre, main.main-content > article > img, main.main-content > section > p, main.main-content > section > h1, main.main-content > section > h2, main.main-content > section > h3, main.main-content > section > h4, main.main-content > section > h5, main.main-content > section > h6, main.main-content > section > ul, main.main-content > section > ol, main.main-content > section > pre, main.main-content > section > img {
+      padding-right: 30%; }
+    main.main-content > article > .full-width, main.main-content > section > .full-width {
+      padding-right: 0; } }
+main.main-content > article .side-note, main.main-content > section .side-note {
   font-size: 0.75rem; }
   @media only screen and (max-width: 40em) {
-    main section > .side-note {
+    main.main-content > article .side-note, main.main-content > section .side-note {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem;
       width: 100%;
-      float: left; } }
-  @media only screen and (min-width: 40.063em) {
-    main section > .side-note {
-      padding-left: 0.9375rem;
-      padding-right: 0.9375rem;
-      width: 16.66667%;
       float: left;
-      margin-left: 16.66667% !important;
-      clear: left; } }
-main section > h2, main section > h3, main section > h4, main section > h5, main section > h6 {
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
-  width: 66.66667%;
-  float: left;
-  margin-left: 33.33333% !important; }
+      background: #e5e5e5; } }
+  @media only screen and (min-width: 40.063em) {
+    main.main-content > article .side-note, main.main-content > section .side-note {
+      width: 30%;
+      float: right;
+      clear: right;
+      padding-right: 0;
+      padding-left: 3rem; } }
+main.main-content > article > header, main.main-content > section > header {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1rem; }
+main.main-content > article > .footnotes, main.main-content > section > .footnotes {
+  border-top: 1px solid #ddd;
+  font-size: 0.75rem; }
+main.main-content > article ul.posts .date, main.main-content > section ul.posts .date {
+  font-size: 0.75rem;
+  color: #999999; }
 
-/* headings */
 @media only screen and (max-width: 40em) {
-  footer aside {
+  footer.main-footer aside {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
-    width: 25%;
+    width: 100%;
     float: left; } }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  footer aside {
+  footer.main-footer aside {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     width: 50%;
     float: left; } }
 @media only screen and (min-width: 64.063em) {
-  footer aside {
+  footer.main-footer aside {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
-    width: 100%;
+    width: 25%;
     float: left; } }
+
+article.post > footer.post-meta {
+  margin-top: 1rem;
+  border-top: 1px solid #ddd; }
+  article.post > footer.post-meta p {
+    font-size: 0.75rem; }
+  article.post > footer.post-meta ul.tags {
+    font-size: 0.75rem; }
+    article.post > footer.post-meta ul.tags li {
+      display: inline;
+      list-style-type: none; }

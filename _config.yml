@@ -1,3 +1,7 @@
 name: Alejandro Giacometti
 markdown: kramdown
+paginate: 25
 pygments: true
+default:
+    author: Alejandro Giacometti
+    permalink: /:month-:day-:year/:title.html
