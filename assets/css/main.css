@@ -5796,7 +5796,17 @@ main.main-content, footer.main-footer {
     padding-right: 0.9375rem;
     width: 100%;
     float: left; } }
-@media only screen and (min-width: 40.063em) {
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  main.main-content > article, main.main-content > section {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: right;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important; } }
+@media only screen and (min-width: 64.063em) {
   main.main-content > article, main.main-content > section {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -5805,11 +5815,12 @@ main.main-content, footer.main-footer {
     float: left;
     margin-left: auto;
     margin-right: auto;
-    float: none !important; }
-    main.main-content > article > p, main.main-content > article > h1, main.main-content > article > h2, main.main-content > article > h3, main.main-content > article > h4, main.main-content > article > h5, main.main-content > article > h6, main.main-content > article > ul, main.main-content > article > ol, main.main-content > article > pre, main.main-content > article > img, main.main-content > section > p, main.main-content > section > h1, main.main-content > section > h2, main.main-content > section > h3, main.main-content > section > h4, main.main-content > section > h5, main.main-content > section > h6, main.main-content > section > ul, main.main-content > section > ol, main.main-content > section > pre, main.main-content > section > img {
-      padding-right: 30%; }
-    main.main-content > article > .full-width, main.main-content > section > .full-width {
-      padding-right: 0; } }
+    float: none !important; } }
+@media only screen and (min-width: 40.063em) {
+  main.main-content > article > p, main.main-content > article > h1, main.main-content > article > h2, main.main-content > article > h3, main.main-content > article > h4, main.main-content > article > h5, main.main-content > article > h6, main.main-content > article > ul, main.main-content > article > ol, main.main-content > article > pre, main.main-content > article > img, main.main-content > section > p, main.main-content > section > h1, main.main-content > section > h2, main.main-content > section > h3, main.main-content > section > h4, main.main-content > section > h5, main.main-content > section > h6, main.main-content > section > ul, main.main-content > section > ol, main.main-content > section > pre, main.main-content > section > img {
+    padding-right: 30%; }
+  main.main-content > article > .full-width, main.main-content > section > .full-width {
+    padding-right: 0; } }
 main.main-content > article .side-note, main.main-content > section .side-note {
   font-size: 0.75rem; }
   @media only screen and (max-width: 40em) {

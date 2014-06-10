@@ -24,11 +24,20 @@
   @media #{$small-only} {
     @include grid-column(12);
   }
-  @media #{$medium-up} {
+  @media #{$medium-only} {
+    @include grid-column(12,
+     $last-column: true,
+     $center: true);
+  }
+
+  @media #{$large-up} {
     @include grid-column(10,
      $last-column: true,
      $center: true);
+  }
 
+
+  @media #{$medium-up} {
     > p, > h1, > h2, > h3, > h4, > h5, > h6, > ul, > ol, > pre, > img {
       padding-right: 30%
     }
