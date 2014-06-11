@@ -7,8 +7,6 @@ slug: tedxjuandefuca-stan-ruecker-rich-prospect-browsing
 title: TEDxJuanDeFuca Stan Ruecker Rich Prospect Browsing
 wordpress_id: 1518
 video_url: //www.youtube.com/embed/Nd2h9U_H0n8
-categories:
-- Blog
 tags:
 - bubblelines
 - clarissa

@@ -1,11 +1,21 @@
 header.main-header {
-    @include grid-row();
+  @include grid-row();
+  margin-bottom: 5px;
 
-    .nav-container {
-        @extend .contain-to-grid;
-        @extend .fixed;
+  &:hover {
+    background: scale-color($topbar-bg-color, $lightness: -14%);
+  }
+  .nav-container {
+    @extend .contain-to-grid;
+    @include main-block();
 
-        @include main-block();
+  }
 
+  .main-menu {
+    li.active {
+      a {
+        text-decoration: underline;
+      }
     }
+  }
 }

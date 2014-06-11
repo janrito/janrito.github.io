@@ -10,48 +10,57 @@ $max-full-width: 1200px;
     // @include grid-sizing(1, 2, 3)
     // for small-1 medium-2 large-3
 
-    @media #{$small-only} {
-      @include grid-column($small);
-    }
-    @media #{$medium-only} {
-      @include grid-column($medium);
-    }
-    @media #{$large-up} {
-      @include grid-column($large);
-    }
+  @media #{$small-only} {
+    @include grid-column($small);
   }
-
-
-  @mixin main-block() {
-    @include grid-column(12,
-     $last-column: true);
-    max-width: rem-calc($max-full-width);
-
-    @media #{$medium-up} {
-      > p, > h1, > h2, > h3, > h4, > h5, > h6, > ul, > ol, > pre, > img, > footer.post-meta {
-        padding-right: 30%
-      }
-
-      > .full-width {
-        padding-right: 0;
-      }
-    }
+  @media #{$medium-only} {
+    @include grid-column($medium);
   }
+  @media #{$large-up} {
+    @include grid-column($large);
+  }
+}
 
-  @mixin aside-block() {
-    @media #{$small-only} {
-      @include grid-column(12);
-      background: #e5e5e5;
+
+@mixin main-block() {
+  @include grid-column(12,
+   $last-column: true);
+  max-width: rem-calc($max-full-width);
+
+  @media #{$medium-up} {
+    > p, > h1, > h2, > h3, > h4, > h5, > h6, > ul, > ol, > pre, > img, > blockquote, > footer.post-meta {
+      padding-right: 30%
     }
-    @media #{$medium-up} {
-      width: 30%;
-      float: right;
-      clear: right;
+
+    > .full-width {
       padding-right: 0;
-      padding-left: rem-calc(48);
     }
-
-    @extend .clearfix;
-    font-size: rem-calc(12);
-
   }
+}
+
+@mixin aside-block() {
+  @media #{$small-only} {
+    @include grid-column(12);
+  }
+  @media #{$medium-up} {
+    width: 30%;
+    float: right;
+    clear: right;
+    padding-right: 0;
+    padding-left: rem-calc(48);
+  }
+
+  @extend .clearfix;
+  font-size: rem-calc(12);
+
+}
+
+
+@mixin aside-panel() {
+  @include aside-block();
+
+
+  @media #{$small-only} {
+    @include panel();
+  }
+}

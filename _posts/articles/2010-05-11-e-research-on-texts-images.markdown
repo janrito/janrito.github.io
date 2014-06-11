@@ -1,5 +1,4 @@
 ---
-author: janrito
 comments: true
 date: 2010-05-11 09:52:05+00:00
 layout: post
@@ -20,17 +19,12 @@ I am at the [British Academy](http://www.britac.ac.uk/) attending a workshop org
 
 ## Introduction to the Colloquium
 
-
-
-
 ### [Mike Brady](http://www.robots.ox.ac.uk/~jmb/), [Oxford](http://www.ox.ac.uk/) & [Alan Bowman](http://www.classics.ox.ac.uk/faculty/directory/buscard.asp?IDno=78) [Oxford](http://www.ox.ac.uk/)
 
 
 Alan Bowman introduced the workshop by summarising the work that is happening in e-research. He explained the main issues and objectives of the discipline.
 
 Mike Brady remarked on the difficulty of making sense of ancient documents given their condition. He talked about advances in imaging in medical technology over the past 20 years, and development in distributed computing in recent years. He commended the work on developing support tools for people who work with images, clinicians or historians. He also stressed the importance of development of computational models for the analysis of those images. He ended by saying that there are very little difference in the way that intellectual scholarship is developed in the sciences and the humanities.
-
-<!-- more -->
 
 
 ## New Image Capture Techniques for Analysing text

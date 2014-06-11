@@ -1,7 +1,19 @@
 name: Alejandro Giacometti
 markdown: kramdown
-paginate: 25
+paginate: 5
 pygments: true
-default:
-    author: Alejandro Giacometti
-    permalink: /:month-:day-:year/:title.html
+relative_permalinks: false
+permalink: /:month-:day-:year/:title/
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      layout: "page"
+      author: Alejandro Giacometti
+      lang: en
+  -
+    scope:
+      path: "articles/"
+    values:
+      layout: "blog" # overrides previous default layout

@@ -1,0 +1,86 @@
+---
+layout: page
+date: 2008-09-11 03:42:40+00:00
+comments: false
+title: Bio
+lang: es
+translations:
+    en: /about/
+---
+
+
+![portrait][portrait]
+{:.side-note}
+
+[alejandro@giacometti.me](mailto:alejandro.giacometti.me)
++44 7 838 562 819
++1 978 253 4289
+{:.side-note}
+
+Dept. Medical Physics & Bioengineering
+3.18 Malet Place Engineering Building
+University College London
+Gower Street
+London
+WC1E 6BT
+United Kingdom
+{:.side-note}
+
+
+Soy un estudiante de doctorado en [Informática Humanística][] en [University
+College London][]. Mi actual proyecto de investigación consiste en la
+aplicación de métodos de análisis de imágenes para recuperar información de
+documentos antiguos en mal estado. Mis supervisores son [Melissa Terras][] del
+[Departamento de Documentación][] y [Adam Gibson][] del [Departmento de Física
+Médica y Bioingeniería][]. También estoy afiliado al [Centro para las
+Humanidades Digitales de UCL][].
+
+
+Recientemente terminé una maestría en [Informática Humanística][1] bajo la
+supervisión de [Stan Ruecker][] en [University of Alberta][]. Mi proyecto se
+concentro en un prototipo de interface: *Texttiles Browser*. El experimento
+consiste en el uso de metadatos para la visualización y  exploración de
+colecciones medianas de texto. Mi [tésis][] se titula: *The Texttiles browser:
+an experiment in rich-prospect browsing for text collections*.
+
+
+Mis intereses son
+visualizaciones, análisis y tratamiento de imágenes, metadatos
+semánticos y su rol al compartir información. También me interesa el
+potencial de la web como una plataforma para construir aplicaciones y un
+entorno que mejore la comunicación, propicie la transparencia
+institucional, y mantenga el flujo libre de información. Irregularmente
+[publico aquí][] enlaces relevantes y noticias sobre mis proyectos.
+
+## mensapredia ##
+
+Soy ecuatoriano, y me gusta [comentar][] sobre la calidad de los medios
+en el Ecuador. Tengo una [sección][] especial para artículos que no
+tienen el mas mínimo interés de informar y que han sido expresamente
+creados para provocar reacciones viscerales en sus lectores.
+
+## Más ##
+
+Puedes ver mis fotos en [flickr][], seguirme en [twitter][], o buscarme
+en [facebook][].
+
+
+[portrait]: http://graph.facebook.com/alejandro.giacometti/picture?type=large
+[Informática Humanística]: http://en.wikipedia.org/wiki/Digital_humanities
+    "Digital Humanities"
+[University College London]: http://www.ucl.ac.uk
+[Melissa Terras]: http://www.ucl.ac.uk/infostudies/melissa-terras/
+[Departamento de Documentación]: http://www.infostudies.ucl.ac.uk/
+[Adam Gibson]: http://www.ucl.ac.uk/medphys/staff/people/agibson/www/index
+[Departmento de Física Médica y Bioingeniería]: http://www.ucl.ac.uk/medphys/
+[Centro para las Humanidades Digitales de UCL]: http://www.ucl.ac.uk/dh/
+[1]: http://huco.ualberta.ca/ "Humanities Computing"
+[Stan Ruecker]: http://www.ualberta.ca/~sruecker/
+[University of Alberta]: http://www.ualberta.ca
+[tésis]: http://repository.library.ualberta.ca/dspace/handle/10048/437
+[publico aquí]: http://www.alejandrogiacometti.com/category/blog/ "Blog"
+[comentar]: http://www.alejandrogiacometti.com/category/mensapredia/ "Mensa Predia"
+[sección]: http://www.alejandrogiacometti.com/category/mensapredia/periodismo_sensacionalista/
+[flickr]: http://www.flickr.com/photos/janrito/
+[twitter]: http://twitter.com/janrito
+[facebook]: http://www.facebook.com/alejandro.giacometti

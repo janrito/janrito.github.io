@@ -1,11 +1,11 @@
 <footer class="post-meta">
   <p>This article was written by {{ page.author }} on
-    {{ page.date | date_to_string }}.
+    <time datetime="{{page.date | date: "%a, %d %b %Y %H:%M:%S %z"}}">{{ page.date | date_to_string }}</time>.
     {% if page.tags %}
+    <i class="fa fa-tag"></i>
     <ul class="tags">
       {% for tag in page.tags %}
-      <li class="tag">
-        <i class="fa fa-tag"></i> {{tag}}
+      <li class="tag"><em>{{tag}}</em>{% unless forloop.last %},{% endunless %}
       </li>
       {% endfor %}
     </ul>

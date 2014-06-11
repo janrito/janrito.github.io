@@ -55,7 +55,7 @@ $base-line-height: 140%;
 // $default-float: left;
 
 // We use these as default colors throughout
-$primary-color: #676776;
+$primary-color: #394174;
 $secondary-color: #e7e7e7;
 $alert-color: #f04124;
 $success-color: #43AC6A;
@@ -1176,19 +1176,19 @@ $code-font-family: 'Adobe Source Code Pro', 'Liberation Mono', Courier, monospac
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-$topbar-bg-color: #fefefe;
+$topbar-bg-color: #fdfdfd;
 $topbar-bg: $topbar-bg-color;
 
 // Height and margin
-$topbar-height: rem-calc(32);
+$topbar-height: rem-calc(24);
 // $topbar-margin-bottom: rem-calc(16);
 
 // Controlling the styles for the title in the top bar
 $topbar-title-weight: normal;
-$topbar-title-font-size: rem-calc(16);
+$topbar-title-font-size: rem-calc(12);
 
 // Style the top bar dropdown elements
-// $topbar-dropdown-bg: #333;
+$topbar-dropdown-bg: $topbar-bg-color;
 // $topbar-dropdown-link-color: #fff;
 // $topbar-dropdown-link-bg: #333;
 // $topbar-dropdown-link-weight: $font-weight-normal;
@@ -1202,13 +1202,13 @@ $topbar-link-color-hover: $topbar-link-color;
 $topbar-link-color-active: $topbar-link-color;
 $topbar-link-color-active-hover: $topbar-link-color;
 // $topbar-link-weight: $font-weight-normal;
-$topbar-link-font-size: rem-calc(12);
+$topbar-link-font-size: rem-calc(10);
 $topbar-link-hover-lightness: -10%; // Darken by 10%
 $topbar-link-bg: $topbar-bg-color;
 $topbar-link-bg-color-hover: $topbar-bg-color;
 $topbar-link-bg-hover: $topbar-bg-color;
 $topbar-link-bg-active: $topbar-bg-color;
-$topbar-link-bg-active-hover: scale-color($topbar-link-bg-active, $lightness: -14%);
+$topbar-link-bg-active-hover: $topbar-bg-color;
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;
 // $topbar-link-padding: $topbar-height / 3;

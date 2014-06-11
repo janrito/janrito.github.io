@@ -25,7 +25,7 @@ html {
 
 body {
   @extend .serif;
-  background-color:#fefefe;
+  background-color:#fdfdfd;
 }
 
 /* headings */
@@ -38,9 +38,22 @@ code, kbd, pre, samp {
   @extend .monospace;
 }
 
+header.main-header, footer.main-footer{
+}
+
+div.wrapper {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  z-index: 1000;
+  #background-color: #fefefe;
+}
+
 
 main.main-content, footer.main-footer {
   @include grid-row();
+  padding-bottom: rem-calc(32px);
+  padding-top: rem-calc(32px);
 }
 
 main.main-content {
@@ -49,7 +62,7 @@ main.main-content {
     @include main-block;
 
     .side-note {
-      @include aside-block;
+      @include aside-panel;
     }
 
     > header {
@@ -67,7 +80,7 @@ main.main-content {
     ul.posts {
       @extend .no-bullet;
 
-      .date {
+      time {
         @extend .sans-serif;
         font-size: rem-calc(12);
         color: #999

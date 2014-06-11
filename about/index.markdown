@@ -2,12 +2,21 @@
 layout: page
 date: 2008-09-11 03:42:40+00:00
 comments: false
-slug: about
 title: About
+translations:
+    es: /about/bio.html
 ---
 
 ![portrait][portrait] 
 {:.side-note}
+
+I am a [Digital Humanities][] postgraduate student at [University College
+London][]. My current research is on the application of medical image
+processing methods to recover information from ancient damaged documents. My
+advisors are  [Melissa Terras][] from the [Department of Information
+Studies][] and [Adam Gibson][] from the [Department of Medical Physics and
+Bioengineering][]. I am also affiliated to the [UCL Centre for Digital
+Humanities][].
 
 [alejandro@giacometti.me](mailto:alejandro.giacometti.me)  
 +44 7 838 562 819  
@@ -23,13 +32,6 @@ WC1E 6BT
 United Kingdom  
 {:.side-note}
 
-I am a [Digital Humanities][] postgraduate student at [University College
-London][]. My current research is on the application of medical image
-processing methods to recover information from ancient damaged documents. My
-advisors are  [Melissa Terras][] from the [Department of Information
-Studies][] and [Adam Gibson][] from the [Department of Medical Physics and
-Bioengineering][]. I am also affiliated to the [UCL Centre for Digital
-Humanities][].
 
 I recently finished my MA in [Humanities Computing][] under the supervision of
 [Stan Ruecker][] at the [University of Alberta][].  My research centred around
