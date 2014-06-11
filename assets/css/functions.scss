@@ -1,5 +1,7 @@
 // Functions
 
+$max-full-width: 1200px;
+
 @mixin grid-sizing($small: 12, $medium: 12, $large: 12) {
     // grid-sizing is a shortcut for simple grid sizing classes.
     // The three arguments are the columns for small, medium
@@ -9,59 +11,47 @@
     // for small-1 medium-2 large-3
 
     @media #{$small-only} {
-        @include grid-column($small);
+      @include grid-column($small);
     }
     @media #{$medium-only} {
-        @include grid-column($medium);
+      @include grid-column($medium);
     }
     @media #{$large-up} {
-        @include grid-column($large);
+      @include grid-column($large);
     }
-}
-
-
-@mixin main-block() {
-  @media #{$small-only} {
-    @include grid-column(12);
   }
-  @media #{$medium-only} {
+
+
+  @mixin main-block() {
     @include grid-column(12,
-     $last-column: true,
-     $center: true);
-  }
+     $last-column: true);
+    max-width: rem-calc($max-full-width);
 
-  @media #{$large-up} {
-    @include grid-column(10,
-     $last-column: true,
-     $center: true);
-  }
+    @media #{$medium-up} {
+      > p, > h1, > h2, > h3, > h4, > h5, > h6, > ul, > ol, > pre, > img, > footer.post-meta {
+        padding-right: 30%
+      }
 
-
-  @media #{$medium-up} {
-    > p, > h1, > h2, > h3, > h4, > h5, > h6, > ul, > ol, > pre, > img {
-      padding-right: 30%
+      > .full-width {
+        padding-right: 0;
+      }
     }
+  }
 
-    > .full-width {
+  @mixin aside-block() {
+    @media #{$small-only} {
+      @include grid-column(12);
+      background: #e5e5e5;
+    }
+    @media #{$medium-up} {
+      width: 30%;
+      float: right;
+      clear: right;
       padding-right: 0;
+      padding-left: rem-calc(48);
     }
-  }
-}
 
-@mixin aside-block() {
-  @media #{$small-only} {
-    @include grid-column(12);
-    background: #e5e5e5;
-  }
-  @media #{$medium-up} {
-    width: 30%;
-    float: right;
-    clear: right;
-    padding-right: 0;
-    padding-left: rem-calc(48);
-  }
+    @extend .clearfix;
+    font-size: rem-calc(12);
 
-  @extend .clearfix;
-  font-size: rem-calc(12);
-
-}
+  }

@@ -1,5 +1,12 @@
 footer.main-footer {
-    aside {
-        @include grid-sizing(12, 6, 3);
+  @include grid-row();
+
+  aside {
+    @include grid-sizing(12, 12, 12);
+
+    ul {
+      @extend .inline-list;
     }
+
+  }
 }

@@ -1,0 +1,11 @@
+header.main-header {
+    @include grid-row();
+
+    .nav-container {
+        @extend .contain-to-grid;
+        @extend .fixed;
+
+        @include main-block();
+
+    }
+}

@@ -12,6 +12,9 @@
 @import'../vendor/fira/fira.css';
 @import 'adobe-source-code-pro.css';
 
+$fa-font-path:   '../vendor/font-awesome/fonts';
+@import '../vendor/font-awesome/scss/font-awesome';
+
 // modules
 @import 'functions';
 @import 'general';

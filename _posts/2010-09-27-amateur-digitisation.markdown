@@ -28,7 +28,10 @@ The spine is falling apart.
 
 The manuscript is not in terrible condition, but it does have some problems. The spine is falling apart, and the cover is almost loose.
 
-[caption id="" align="alignnone" width="1024" caption="Damaged page detail"][![damaged page detail](http://farm5.static.flickr.com/4086/5030283872_7842b3f64a_b.jpg)](http://www.flickr.com/photos/janrito/5030283872/)[/caption]
+Damaged page detail
+{:.side-note}
+
+[![damaged_page]][damaged_page_link]
 
 Some of the pages are eaten by moths. I was told that the manuscript was sprayed with [Formol](http://en.wikipedia.org/wiki/Formaldehyde) in order to stop the banquet.
 
@@ -46,3 +49,5 @@ I have some more shots of the book in a [flickr set](http://www.flickr.com/photo
 
 [spine]: http://farm5.static.flickr.com/4108/5030285836_a878065d51_b.jpg "The spine is falling apart."
 [spine_link]: http://www.flickr.com/photos/janrito/5030285836/ "The spine is falling apart."
+[damaged_page]: http://farm5.static.flickr.com/4086/5030283872_7842b3f64a_b.jpg "Damaged Page Detail"
+[damaged_page_link]: http://www.flickr.com/photos/janrito/5030283872/ "Damaged Page Detail"

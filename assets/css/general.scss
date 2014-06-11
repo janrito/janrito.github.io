@@ -72,6 +72,20 @@ main.main-content {
         font-size: rem-calc(12);
         color: #999
       }
+
+      h2 {
+        display: inline;
+        font-size: rem-calc(18);
+      }
+
+      section.excerpt {
+        color: #999
+      }
+    }
+
+    .pagination {
+      @include aside-block;
+      @extend .sans-serif;
     }
   }
 }

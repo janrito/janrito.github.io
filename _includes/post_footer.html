@@ -1,0 +1,15 @@
+<footer class="post-meta">
+  <p>This article was written by {{ page.author }} on
+    {{ page.date | date_to_string }}.
+    {% if page.tags %}
+    <ul class="tags">
+      {% for tag in page.tags %}
+      <li class="tag">
+        <i class="fa fa-tag"></i> {{tag}}
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+  </p>
+</footer>
