@@ -7408,6 +7408,8 @@ main.main-content > article, main.main-content > section {
       border-top: 3px solid #ddd; }
     main.main-content > article > .footnotes p, main.main-content > article > .footnotes ol, main.main-content > section > .footnotes p, main.main-content > section > .footnotes ol {
       font-size: 0.75rem; }
+  main.main-content > article ul.posts li.post, main.main-content > section ul.posts li.post {
+    padding-bottom: 0.75rem; }
   main.main-content > article ul.posts time, main.main-content > section ul.posts time {
     font-size: 0.75rem;
     color: #999999; }
@@ -7418,7 +7420,6 @@ main.main-content > article, main.main-content > section {
     margin-top: 0.75rem;
     color: #999; }
   main.main-content > article ul.posts .categories, main.main-content > section ul.posts .categories {
-    display: inline;
     font-size: 0.75rem;
     color: #999999; }
   main.main-content > article .pagination, main.main-content > section .pagination {

@@ -1,5 +1,5 @@
 
-
+{% if paginator.previous_page or paginator.next_page %}
 <ul class="pagination">
   <li class="arrow {% unless paginator.previous_page %}unavailable{% endunless %}">
     <a href="{% if paginator.previous_page %}{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}{% else %}#{% endif %}">&laquo;</a>
@@ -9,3 +9,4 @@
     <a href="{% if paginator.next_page %}{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}{% else %}#{% endif %}">&raquo;</a>
   </li>
 </ul>
+{% endif %}

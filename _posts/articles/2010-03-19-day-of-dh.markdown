@@ -1,5 +1,4 @@
 ---
-author: janrito
 comments: true
 date: 2010-03-19 13:03:29+00:00
 layout: post
@@ -7,17 +6,26 @@ slug: day-of-dh
 title: Day of DH
 wordpress_id: 431
 categories:
-- Blog
+- Digital Humanities
 tags:
 - dayofdh
 - dh
 - digital humanities
 ---
 
+
+
+*Oasis, Everyware*
+{:.side-note}
+
+[![oe]][oe_link]
+
 Yesterday I took part of [Day in the Life of the Digital Humanities 2010](http://tapor.ualberta.ca/taporwiki/index.php/Day_in_the_Life_of_the_Digital_Humanities_2010). You can read [my entries](http://ra.tapor.ualberta.ca/~dayofdh2010/alejandrogiacometti), or browse the most [recent posts](http://ra.tapor.ualberta.ca/~dayofdh2010/).
 
 The project is a digital publication that aims to answer the question: What does a digital humanist do? It is an interesting way of taking a snapshot of the community at a specific point in time. This is the second Day of DH, the first one was last year. I really hope this project continues to be carried out. I would like to see the evolution of DH in 10 years.
 
-[caption id="" align="alignnone" width="940" caption="Oasis, Everyware"][![Oasis, Everyware](http://farm3.static.flickr.com/2747/4443374305_4c97dfcf86_b.jpg)](http://www.flickr.com/photos/janrito/4443374305/)[/caption]
-
 I also took some pictures and wrote about the [decode](http://www.vam.ac.uk/microsites/decode/) exhibit at the Victoria & Albert Museum.
+
+
+[oe]: http://farm3.static.flickr.com/2747/4443374305_4c97dfcf86_b.jpg "Oasis, Everyware"
+[oe_link]: http://www.flickr.com/photos/janrito/4443374305/ ""Oasis, Everyware"

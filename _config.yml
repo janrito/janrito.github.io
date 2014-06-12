@@ -1,6 +1,6 @@
 name: Alejandro Giacometti
 markdown: kramdown
-paginate: 5
+paginate: 15
 pygments: true
 relative_permalinks: false
 permalink: /:month-:day-:year/:title/
