@@ -22,7 +22,7 @@ I'm in the middle of writing a paper, and I needed a distraction. This year's [D
 It contains two timelines: the first one displays all the posts, and the second one displays a subset. The subset is marked on the first timeline in blue. The two small grey handles control the extremes of the subset; drag them to limit or expand the selection. Each post is represented by a blue bubble. The size of the bubble changes according to the number of words in the post. If you hover the mouse over a bubble, the title and author of the post will appear. Also, the post will be marked in orange (in both timelines, if the post is within the selection).
 
 
-<iframe src="http://vis.giacometti.me/embed/dayofdh_timeline" height="500px" width="1200px" ></iframe>
+{% include media.html url='//vis.giacometti.me/embed/dayofdh_timeline' %}
 
 *This visualisation is experimental. It takes advantage of some fairly new technology, which is, unfortunately, not available in legacy browsers, including every version of Internet Explorer.*
 {:.side-note}
@@ -38,4 +38,5 @@ I recommend reading through the tutorials. I spent too much time fighting with t
 
 Today I reloaded the data to include the latest posts. Some people updated the first "Hello World" post, created by default by Wordpress. So I created a second visualisation which uses the updated time rather than the published time for the posts. Take a look:
 
-<iframe src="http://vis.giacometti.me/embed/day_of_dh_timeline_updated" height="500px" width="1200px" ></iframe>
+
+{% include media.html url='http://vis.giacometti.me/embed/day_of_dh_timeline_updated' %}

@@ -87,6 +87,10 @@ main.main-content {
     ul.posts {
       @extend .no-bullet;
 
+      li.post {
+        //padding-bottom: rem-calc(32px);
+      }
+
       time {
         @extend .sans-serif;
         font-size: rem-calc(12);
@@ -96,10 +100,23 @@ main.main-content {
       h2 {
         display: inline;
         font-size: rem-calc(18);
+        @extend .serif;
       }
 
       section.excerpt {
+        margin-top: rem-calc(12);
+        color: #999;
+
+
+      }
+
+      .categories {
+        @extend .sans-serif;
+        display: inline;
+        //margin-top: - rem-calc(12);
+        font-size: rem-calc(12);
         color: #999
+
       }
     }
 
@@ -114,4 +131,10 @@ main.main-content {
 p.reference {
   text-indent: -2rem;
   padding-left: 2rem;
+}
+
+
+.media-container {
+  @include flex-video-container();
+  @extend .widescreen;
 }

@@ -2561,7 +2561,7 @@ button, .button {
   height: 0;
   margin-bottom: 1rem;
   overflow: hidden; }
-  .flex-video.widescreen {
+  .flex-video.widescreen, .flex-video.media-container {
     padding-bottom: 56.34%; }
   .flex-video.vimeo {
     padding-top: 0; }
@@ -4134,7 +4134,7 @@ table {
   .small-only-text-left {
     text-align: left !important; }
 
-  .small-only-text-right {
+  .small-only-text-right, article.post > footer.post-meta .barcode {
     text-align: right !important; }
 
   .small-only-text-center {
@@ -7310,10 +7310,10 @@ th.hide-for-touch {
   content: "\f1e2"; }
 
 /* type */
-.serif, body {
+.serif, body, main.main-content > article ul.posts h2, main.main-content > section ul.posts h2 {
   font-family: CharisSILW, serif; }
 
-.sans-serif, h1, h2, h3, main.main-content > article > header, main.main-content > section > header, main.main-content > article ul.posts time, main.main-content > section ul.posts time, main.main-content > article .pagination, main.main-content > section .pagination, article.post > footer.post-meta {
+.sans-serif, h1, h2, h3, main.main-content > article > header, main.main-content > section > header, main.main-content > article ul.posts time, main.main-content > section ul.posts time, main.main-content > article ul.posts .categories, main.main-content > section ul.posts .categories, main.main-content > article .pagination, main.main-content > section .pagination, article.post > footer.post-meta {
   font-family: 'Fira Sans', sans-serif; }
 
 .monospace, code, kbd, pre, samp {
@@ -7415,6 +7415,11 @@ main.main-content > article, main.main-content > section {
     display: inline;
     font-size: 1.125rem; }
   main.main-content > article ul.posts section.excerpt, main.main-content > section ul.posts section.excerpt {
+    margin-top: 0.75rem;
+    color: #999; }
+  main.main-content > article ul.posts .categories, main.main-content > section ul.posts .categories {
+    display: inline;
+    font-size: 0.75rem;
     color: #999999; }
   main.main-content > article .pagination, main.main-content > section .pagination {
     font-size: 0.75rem; }
@@ -7435,6 +7440,27 @@ main.main-content > article, main.main-content > section {
 p.reference {
   text-indent: -2rem;
   padding-left: 2rem; }
+
+.media-container {
+  position: relative;
+  padding-top: 1.5625rem;
+  padding-bottom: 67.5%;
+  height: 0;
+  margin-bottom: 1rem;
+  overflow: hidden; }
+  .media-container.widescreen, .media-container {
+    padding-bottom: 56.34%; }
+  .media-container.vimeo {
+    padding-top: 0; }
+  .media-container iframe,
+  .media-container object,
+  .media-container embed,
+  .media-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
 
 header.main-header {
   width: 100%;
