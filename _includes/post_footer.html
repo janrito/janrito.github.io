@@ -1,15 +1,37 @@
+
+
 <footer class="post-meta">
-  <p>This article was written by {{ page.author }} on
-    <time datetime="{{page.date | date: "%a, %d %b %Y %H:%M:%S %z"}}">{{ page.date | date_to_string }}</time>.
-    {% if page.tags %}
-    <i class="fa fa-tag"></i>
-    <ul class="tags">
-      {% for tag in page.tags %}
-      <li class="tag"><em>{{tag}}</em>{% unless forloop.last %},{% endunless %}
-      </li>
-      {% endfor %}
-    </ul>
+
+  <div class="barcode">
+    <i class="fa fa-anchor"></i>
+  </div>
+
+  <p>
+    <span class="title">{{page.title}}</span>
+    was published
+    {% if page.category %}
+    in <i class="fa fa-bookmark"></i>
+    <span class="category">{{ page.category }}</span><wbr>
     {% endif %}
 
-  </p>
-</footer>
+    {% if page.categories %}
+    in <i class="fa fa-bookmark"></i>
+    {% for category in page.categories%}
+    <span class="category">{{ category }}</span>{% if forloop.rindex0 == 1 %} and {% elsif forloop.rindex0 != 0 %}, {% endif %}<wbr>
+    {% endfor %}
+    {% endif %}
+
+    by <i class="fa fa-user"></i> <span class="author">{% if page.author %}{{ page.author }}{% else %}{{ site.name }}{% endif %}</span><wbr>
+
+    around <i class="fa fa-clock-o"></i>
+
+    <time datetime="{{page.date | date: "%a, %d %b %Y %H:%M:%S %z"}}">
+      {{ page.date | date_to_string }}</time><wbr>{% if page.tags %}, {% endif %}
+
+
+      {% if page.tags %}
+      and tagged with
+      <i class="fa fa-tag"></i>
+      {% for tag in page.tags|sort %}<span class="tag">{{tag}}</span>{% if forloop.rindex0 == 1 %} and {% elsif forloop.rindex0 != 0 %}, {% endif %}<wbr>{% endfor %}{% endif %}.
+    </p>
+  </footer>

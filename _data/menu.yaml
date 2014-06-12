@@ -1,5 +1,8 @@
 - name: Archive
-  url: /index.html
+  url: /
 
 - name: About
   url: /about/
+
+- name: Publications
+  url: /publications/

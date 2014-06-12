@@ -28,7 +28,7 @@ $max-full-width: 1200px;
   max-width: rem-calc($max-full-width);
 
   @media #{$medium-up} {
-    > p, > h1, > h2, > h3, > h4, > h5, > h6, > ul, > ol, > pre, > img, > blockquote, > footer.post-meta {
+    > p, > h1, > h2, > h3, > h4, > h5, > h6, > ul, > ol, > pre, > img, > blockquote, > div.footnotes {
       padding-right: 30%
     }
 

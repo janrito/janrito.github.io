@@ -6,7 +6,8 @@ slug: amateur-digitisation
 title: Amateur Digitisation
 wordpress_id: 701
 categories:
-- Blog
+- Digital Humanities
+- imaging
 tags:
 - amateur
 - cluj

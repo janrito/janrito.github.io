@@ -6,7 +6,7 @@ slug: e-research-on-texts-images
 title: e-Research on Texts & Images
 wordpress_id: 478
 categories:
-- Blog
+- Digital Humanities
 tags:
 - British Academy
 - conference

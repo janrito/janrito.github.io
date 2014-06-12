@@ -5,6 +5,9 @@ layout: post
 slug: day-of-dh-2011
 title: Day of DH 2011
 wordpress_id: 1437
+categories:
+- Digital Humanities
+- Visualisation
 tags:
 - d3.js
 - dayofdh

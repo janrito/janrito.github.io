@@ -434,10 +434,10 @@ img {
 .right {
   float: right !important; }
 
-.clearfix:before, main.main-content > article .side-note:before, main.main-content > section .side-note:before, main.main-content > article .pagination:before, main.main-content > section .pagination:before, article.post.video header:before, .clearfix:after, main.main-content > article .side-note:after, main.main-content > section .side-note:after, main.main-content > article .pagination:after, main.main-content > section .pagination:after, article.post.video header:after {
+.clearfix:before, main.main-content > article .side-note:before, main.main-content > section .side-note:before, main.main-content > article .pagination:before, main.main-content > section .pagination:before, article.post > footer.post-meta .barcode:before, article.post.video header:before, .clearfix:after, main.main-content > article .side-note:after, main.main-content > section .side-note:after, main.main-content > article .pagination:after, main.main-content > section .pagination:after, article.post > footer.post-meta .barcode:after, article.post.video header:after {
   content: " ";
   display: table; }
-.clearfix:after, main.main-content > article .side-note:after, main.main-content > section .side-note:after, main.main-content > article .pagination:after, main.main-content > section .pagination:after, article.post.video header:after {
+.clearfix:after, main.main-content > article .side-note:after, main.main-content > section .side-note:after, main.main-content > article .pagination:after, main.main-content > section .pagination:after, article.post > footer.post-meta .barcode:after, article.post.video header:after {
   clear: both; }
 
 .hide {
@@ -7360,7 +7360,7 @@ main.main-content > article, main.main-content > section {
   float: left;
   max-width: 75rem; }
   @media only screen and (min-width: 40.063em) {
-    main.main-content > article > p, main.main-content > article > h1, main.main-content > article > h2, main.main-content > article > h3, main.main-content > article > h4, main.main-content > article > h5, main.main-content > article > h6, main.main-content > article > ul, main.main-content > article > ol, main.main-content > article > pre, main.main-content > article > img, main.main-content > article > blockquote, main.main-content > article > footer.post-meta, main.main-content > section > p, main.main-content > section > h1, main.main-content > section > h2, main.main-content > section > h3, main.main-content > section > h4, main.main-content > section > h5, main.main-content > section > h6, main.main-content > section > ul, main.main-content > section > ol, main.main-content > section > pre, main.main-content > section > img, main.main-content > section > blockquote, main.main-content > section > footer.post-meta {
+    main.main-content > article > p, main.main-content > article > h1, main.main-content > article > h2, main.main-content > article > h3, main.main-content > article > h4, main.main-content > article > h5, main.main-content > article > h6, main.main-content > article > ul, main.main-content > article > ol, main.main-content > article > pre, main.main-content > article > img, main.main-content > article > blockquote, main.main-content > article > div.footnotes, main.main-content > section > p, main.main-content > section > h1, main.main-content > section > h2, main.main-content > section > h3, main.main-content > section > h4, main.main-content > section > h5, main.main-content > section > h6, main.main-content > section > ul, main.main-content > section > ol, main.main-content > section > pre, main.main-content > section > img, main.main-content > section > blockquote, main.main-content > section > div.footnotes {
       padding-right: 30%; }
     main.main-content > article > .full-width, main.main-content > section > .full-width {
       padding-right: 0; } }
@@ -7402,8 +7402,12 @@ main.main-content > article, main.main-content > section {
     border-bottom: 1px solid #ddd;
     margin-bottom: 1rem; }
   main.main-content > article > .footnotes, main.main-content > section > .footnotes {
-    border-top: 1px solid #ddd;
-    font-size: 0.75rem; }
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem; }
+    main.main-content > article > .footnotes ol, main.main-content > section > .footnotes ol {
+      border-top: 3px solid #ddd; }
+    main.main-content > article > .footnotes p, main.main-content > article > .footnotes ol, main.main-content > section > .footnotes p, main.main-content > section > .footnotes ol {
+      font-size: 0.75rem; }
   main.main-content > article ul.posts time, main.main-content > section ul.posts time {
     font-size: 0.75rem;
     color: #999999; }
@@ -7428,6 +7432,10 @@ main.main-content > article, main.main-content > section {
         padding-right: 0;
         padding-left: 3rem; } }
 
+p.reference {
+  text-indent: -2rem;
+  padding-left: 2rem; }
+
 header.main-header {
   width: 100%;
   margin-left: auto;
@@ -7451,7 +7459,7 @@ header.main-header {
     float: left;
     max-width: 75rem; }
     @media only screen and (min-width: 40.063em) {
-      header.main-header .nav-container > p, header.main-header .nav-container > h1, header.main-header .nav-container > h2, header.main-header .nav-container > h3, header.main-header .nav-container > h4, header.main-header .nav-container > h5, header.main-header .nav-container > h6, header.main-header .nav-container > ul, header.main-header .nav-container > ol, header.main-header .nav-container > pre, header.main-header .nav-container > img, header.main-header .nav-container > blockquote, header.main-header .nav-container > footer.post-meta {
+      header.main-header .nav-container > p, header.main-header .nav-container > h1, header.main-header .nav-container > h2, header.main-header .nav-container > h3, header.main-header .nav-container > h4, header.main-header .nav-container > h5, header.main-header .nav-container > h6, header.main-header .nav-container > ul, header.main-header .nav-container > ol, header.main-header .nav-container > pre, header.main-header .nav-container > img, header.main-header .nav-container > blockquote, header.main-header .nav-container > div.footnotes {
         padding-right: 30%; }
       header.main-header .nav-container > .full-width {
         padding-right: 0; } }
@@ -7490,18 +7498,44 @@ footer.main-footer {
       float: left; } }
 
 article.post > footer.post-meta {
-  margin-top: 1rem;
-  border-top: 1px solid #ddd;
-  clear: both; }
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 100%;
+  float: right;
+  float: left;
+  max-width: 75rem;
+  margin-top: 3rem;
+  clear: both;
+  color: #999; }
+  @media only screen and (min-width: 40.063em) {
+    article.post > footer.post-meta > p, article.post > footer.post-meta > h1, article.post > footer.post-meta > h2, article.post > footer.post-meta > h3, article.post > footer.post-meta > h4, article.post > footer.post-meta > h5, article.post > footer.post-meta > h6, article.post > footer.post-meta > ul, article.post > footer.post-meta > ol, article.post > footer.post-meta > pre, article.post > footer.post-meta > img, article.post > footer.post-meta > blockquote, article.post > footer.post-meta > div.footnotes {
+      padding-right: 30%; }
+    article.post > footer.post-meta > .full-width {
+      padding-right: 0; } }
   article.post > footer.post-meta p {
-    font-size: 0.75rem; }
-  article.post > footer.post-meta ul.tags {
-    display: inline;
-    margin-left: 0;
-    font-size: 0.75rem; }
-    article.post > footer.post-meta ul.tags li {
-      display: inline;
-      list-style-type: none; }
+    text-align: right;
+    font-size: 0.75rem;
+    padding-left: 30%; }
+  article.post > footer.post-meta span.title, article.post > footer.post-meta span.tag, article.post > footer.post-meta span.author, article.post > footer.post-meta span.category, article.post > footer.post-meta time {
+    font-style: italic; }
+  article.post > footer.post-meta .barcode {
+    font-size: 0.75rem;
+    margin-top: -1rem;
+    font-size: 8rem;
+    color: #e9e9e9; }
+    @media only screen and (max-width: 40em) {
+      article.post > footer.post-meta .barcode {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem;
+        width: 100%;
+        float: left; } }
+    @media only screen and (min-width: 40.063em) {
+      article.post > footer.post-meta .barcode {
+        width: 30%;
+        float: right;
+        clear: right;
+        padding-right: 0;
+        padding-left: 3rem; } }
 
 article.post.video header {
   font-size: 0.75rem;

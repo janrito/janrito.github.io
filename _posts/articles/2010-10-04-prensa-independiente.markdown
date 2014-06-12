@@ -1,5 +1,4 @@
 ---
-author: janrito
 comments: true
 date: 2010-10-04 10:07:07+00:00
 layout: post
@@ -7,7 +6,7 @@ slug: prensa-independiente
 title: Prensa Independiente
 wordpress_id: 717
 categories:
-- Comentario
+- Ecuador
 lang: es
 tags:
 - Ecuador

@@ -73,8 +73,15 @@ main.main-content {
     }
 
     > .footnotes {
-      border-top: 1px solid #ddd;
-      font-size: rem-calc(12);
+      margin-top: rem-calc(12);
+      margin-bottom: rem-calc(12);
+
+      ol {
+        border-top: 3px solid #ddd;
+      }
+      p , ol{
+        font-size: rem-calc(12);
+      }
     }
 
     ul.posts {
@@ -103,3 +110,8 @@ main.main-content {
   }
 }
 
+
+p.reference {
+  text-indent: -2rem;
+  padding-left: 2rem;
+}
