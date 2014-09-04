@@ -1,7 +1,11 @@
 name: Alejandro Giacometti
 markdown: kramdown
+sass:
+    sass_dir: assets/_sass
+    # style: :compressed
+include_dir: assets/vendor
 paginate: 15
-pygments: true
+highlighter: pygments
 relative_permalinks: false
 permalink: /:month-:day-:year/:title/
 defaults:
