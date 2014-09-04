@@ -50,7 +50,7 @@ $max-full-width: 1200px;
     padding-left: rem-calc(48);
   }
 
-  @extend .clearfix;
+  @include clearfix();
   font-size: rem-calc(12);
 
 }

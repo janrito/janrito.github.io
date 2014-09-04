@@ -18,7 +18,6 @@ article.post {
 
     .barcode {
       @include aside-block();
-      @extend .small-only-text-right;
       margin-top: - rem-calc(16);
       font-size: 8rem;
       color: #e9e9e9;

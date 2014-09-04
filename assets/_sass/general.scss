@@ -25,7 +25,7 @@ html {
 
 body {
   @extend .serif;
-  background-color:#fdfdfd;
+  background-color:#d4d4d4;
 }
 
 /* headings */
@@ -85,7 +85,8 @@ main.main-content {
     }
 
     ul.posts {
-      @extend .no-bullet;
+      margin-left: $list-side-margin-no-bullet;
+      list-style: none;
 
       li.post {
         padding-bottom: rem-calc(12px);

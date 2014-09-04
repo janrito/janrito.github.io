@@ -5,7 +5,7 @@ footer.main-footer {
     @include grid-sizing(12, 12, 12);
 
     ul {
-      @extend .inline-list;
+      @include inline-list();
     }
 
   }
