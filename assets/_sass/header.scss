@@ -1,9 +1,9 @@
 header.main-header {
-  @include grid-row();
+  @extend .navigation;
   margin-bottom: 5px;
 
   &:hover {
-    background: scale-color($topbar-bg-color, $lightness: -14%);
+
   }
   .nav-container {
     @include main-block();

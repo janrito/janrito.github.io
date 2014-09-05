@@ -51,7 +51,7 @@ div.wrapper {
 
 
 main.main-content, footer.main-footer {
-  @include grid-row();
+  @include outer-container;
   padding-bottom: rem-calc(32px);
   padding-top: rem-calc(32px);
 }
@@ -85,7 +85,7 @@ main.main-content {
     }
 
     ul.posts {
-      margin-left: $list-side-margin-no-bullet;
+      margin-left: 0;
       list-style: none;
 
       li.post {
@@ -135,6 +135,5 @@ p.reference {
 
 
 .media-container {
-  @include flex-video-container();
-  @extend .widescreen;
+  @extend .video;
 }

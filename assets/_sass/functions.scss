@@ -1,66 +1,88 @@
 // Functions
 
-$max-full-width: 1200px;
+// $max-full-width: 1200px;
 
-@mixin grid-sizing($small: 12, $medium: 12, $large: 12) {
-    // grid-sizing is a shortcut for simple grid sizing classes.
-    // The three arguments are the columns for small, medium
-    // and large media sizes respectively
-    // call the mixin like:
-    // @include grid-sizing(1, 2, 3)
-    // for small-1 medium-2 large-3
+// @mixin grid-sizing($small: 12, $medium: 12, $large: 12) {
+//     // grid-sizing is a shortcut for simple grid sizing classes.
+//     // The three arguments are the columns for small, medium
+//     // and large media sizes respectively
+//     // call the mixin like:
+//     // @include grid-sizing(1, 2, 3)
+//     // for small-1 medium-2 large-3
 
-  @media #{$small-only} {
-    @include grid-column($small);
-  }
-  @media #{$medium-only} {
-    @include grid-column($medium);
-  }
-  @media #{$large-up} {
-    @include grid-column($large);
-  }
-}
+//   @media #{$small-only} {
+//     @include grid-column($small);
+//   }
+//   @media #{$medium-only} {
+//     @include grid-column($medium);
+//   }
+//   @media #{$large-up} {
+//     @include grid-column($large);
+//   }
+// }
 
+
+// @mixin main-block() {
+//   @include grid-column(12,
+//    $last-column: true);
+//   max-width: rem-calc($max-full-width);
+
+//   @media #{$medium-up} {
+//     > p, > h1, > h2, > h3, > h4, > h5, > h6, > ul, > ol, > pre, > img, > blockquote, > div.footnotes {
+//       padding-right: 30%
+//     }
+
+//     > .full-width {
+//       padding-right: 0;
+//     }
+//   }
+// }
+
+// @mixin aside-block() {
+//   @media #{$small-only} {
+//     @include grid-column(12);
+//   }
+//   @media #{$medium-up} {
+//     width: 30%;
+//     float: right;
+//     clear: right;
+//     padding-right: 0;
+//     padding-left: rem-calc(48);
+//   }
+
+//   @include clearfix();
+//   font-size: rem-calc(12);
+
+// }
+
+
+// @mixin aside-panel() {
+//   @include aside-block();
+
+
+//   @media #{$small-only} {
+//     @include panel();
+//   }
+// }
 
 @mixin main-block() {
-  @include grid-column(12,
-   $last-column: true);
-  max-width: rem-calc($max-full-width);
-
-  @media #{$medium-up} {
-    > p, > h1, > h2, > h3, > h4, > h5, > h6, > ul, > ol, > pre, > img, > blockquote, > div.footnotes {
-      padding-right: 30%
-    }
-
-    > .full-width {
-      padding-right: 0;
-    }
-  }
+  @include span-columns(12);
+  @include omega();
 }
 
 @mixin aside-block() {
-  @media #{$small-only} {
-    @include grid-column(12);
-  }
-  @media #{$medium-up} {
-    width: 30%;
-    float: right;
-    clear: right;
-    padding-right: 0;
-    padding-left: rem-calc(48);
-  }
-
-  @include clearfix();
-  font-size: rem-calc(12);
-
+  @include span-columns(4);
 }
 
-
 @mixin aside-panel() {
-  @include aside-block();
+  @include aside-block;
+}
 
+@mixin inline-list() {
+  list-style: none;
+  margin-left: 0;
 
-  @media #{$small-only} {
-    @include panel();
+  li {
+    display: inline;
   }
 }
