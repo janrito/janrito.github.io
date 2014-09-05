@@ -4,7 +4,7 @@
   "dependencies": {
     "jquery": null,
     "requirejs": null,
-    "foundation": null,
+    "refills": null,
     "font-awesome": null,
     "fira": null,
     "charis-sil": "http://scripts.sil.org/cms/scripts/render_download.php?format=file&media_id=CharisSIL-4.114-web.zip&filename=CharisSIL-4.114-web.zip",
