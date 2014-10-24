@@ -1,20 +1,20 @@
 header.main-header {
-  @extend .navigation;
   margin-bottom: 5px;
 
-  &:hover {
+  // &:hover {
 
-  }
+  // }
+
   .nav-container {
     @include main-block();
 
   }
+}
 
-  .main-menu {
-    li.active {
-      a {
-        text-decoration: underline;
-      }
+.main-menu {
+  li.active {
+    a {
+      text-decoration: underline;
     }
   }
 }

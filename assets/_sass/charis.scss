@@ -1,24 +1,24 @@
-/* use Charis SIL - Regular in .woff format */
+// use Charis SIL - Regular in .woff format
 @font-face {
   font-family: CharisSILW;
-  src: url(../vendor/charis-sil/web/CharisSIL-R.woff);
+  src: url('../vendor/charis-sil/web/CharisSIL-R.woff');
 }
-/* use Charis SIL - Italic in .woff format */
+// use Charis SIL - Italic in .woff format
 @font-face {
   font-family: CharisSILW;
   font-style: italic;
-  src: url(../vendor/charis-sil/web/CharisSIL-I.woff);
+  src: url('../vendor/charis-sil/web/CharisSIL-I.woff');
 }
 
 @font-face {
-    font-family: CharisSILW;
-    font-weight: bold;
-    src: url(../vendor/charis-sil/web/CharisSIL-B.woff);
+  font-family: CharisSILW;
+  font-weight: bold;
+  src: url('../vendor/charis-sil/web/CharisSIL-B.woff');
 }
 
 @font-face {
-    font-family: CharisSILW;
-    font-weight: bold;
-    font-style: italic;
-    src: url(../vendor/charis-sil/web/CharisSIL-BI.woff);
+  font-family: CharisSILW;
+  font-weight: bold;
+  font-style: italic;
+  src: url('../vendor/charis-sil/web/CharisSIL-BI.woff');
 }

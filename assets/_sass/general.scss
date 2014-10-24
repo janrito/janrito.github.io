@@ -3,15 +3,15 @@
 
 
 .serif {
-  font-family: CharisSILW, serif;
+  font-family: $font-family-serif;
 }
 
 .sans-serif {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: $font-family-sans-serif;
 }
 
 .monospace {
-  font-family: 'Adobe Source Code Pro', monospace;
+  font-family: $font-family-monospace;
   font-size: .7rem;
   line-height: 150%;
   font-weight: 400;
@@ -28,11 +28,6 @@ body {
   background-color:#d4d4d4;
 }
 
-/* headings */
-
-h1, h2, h3 {
-  @extend .sans-serif;
-}
 
 code, kbd, pre, samp {
   @extend .monospace;
@@ -51,7 +46,7 @@ div.wrapper {
 
 
 main.main-content, footer.main-footer {
-  @include outer-container;
+  @include grid-row();
   padding-bottom: rem-calc(32px);
   padding-top: rem-calc(32px);
 }

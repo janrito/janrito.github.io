@@ -1,9 +1,8 @@
 footer.main-footer {
-  @include outer-container;
+  @include grid-row;
 
   aside {
-    @include span-columns(12);
-      @include omega();
+    @include main-block();
 
     ul {
       @include inline-list();

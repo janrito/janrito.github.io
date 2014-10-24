@@ -2,6 +2,7 @@ article.post {
   > footer.post-meta {
     @include main-block();
     @extend .sans-serif;
+
     margin-top: rem-calc(48);
     clear: both;
     color: #999;
@@ -12,7 +13,11 @@ article.post {
       padding-left: 30%;
     }
 
-    span.title, span.tag, span.author, span.category, time {
+    span.title,
+    span.tag,
+    span.author,
+    span.category,
+    time {
       font-style: italic;
     }
 
@@ -24,17 +29,17 @@ article.post {
 
     }
   }
-}
 
-article.post.video {
-  header {
-    @include aside-block();
-    border-bottom: none;
+  &.video {
+    header {
+      @include aside-block();
+      border-bottom: 0;
 
-    h1 {
-      font-size: rem-calc(16px);
-      font-weight: bold;
+      h1 {
+        font-size: rem-calc(16px);
+        font-weight: bold;
 
+      }
     }
   }
 }

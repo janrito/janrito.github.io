@@ -2,69 +2,25 @@
 // settings
 @import 'settings';
 
-// import refills
-@import "../vendor/refills/source/stylesheets/normalize";
-@import "../vendor/refills/source/stylesheets/bourbon/bourbon";
-@import "../vendor/refills/source/stylesheets/bitters/grid-settings";
-
-@import "../vendor/refills/source/stylesheets/neat/neat";
-@import "../vendor/refills/source/stylesheets/bitters/bitters";
-@import "../vendor/refills/source/vendor/stylesheets/prism.css";
-
-@import "../vendor/refills/source/stylesheets/refills-nav";
-@import "../vendor/refills/source/stylesheets/refills-styles";
-
-@import "../vendor/refills/source/stylesheets/refills/accordion";
-@import "../vendor/refills/source/stylesheets/refills/accordion-tabs";
-@import "../vendor/refills/source/stylesheets/refills/accordion-tabs-minimal";
-@import "../vendor/refills/source/stylesheets/refills/badges";
-@import "../vendor/refills/source/stylesheets/refills/breadcrumbs";
-@import "../vendor/refills/source/stylesheets/refills/button-group";
-@import "../vendor/refills/source/stylesheets/refills/cards";
-@import "../vendor/refills/source/stylesheets/refills/footer";
-@import "../vendor/refills/source/stylesheets/refills/footer-2";
-@import "../vendor/refills/source/stylesheets/refills/hero";
-@import "../vendor/refills/source/stylesheets/refills/modal";
-@import "../vendor/refills/source/stylesheets/refills/navigation";
-@import "../vendor/refills/source/stylesheets/refills/image-gradient";
-@import "../vendor/refills/source/stylesheets/refills/image-gradient-dynamic";
-@import "../vendor/refills/source/stylesheets/refills/progress-bar";
-@import "../vendor/refills/source/stylesheets/refills/progress-bar-indication";
-@import "../vendor/refills/source/stylesheets/refills/search-bar";
-@import "../vendor/refills/source/stylesheets/refills/sliding-menu";
-@import "../vendor/refills/source/stylesheets/refills/switch";
-@import "../vendor/refills/source/stylesheets/refills/tables";
-@import "../vendor/refills/source/stylesheets/refills/tables-minimal";
-@import "../vendor/refills/source/stylesheets/refills/tooltip";
-@import "../vendor/refills/source/stylesheets/refills/vertical-tabs";
-@import "../vendor/refills/source/stylesheets/refills/hover-tile-animation";
-@import "../vendor/refills/source/stylesheets/refills/icon-bullet-points";
-@import "../vendor/refills/source/stylesheets/refills/grid-items";
-@import "../vendor/refills/source/stylesheets/refills/grid-items-lines";
-@import "../vendor/refills/source/stylesheets/refills/comment";
-@import "../vendor/refills/source/stylesheets/refills/type-system-slab";
-@import "../vendor/refills/source/stylesheets/refills/type-system-traditional";
-@import "../vendor/refills/source/stylesheets/refills/type-system-geometric";
-@import "../vendor/refills/source/stylesheets/refills/type-system-rounded";
-@import "../vendor/refills/source/stylesheets/refills/type-system-sans";
-@import "../vendor/refills/source/stylesheets/refills/type-system-serif";
-
-
 // import fonts
-@import 'charis';
-@import'../vendor/fira/fira.css';
-@import 'adobe-source-code-pro';
+@import 'charis',
+'../vendor/fira/fira.css',
+'adobe-source-code-pro';
 
-$fa-font-path:   '../vendor/font-awesome/fonts';
+// import foundation
+@import '../vendor/foundation/scss/normalize',
+'../vendor/foundation/scss/foundation';
+
+$fa-font-path: '../vendor/font-awesome/fonts';
 @import '../vendor/font-awesome/scss/font-awesome';
 
 // modules
-@import 'functions';
-@import 'general';
-@import 'header';
-@import 'footer';
-@import 'page';
-@import 'post';
+@import 'functions',
+'general',
+'header',
+'footer',
+'page',
+'post';
 
 // syntax highlighting CSS
 @import 'syntax';
