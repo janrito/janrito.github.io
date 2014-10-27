@@ -3,12 +3,12 @@
 $max-full-width: 1200px;
 
 @mixin grid-sizing($small: 12, $medium: 12, $large: 12) {
-    // grid-sizing is a shortcut for simple grid sizing classes.
-    // The three arguments are the columns for small, medium
-    // and large media sizes respectively
-    // call the mixin like:
-    // @include grid-sizing(1, 2, 3)
-    // for small-1 medium-2 large-3
+  // grid-sizing is a shortcut for simple grid sizing classes.
+  // The three arguments are the columns for small, medium
+  // and large media sizes respectively
+  // call the mixin like:
+  // @include grid-sizing(1, 2, 3)
+  // for small-1 medium-2 large-3
 
   @media #{$small-only} {
     @include grid-column($small);
@@ -23,13 +23,24 @@ $max-full-width: 1200px;
 
 
 @mixin main-block() {
-  @include grid-column(12,
-   $last-column: true);
+  @include grid-column(12, $last-column: true);
   max-width: rem-calc($max-full-width);
 
   @media #{$medium-up} {
-    > p, > h1, > h2, > h3, > h4, > h5, > h6, > ul, > ol, > pre, > img, > blockquote, > div.footnotes {
-      padding-right: 30%
+    > p,
+    > h1,
+    > h2,
+    > h3,
+    > h4,
+    > h5,
+    > h6,
+    > ul,
+    > ol,
+    > pre,
+    > img,
+    > blockquote,
+    > div.footnotes {
+      padding-right: 30%;
     }
 
     > .full-width {
@@ -43,11 +54,11 @@ $max-full-width: 1200px;
     @include grid-column(12);
   }
   @media #{$medium-up} {
-    width: 30%;
-    float: right;
     clear: right;
-    padding-right: 0;
+    float: right;
     padding-left: rem-calc(48);
+    padding-right: 0;
+    width: 30%;
   }
 
   @include clearfix();

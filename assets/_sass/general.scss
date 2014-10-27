@@ -13,39 +13,20 @@
 .monospace {
   font-family: $font-family-monospace;
   font-size: .7rem;
-  line-height: 150%;
   font-weight: 400;
+  line-height: 150%;
 }
 
 
 /* structure */
-html {
-  height:100%;
-}
 
-body {
-  @extend .serif;
-  background-color:#d4d4d4;
+header.main-header,
+footer.main-footer{
 }
 
 
-code, kbd, pre, samp {
-  @extend .monospace;
-}
-
-header.main-header, footer.main-footer{
-}
-
-div.wrapper {
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);
-  box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.75);
-  z-index: 1000;
-  #background-color: #fefefe;
-}
-
-
-main.main-content, footer.main-footer {
+main.main-content,
+footer.main-footer {
   @include grid-row();
   padding-bottom: rem-calc(32px);
   padding-top: rem-calc(32px);
@@ -53,7 +34,8 @@ main.main-content, footer.main-footer {
 
 main.main-content {
 
-  > article, > section {
+  > article,
+  > section {
     @include main-block;
 
     .side-note {
@@ -80,8 +62,9 @@ main.main-content {
     }
 
     ul.posts {
-      margin-left: 0;
+
       list-style: none;
+      margin-left: 0;
 
       li.post {
         padding-bottom: rem-calc(12px);
@@ -89,19 +72,21 @@ main.main-content {
 
       time {
         @extend .sans-serif;
+        color: #999;
         font-size: rem-calc(12);
-        color: #999
+
       }
 
       h2 {
+        @extend .serif;
+
         display: inline;
         font-size: rem-calc(18);
-        @extend .serif;
       }
 
       section.excerpt {
-        margin-top: rem-calc(12);
         color: #999;
+        margin-top: rem-calc(12);
 
 
       }
@@ -109,8 +94,8 @@ main.main-content {
       .categories {
         @extend .sans-serif;
         //margin-top: - rem-calc(12);
+        color: #999;
         font-size: rem-calc(12);
-        color: #999
 
       }
     }
@@ -124,8 +109,8 @@ main.main-content {
 
 
 p.reference {
-  text-indent: -2rem;
   padding-left: 2rem;
+  text-indent: -2rem;
 }
 
 
