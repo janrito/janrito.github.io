@@ -1,13 +1,13 @@
-footer.main-footer {
-  @include grid-row;
+// footer.main-footer {
+//   @include grid-row;
 
 
-  aside {
-    @include main-block();
+//   aside {
+//     @include main-block();
 
-    ul {
-      @include inline-list();
-    }
+//     ul {
+//       @include inline-list();
+//     }
 
-  }
-}
+//   }
+// }

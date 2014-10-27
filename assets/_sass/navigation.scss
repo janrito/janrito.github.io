@@ -1,0 +1,24 @@
+nav.main-navigation {
+  @extend .navbar;
+  @extend .navbar-default;
+
+  @extend .sans-serif;
+
+
+  .nav-container {
+    @extend .container;
+
+    .main-navigation,
+    .language-navigation {
+      @extend .nav, .navbar-nav;
+    }
+
+    .language-navigation {
+      @extend .navbar-right;
+    }
+
+  }
+  a.navbar-brand {
+    font-weight: 100;
+  }
+}

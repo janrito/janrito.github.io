@@ -1,0 +1,43 @@
+<div class="nav-container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+    <a class="navbar-brand" href="{{ site.baseurl }}">
+      {{ site.name }}</a>
+
+    </div>
+
+    <div class="collapse navbar-collapse" >
+      <!-- main navigation -->
+      <ul class="main-navigation">
+        {% for mi in site.data.menu %}
+        <li class="{% if mi.name == page.title %}active{% endif %}">
+        <a href="{{ mi.url }}">{{ mi.name }}</a>
+        </li>
+        {% endfor %}
+
+      </ul>
+
+
+    {% if page.translations %}
+      <!-- language navigation -->
+      <ul class="language-navigation">
+
+        {% for lang in site.data.languages %}
+        {% if lang.abbr == page.lang or (lang.abbr == 'en' and page.lang == '' %}
+        <li class="active"><a href="#">{{ lang.abbr }}</a></li>
+        {% else %}
+        <li class=""><a href="{{ page.translations[lang.abbr]}}">{{ lang.abbr }}</a></li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+
+
+    {% endif %}
+  </div>
+</div>
+

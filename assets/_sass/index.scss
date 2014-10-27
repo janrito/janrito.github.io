@@ -8,8 +8,7 @@
 'adobe-source-code-pro';
 
 // import foundation
-@import '../vendor/foundation/scss/normalize',
-'../vendor/foundation/scss/foundation';
+@import '../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap';
 
 $fa-font-path: '../vendor/font-awesome/fonts';
 @import '../vendor/font-awesome/scss/font-awesome';
@@ -17,7 +16,7 @@ $fa-font-path: '../vendor/font-awesome/fonts';
 // modules
 @import 'functions',
 'general',
-'header',
+'navigation',
 'footer',
 'page',
 'post';
