@@ -1,13 +1,65 @@
 
 main {
-    @include make-row();
+  @include make-row();
 
-    > article,
-    > section {
-        @include make-lg-column(8);
-        @include make-xs-column(12);
-    }
+  > article,
+  > section.archive {
+    @include make-xs-column(12);
+
+  }
 }
+
+section.post-content,
+section.page-content {
+  @include make-row();
+  @include clearfix();
+  .side-note {
+    @include make-lg-column(4);
+
+    font-size: $font-size-small;
+    line-height: $line-height-computed;
+
+    // this corrects baseline issues
+    padding-top: 2px;
+    padding-bottom: $line-height-computed - 2px;
+
+    @media (min-width: $screen-lg-min) {
+      float: right;
+      clear: right;
+    }
+  }
+
+  > p,
+  > h1,
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > h6,
+  > ul,
+  > ol,
+  > pre,
+  > img,
+  > blockquote,
+  > div.footnotes {
+    @include make-lg-column(8);
+    @media (min-width: $screen-lg-min) {
+      clear: left;
+      float: none;
+    }
+
+    &.reference {
+      padding-left: ($grid-gutter-width / 2) + ($font-size-base);
+    }
+  }
+
+
+}
+
+.side-note {
+  @extend .sans-serif;
+}
+
 
 
 

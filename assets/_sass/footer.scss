@@ -1,9 +1,10 @@
 .footer-wrapper {
-  background: $gray-darker;
+  background: $gray-dark;
   color: $gray-lighter;
 }
 
 footer.main-footer {
+  padding-top: $line-height-computed;
 
   > aside {
     @include make-row();
