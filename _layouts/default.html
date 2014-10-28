@@ -7,15 +7,17 @@
     {% include navigation.html %}
   </nav>
 
-  <div class="wrapper">
-    <main class="main-content">
+  <div class="container">
+    <main>
       {{ content }}
     </main>
   </div>
 
-  <footer class="main-footer">
-    {% include footer.html %}
-  </footer>
+  <div class="footer-wrapper">
+    <footer class="main-footer container">
+      {% include footer.html %}
+    </footer>
+  </div>
 
   {% include foot.html %}
 

@@ -1,13 +1,15 @@
-// footer.main-footer {
-//   @include grid-row;
+.footer-wrapper {
+  background: $gray-darker;
+  color: $gray-lighter;
+}
 
+footer.main-footer {
 
-//   aside {
-//     @include main-block();
+  > aside {
+    @include make-row();
 
-//     ul {
-//       @include inline-list();
-//     }
-
-//   }
-// }
+    ul {
+      @extend .list-inline;
+    }
+  }
+}
