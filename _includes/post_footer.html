@@ -2,36 +2,38 @@
 
 <footer class="post-meta">
 
-  <div class="barcode small-only-text-right">
-    <i class="fa fa-coffee"></i>
+  {% if page.tags %}
+  <div class="barcode">
+    <i class="fa fa-tag"></i>
+    <p>
+    {% for tag in page.tags|sort %}<span class="tag">{{tag}}</span>{% if forloop.rindex0 == 1 %} and {% elsif forloop.rindex0 != 0 %}, {% endif %}<wbr>{% endfor %}.
+    </p>
   </div>
+  {% endif %}
 
   <p>
     <span class="title">{{page.title}}</span>
     was published
     {% if page.category %}
-    in <i class="fa fa-bookmark"></i>
+    in
     <span class="category">{{ page.category }}</span><wbr>
     {% endif %}
 
     {% if page.categories %}
-    in <i class="fa fa-bookmark"></i>
+    in
     {% for category in page.categories%}
     <span class="category">{{ category }}</span>{% if forloop.rindex0 == 1 %} and {% elsif forloop.rindex0 != 0 %}, {% endif %}<wbr>
     {% endfor %}
     {% endif %}
 
-    by <i class="fa fa-user"></i> <span class="author">{% if page.author %}{{ page.author }}{% else %}{{ site.name }}{% endif %}</span><wbr>
+    by <span class="author">{% if page.author %}{{ page.author }}{% else %}{{ site.name }}{% endif %}</span><wbr>
 
-    on <i class="fa fa-clock-o"></i>
+    on
 
     <time datetime="{{page.date | date: "%a, %d %b %Y %H:%M:%S %z"}}">
-      {{ page.date | date_to_string }}</time><wbr>
+      {{ page.date | date_to_string }}
+    </time>
 
+  </p>
 
-      {% if page.tags %}
-      and tagged with
-      <i class="fa fa-tag"></i>
-      {% for tag in page.tags|sort %}<span class="tag">{{tag}}</span>{% if forloop.rindex0 == 1 %} and {% elsif forloop.rindex0 != 0 %}, {% endif %}<wbr>{% endfor %}{% endif %}.
-    </p>
-  </footer>
+</footer>

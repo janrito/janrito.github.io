@@ -13,8 +13,9 @@ section.post-content,
 section.page-content {
   @include make-row();
   @include clearfix();
+
   .side-note {
-    @include make-lg-column(4);
+    @extend %aside-block;
 
     font-size: $font-size-small;
     line-height: $line-height-computed;
@@ -22,11 +23,6 @@ section.page-content {
     // this corrects baseline issues
     padding-top: 2px;
     padding-bottom: $line-height-computed - 2px;
-
-    @media (min-width: $screen-lg-min) {
-      float: right;
-      clear: right;
-    }
   }
 
   > p,
@@ -42,22 +38,16 @@ section.page-content {
   > img,
   > blockquote,
   > div.footnotes {
-    @include make-lg-column(8);
-    @media (min-width: $screen-lg-min) {
-      clear: left;
-      float: none;
-    }
+    @extend %main-block;
 
     &.reference {
       padding-left: ($grid-gutter-width / 2) + ($font-size-base);
     }
   }
-
-
 }
 
 .side-note {
-  @extend .sans-serif;
+  @extend %sans-serif;
 }
 
 

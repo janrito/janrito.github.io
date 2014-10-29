@@ -2,19 +2,17 @@
 // /* type */
 
 
-.serif {
+%serif {
   font-family: $font-family-serif;
 }
 
-.sans-serif {
+%sans-serif {
   font-family: $font-family-sans-serif;
 }
 
-.monospace {
+%monospace {
   font-family: $font-family-monospace;
-  font-size: .7rem;
   font-weight: 400;
-  line-height: 150%;
 }
 
 
@@ -24,7 +22,24 @@ p.reference {
   text-indent: -2rem;
 }
 
+h1 {
+    font-weight: 100;
+    line-height: $line-height-computed * 2.5;
+}
 
-// .media-container {
-//   @extend .video;
-// }
+h2 {
+    font-weight: normal;
+    line-height: $line-height-computed * 2.5;
+}
+
+h3 {
+    line-height: $line-height-computed * 1.5;
+}
+
+.media-container {
+  @extend .embed-responsive;
+
+  iframe {
+    @extend .embed-responsive-item;
+  }
+}

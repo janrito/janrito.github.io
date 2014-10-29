@@ -189,14 +189,10 @@ He also talked about MOLGEN, a system developed in the 70's and 80's that was si
 John concludes by noting that we are beginning to see discussions about any topic be very common over the internet, and the question becomes how do we manage uncertainty?
 
 
-#### End of Day 1
-
-
-
+**End of Day 1**
+{:.side-note}
 
 ## Broader Implications of Digital Technologies for Research in the Humanities
-
-
 
 
 ### Data Mining for Historians – [Robert Shoemaker](http://www.shef.ac.uk/history/staff/robert_shoemaker.html), [Sheffield](http://www.shef.ac.uk/)
@@ -253,4 +249,5 @@ She also stressed the importance of visibility of individual projects. Usage and
 _Alan Bowman concluded the colloquium by thanking the British Academy and the attendees._
 
 
-#### End of Day 2
+**End of Day 2**
+{:.side-note}

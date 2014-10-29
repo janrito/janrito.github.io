@@ -2,7 +2,9 @@ nav.main-navigation {
   @extend .navbar;
   @extend .navbar-default;
 
-  @extend .sans-serif;
+  @extend %sans-serif;
+
+  font-size: $font-size-small;
 
 
   .nav-container {
@@ -18,7 +20,13 @@ nav.main-navigation {
     }
 
   }
-  a.navbar-brand {
-    font-weight: 100;
-  }
+}
+
+
+.navbar-brand {
+  font-weight: 100;
+  font-size: $font-size-small;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-weight: 100;
 }

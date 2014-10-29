@@ -5,12 +5,17 @@
 
 footer.main-footer {
   padding-top: $line-height-computed;
-
-  > aside {
+  > .footer-container {
     @include make-row();
 
-    ul {
-      @extend .list-inline;
+    aside {
+      @include make-lg-column(3);
+      @include make-lg-column-push(3);
+
+      ul {
+        @extend .list-inline;
+      }
     }
   }
+
 }
