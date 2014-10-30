@@ -5,7 +5,7 @@
   {% if page.tags %}
   <div class="barcode">
     <i class="fa fa-tag"></i>
-    <p>
+    <p class='tags'>
     {% for tag in page.tags|sort %}<span class="tag">{{tag}}</span>{% if forloop.rindex0 == 1 %} and {% elsif forloop.rindex0 != 0 %}, {% endif %}<wbr>{% endfor %}.
     </p>
   </div>

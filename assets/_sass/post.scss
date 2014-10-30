@@ -13,7 +13,7 @@ article.post {
     }
 
     i {
-      color: $gray-lighter;
+      color: $gray-light;
     }
 
     p,
@@ -27,16 +27,19 @@ article.post {
 
 
     .barcode {
-      color: $gray-lighter;
-      span.tag {
+      color: $gray-light;
+      p.tags {
         @extend %sans-serif;
         font-size: $font-size-smaller;
         font-style: normal;
-        font-weight: 100;
-        letter-spacing: .05em;
-        text-transform: uppercase;
+        .tag {
+          font-weight: 100;
+          letter-spacing: .05em;
+          text-transform: uppercase;
+        }
       }
       i {
+        color: $gray-lighter;
         display: block;
         float: left;
         font-size: 8rem;

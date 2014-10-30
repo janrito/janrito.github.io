@@ -63,7 +63,7 @@ section.page-content {
 
     time {
       @extend %sans-serif;
-      color: $gray-lighter;
+      color: $gray-light;
       font-size: $font-size-smaller;
 
     }
@@ -83,7 +83,7 @@ section.page-content {
 
     .categories {
       @extend %sans-serif;
-      color: $gray-lighter;
+      color: $gray-light;
       display: inline;
       font-size: $font-size-smaller;
 
