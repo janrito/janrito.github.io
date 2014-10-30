@@ -12,11 +12,11 @@ layout: default
     <!-- This loops through the paginated posts -->
     {% for post in paginator.posts %}
     <li class="post">
-      <time datetime="{{post.date | date: "%a, %d %b %Y %H:%M:%S %z"}}">{{ post.date | date_to_string }}</time>
+
 
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 
-
+      <time datetime="{{post.date | date: "%a, %d %b %Y %H:%M:%S %z"}}">{{ post.date | date_to_string }}</time>
 
       <div class="categories">
         {% if post.category %}

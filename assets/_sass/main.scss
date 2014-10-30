@@ -51,6 +51,50 @@ section.page-content {
 }
 
 
+.archive {
+  ul.posts {
+
+    list-style: none;
+    padding-left: 0;
+
+    li.post {
+      padding-bottom: 0;
+    }
+
+    time {
+      @extend %sans-serif;
+      color: $gray-lighter;
+      font-size: $font-size-smaller;
+
+    }
+
+    h2 {
+      @extend %serif;
+      font-size: $font-size-large;
+      line-height: $line-height-computed/2;
+    }
+
+    section.excerpt {
+      color: $gray-lighter;
+      margin-top: $line-height-computed;
+
+
+    }
+
+    .categories {
+      @extend %sans-serif;
+      color: $gray-lighter;
+      display: inline;
+      font-size: $font-size-smaller;
+
+    }
+  }
+
+  .pagination {
+    @extend %aside-block;
+    @extend %sans-serif;
+  }
+}
 
 
 // /* structure */
