@@ -78,5 +78,5 @@ For more information please visit the Charis SIL page on SIL International's
 Computers and Writing systems website:
 http://scripts.sil.org/CharisSILfont
 
-Or send an email to fonts@sil.org
+Support through the website: http://scripts.sil.org/Support
 
