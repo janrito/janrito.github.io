@@ -1,0 +1,27 @@
+en: |
+
+  #### Colophon
+
+  This site is statically generated using [Jekyll] and it is hosted by [gihub pages].
+  The serif type is [Charis SIL], the sans-serif is [Fira Sans] and the occasional monospace is [Adobe Source Code Pro].
+
+  [jekyll]: http://jekyllrb.com/
+  [gihub pages]: https://pages.github.com/
+  [Charis SIL]: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=CharisSIL_download
+  [Fira Sans]: http://mozilla.github.io/Fira/
+  [Adobe Source Code Pro]: http://store1.adobe.com/cfusion/store/html/index.cfm?event=displayFontPackage&code=1960
+  [Bootstrap]: http://getbootstrap.com/
+
+es: |
+
+  #### Colofón
+
+  Este sitio es estáticamente generado usando [Jekyll] y es alojado en [gihub pages].
+  Usa el tipo serif [Charis SIL], el tipo sans-serif [Fira Sans] y ocasionalmente el tipo monoespaciado [Adobe Source Code Pro].
+
+  [jekyll]: http://jekyllrb.com/
+  [gihub pages]: https://pages.github.com/
+  [Charis SIL]: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=CharisSIL_download
+  [Fira Sans]: http://mozilla.github.io/Fira/
+  [Adobe Source Code Pro]: http://store1.adobe.com/cfusion/store/html/index.cfm?event=displayFontPackage&code=1960
+  [Bootstrap]: http://getbootstrap.com/
