@@ -11,29 +11,37 @@
   </div>
   {% endif %}
 
-  <p>
-    <span class="title">{{page.title}}</span>
-    was published
-    {% if page.category %}
-    in
-    <span class="category">{{ page.category }}</span><wbr>
+  <div class="post-footer-main">
+    {% if page.footer %}
+      {{ page.footer | markdownify }}
+    {% elsif site.data.postfooter[page.lang] %}
+      {{ site.data.postfooter[page.lang] | markdownify }}
     {% endif %}
 
-    {% if page.categories %}
-    in
-    {% for category in page.categories%}
-    <span class="category">{{ category }}</span>{% if forloop.rindex0 == 1 %} and {% elsif forloop.rindex0 != 0 %}, {% endif %}<wbr>
-    {% endfor %}
-    {% endif %}
+    <p>
+      <span class="title">{{page.title}}</span>
+      was published
+      {% if page.category %}
+      in
+      <span class="category">{{ page.category }}</span><wbr>
+      {% endif %}
 
-    by <span class="author">{% if page.author %}{{ page.author }}{% else %}{{ site.name }}{% endif %}</span><wbr>
+      {% if page.categories %}
+      in
+      {% for category in page.categories%}
+      <span class="category">{{ category }}</span>{% if forloop.rindex0 == 1 %} and {% elsif forloop.rindex0 != 0 %}, {% endif %}<wbr>
+      {% endfor %}
+      {% endif %}
 
-    on
+      on
 
-    <time datetime="{{page.date | date: "%a, %d %b %Y %H:%M:%S %z"}}">
-      {{ page.date | date_to_string }}
-    </time>
+      <time datetime="{{page.date | date: "%a, %d %b %Y %H:%M:%S %z"}}">
+        {{ page.date | date_to_string }}
+      </time>
 
-  </p>
+      by <span class="author">{% if page.author %}{{ page.author }}{% else %}{{ site.name }}{% endif %}</span><wbr>
+
+    </p>
+  </div>
 
 </footer>

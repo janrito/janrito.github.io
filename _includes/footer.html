@@ -15,4 +15,10 @@
       </li>
     </ul>
   </aside>
+
+  {% if site.data.postfooter[page.lang] %}
+  <aside class="colophon">
+    {{ site.data.colophon[page.lang] | markdownify }}
+  </aside>
+  {% endif %}
 </div>

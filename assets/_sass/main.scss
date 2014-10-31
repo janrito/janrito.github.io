@@ -6,6 +6,8 @@ main {
   > section.archive {
     @include make-xs-column(12);
 
+    padding-bottom: ($line-height-computed * 2);
+
   }
 }
 
@@ -36,12 +38,28 @@ section.page-content {
   > pre,
   > img,
   > blockquote,
-  > div.footnotes {
+  > div.footnotes,
+  > div.highlight {
     @extend %main-block;
 
     &.reference {
       padding-left: ($grid-gutter-width / 2) + ($font-size-base);
     }
+
+    &.wide {
+      @extend %wide-block;
+    }
+  }
+}
+
+.footnotes {
+  border-top: 1px solid $gray-light;
+  margin-top: $line-height-computed;
+  padding-top: ($line-height-computed/2);
+
+  p, ul, ol {
+    font-size: $font-size-smaller;
+    line-height: $line-height-computed;
   }
 }
 

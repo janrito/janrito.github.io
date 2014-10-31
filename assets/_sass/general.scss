@@ -23,7 +23,7 @@ p.reference {
 }
 
 h1 {
-  font-weight: 100;
+  font-weight: 200;
   line-height: $line-height-computed * 2.5;
 }
 
@@ -42,4 +42,8 @@ h3 {
   iframe {
     @extend .embed-responsive-item;
   }
+}
+
+p img {
+    max-width: 100%;
 }

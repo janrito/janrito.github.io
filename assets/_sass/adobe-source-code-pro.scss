@@ -1,35 +1,59 @@
 // use Adobe Source Code Pro - Regular in .woff format
+
+$adobe_source_pro_location: '../vendor/adobe-source-code-pro';
+
 @font-face {
   font-family: 'Adobe Source Code Pro';
-  src: url('../vendor/adobe-source-code-pro/woff/ttf/SourceCodePro-Regular.ttf.woff');
+  src: url('#{$adobe_source_pro_location}/EOT/SourceCodePro-Regular.eot');
+  src: local('SourceCodePro Regular'),
+       url('#{$adobe_source_pro_location}/WOFF/OTF/SourceCodePro-Regular.otf.woff') format('woff'),
+       url('#{$adobe_source_pro_location}/WOFF/TTF/SourceCodePro-Regular.ttf.woff') format('truetype');
 }
 @font-face {
   font-family: 'Adobe Source Code Pro';
   font-weight: 200;
-  src: url('../vendor/adobe-source-code-pro/woff/ttf/SourceCodePro-ExtraLight.ttf.woff');
+  src: url('#{$adobe_source_pro_location}/EOT/SourceCodePro-ExtraLight.eot');
+  src: local('SourceCodePro ExtraLight'),
+       url('#{$adobe_source_pro_location}/WOFF/OTF/SourceCodePro-ExtraLight.otf.woff') format('woff'),
+       url('#{$adobe_source_pro_location}/WOFF/TTF/SourceCodePro-ExtraLight.ttf.woff') format('truetype');
 }
 @font-face {
   font-family: 'Adobe Source Code Pro';
   font-weight: 300;
-  src: url('../vendor/adobe-source-code-pro/woff/ttf/SourceCodePro-Light.ttf.woff');
+  src: url('#{$adobe_source_pro_location}/EOT/SourceCodePro-Light.eot');
+  src: local('SourceCodePro Light'),
+       url('#{$adobe_source_pro_location}/WOFF/OTF/SourceCodePro-Light.otf.woff') format('woff'),
+       url('#{$adobe_source_pro_location}/WOFF/TTF/SourceCodePro-Light.ttf.woff') format('truetype');
 }
 @font-face {
   font-family: 'Adobe Source Code Pro';
   font-weight: 500;
-  src: url('../vendor/adobe-source-code-pro/woff/ttf/SourceCodePro-Medium.ttf.woff');
+  src: url('#{$adobe_source_pro_location}/EOT/SourceCodePro-Medium.eot');
+  src: local('SourceCodePro Medium'),
+       url('#{$adobe_source_pro_location}/WOFF/OTF/SourceCodePro-Medium.otf.woff') format('woff'),
+       url('#{$adobe_source_pro_location}/WOFF/TTF/SourceCodePro-Medium.ttf.woff') format('truetype');
 }
 @font-face {
   font-family: 'Adobe Source Code Pro';
   font-weight: 600;
-  src: url('../vendor/adobe-source-code-pro/woff/ttf/SourceCodePro-Semibold.ttf.woff');
+  src: url('#{$adobe_source_pro_location}/EOT/SourceCodePro-Semibold.eot');
+  src: local('SourceCodePro Semibold'),
+       url('#{$adobe_source_pro_location}/WOFF/OTF/SourceCodePro-Semibold.otf.woff') format('woff'),
+       url('#{$adobe_source_pro_location}/WOFF/TTF/SourceCodePro-Semibold.ttf.woff') format('truetype');
 }
 @font-face {
   font-family: 'Adobe Source Code Pro';
   font-weight: 700;
-  src: url('../vendor/adobe-source-code-pro/woff/ttf/SourceCodePro-Bold.ttf.woff');
+  src: url('#{$adobe_source_pro_location}/EOT/SourceCodePro-Bold.eot');
+  src: local('SourceCodePro Bold'),
+       url('#{$adobe_source_pro_location}/WOFF/OTF/SourceCodePro-Bold.otf.woff') format('woff'),
+       url('#{$adobe_source_pro_location}/WOFF/TTF/SourceCodePro-Bold.ttf.woff') format('truetype');
 }
 @font-face {
   font-family: 'Adobe Source Code Pro';
   font-weight: 800;
-  src: url('../vendor/adobe-source-code-pro/woff/ttf/SourceCodePro-Black.ttf.woff');
+  src: url('#{$adobe_source_pro_location}/EOT/SourceCodePro-Black.eot');
+  src: local('SourceCodePro Black'),
+       url('#{$adobe_source_pro_location}/WOFF/OTF/SourceCodePro-Black.otf.woff') format('woff'),
+       url('#{$adobe_source_pro_location}/WOFF/TTF/SourceCodePro-Black.ttf.woff') format('truetype');
 }

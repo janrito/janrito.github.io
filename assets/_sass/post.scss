@@ -1,8 +1,13 @@
 article.post {
   > footer.post-meta {
+    @include make-row();
     margin-top: $line-height-computed * 2;
     margin-bottom: $line-height-computed * 2;
     color: $gray-light;
+
+    .post-footer-main {
+      @extend %main-block;
+    }
 
     span.title,
     span.author,
@@ -21,27 +26,37 @@ article.post {
     ol, {
 
       font-size: $font-size-small;
+      font-weight: 200;
       line-height: $line-height-computed;
 
     }
 
 
     .barcode {
+      @include make-row();
       color: $gray-light;
       p.tags {
+        @include make-xs-column(9);
+        @include make-sm-column(10);
+        @include make-md-column(8);
+        @include make-lg-column(9);
+
         @extend %sans-serif;
+
         font-size: $font-size-smaller;
-        font-style: normal;
+        font-weight: 200;
+        letter-spacing: .05em;
+        text-transform: uppercase;
         .tag {
-          font-weight: 100;
-          letter-spacing: .05em;
-          text-transform: uppercase;
+
         }
       }
       i {
-        color: $gray-lighter;
-        display: block;
-        float: left;
+        @include make-xs-column(3);
+        @include make-sm-column(2);
+        @include make-md-column(4);
+        @include make-lg-column(3);
+        color: $gray-light;
         font-size: 8rem;
         height: 100%;
         line-height: $line-height-computed * 3;
@@ -60,56 +75,9 @@ article.post {
       @extend %aside-block;
 
       h1 {
-        // margin-top: 0;
         font-size: $font-size-large;
         line-height: $line-height-computed * 1.5;
       }
     }
   }
 }
-
-// article.post {
-//   > footer.post-meta {
-//     @include main-block();
-//     @extend .sans-serif;
-
-//     clear: both;
-//     color: #999;
-//     margin-top: rem-calc(48);
-
-//     p {
-//       font-size: rem-calc(12);
-//       padding-left: 30%;
-//       text-align: right;
-//     }
-
-//     span.title,
-//     span.tag,
-//     span.author,
-//     span.category,
-//     time {
-//       font-style: italic;
-//     }
-
-//     .barcode {
-//       @include aside-block();
-//       color: #e9e9e9;
-//       font-size: 8rem;
-//       margin-top: - rem-calc(16);
-
-//     }
-//   }
-
-//   &.video {
-//     header {
-//       @include aside-block();
-//       border-bottom: 0;
-
-//       h1 {
-//         font-size: rem-calc(16px);
-//         font-weight: bold;
-
-//       }
-//     }
-//   }
-// }

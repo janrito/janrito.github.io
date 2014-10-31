@@ -1,7 +1,8 @@
 %aside-block {
   @include make-lg-column(4);
+  @include make-md-column(4);
 
-  @media (min-width: $screen-lg-min) {
+  @media (min-width: $screen-md-min) {
     clear: right;
     float: right;
   }
@@ -9,8 +10,14 @@
 
 %main-block {
   @include make-lg-column(8);
-  @media (min-width: $screen-lg-min) {
+  @include make-md-column(8);
+  @media (min-width: $screen-md-min) {
     clear: left;
     float: none;
   }
+}
+
+%wide-block {
+    @include make-lg-column(12);
+
 }
