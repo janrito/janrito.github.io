@@ -15,10 +15,11 @@ tags:
 
 
 
+[![oe]][oe_link]
+{:.wide}
+
 *Oasis, Everyware*
 {:.side-note}
-
-[![oe]][oe_link]
 
 Yesterday I took part of [Day in the Life of the Digital Humanities 2010](http://tapor.ualberta.ca/taporwiki/index.php/Day_in_the_Life_of_the_Digital_Humanities_2010). You can read [my entries](http://ra.tapor.ualberta.ca/~dayofdh2010/alejandrogiacometti), or browse the most [recent posts](http://ra.tapor.ualberta.ca/~dayofdh2010/).
 
