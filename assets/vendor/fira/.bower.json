@@ -1,15 +1,14 @@
 {
   "name": "fira",
-  "version": "0.1.0",
   "main": "fira.css",
-  "homepage": "https://github.com/jjt/Fira",
-  "_release": "0.1.0",
+  "homepage": "https://github.com/mozilla/Fira",
+  "_release": "6bcf57fc7f",
   "_resolution": {
-    "type": "version",
-    "tag": "v0.1.0",
-    "commit": "6ba65a90ca22cae4a039960a3d53dba7a0080fb1"
+    "type": "branch",
+    "branch": "master",
+    "commit": "6bcf57fc7f50df118964f71d7c4eb02e1a4e51b3"
   },
-  "_source": "git://github.com/jjt/Fira.git",
+  "_source": "https://github.com/mozilla/Fira.git",
   "_target": "*",
-  "_originalSource": "fira"
+  "_originalSource": "https://github.com/mozilla/Fira.git"
 }

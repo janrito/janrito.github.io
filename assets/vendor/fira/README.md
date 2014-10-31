@@ -1,1 +1,7 @@
-See http://www.mozilla.org/en-US/styleguide/products/firefox-os/typeface/ for more details.
+See http://www.carrois.com/fira-3-1/ for more details.
+
+Use this font on your website!
+
+```html
+<link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
+```
