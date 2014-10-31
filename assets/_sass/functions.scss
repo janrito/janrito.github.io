@@ -2,8 +2,8 @@
   @include make-lg-column(4);
 
   @media (min-width: $screen-lg-min) {
-    float: right;
     clear: right;
+    float: right;
   }
 }
 

@@ -11,10 +11,12 @@ footer.main-footer {
     aside {
       @include make-lg-column(3);
       @include make-lg-column-push(3);
+    }
+  }
 
-      ul {
-        @extend .list-inline;
-      }
+  aside {
+    ul {
+      @extend .list-inline;
     }
   }
 

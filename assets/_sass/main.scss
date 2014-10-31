@@ -19,10 +19,9 @@ section.page-content {
 
     font-size: $font-size-small;
     line-height: $line-height-computed;
-
     // this corrects baseline issues
-    padding-top: 2px;
     padding-bottom: $line-height-computed - 2px;
+    padding-top: 2px;
   }
 
   > p,
@@ -71,7 +70,8 @@ section.page-content {
     h2 {
       @extend %serif;
       font-size: $font-size-large;
-      line-height: $line-height-computed/2;
+      line-height: $line-height-computed;
+      margin-bottom: 0;
     }
 
     section.excerpt {

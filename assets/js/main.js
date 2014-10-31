@@ -1,7 +1,9 @@
 // Main
 require([
   'jquery',
-  ], function ($) {
+  'bootstrap/transition',
+  'bootstrap/collapse',
+  ], function ($, bt, bc) {
 
     $( document ).ready(function() {
 
