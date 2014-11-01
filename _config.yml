@@ -1,8 +1,8 @@
-name: Alejandro Giacometti
+name: AG
 markdown: kramdown
 sass:
     sass_dir: assets/_sass
-    # style: :compressed
+    style: :compressed
 paginate: 15
 highlighter: pygments
 relative_permalinks: false
