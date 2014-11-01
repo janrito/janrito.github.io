@@ -1,0 +1,8 @@
+- name: Archive
+  url: /
+
+- name: Bio
+  url: /about/bio.html
+
+- name: Publications
+  url: /publications/

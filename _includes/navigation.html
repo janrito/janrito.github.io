@@ -14,9 +14,10 @@
     <div class="collapse navbar-collapse" id="bs-navbar-collapse">
       <!-- main navigation -->
 
+      {% capture lmenu %}menu-{% if page.lang %}{{page.lang}}{% else %}en{% endif %}{% endcapture %}
 
       <ul class="main-navigation">
-        {% for mi in site.data.menu %}
+        {% for mi in site.data[lmenu] %}
           {% capture active%}{% if mi.name == page.title%}active{% endif %}{% for lang in site.data.languages %}{%if mi.url == page.translations[lang.abbr] and mi.url != page.url %}active{% endif %}{% endfor %}{% endcapture %}
         <li class="{{active}}">
           <a href="{{ mi.url }}">{{ mi.name }}</a>
