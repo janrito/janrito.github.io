@@ -31,7 +31,7 @@ defaults:
 prose:
   rooturl: '_posts'
   siteurl: 'http://janrito.github.io'
-  relativeLinks: 'http://janrito.github.io/links.jsonp'
+  # relativeLinks: 'http://janrito.github.io/api/links.jsonp'
   media: 'images'
   ignore:
     - index.md
@@ -55,7 +55,7 @@ prose:
         field:
           element: "multiselect"
           label: "Tags"
-          options: 'http://janrito.github.io/pages/tags.jsonp'
+          options: 'http://janrito.github.io/api/tags.jsonp'
           alterable: true
     _posts/page:
       - name: "layout"
