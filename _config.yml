@@ -27,3 +27,47 @@ defaults:
     values:
       layout: "page" # overrides previous default layout
 
+# prose.io
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://janrito.github.io'
+  relativeLinks: 'http://janrito.github.io/links.jsonp'
+  media: 'images'
+  ignore:
+    - index.md
+    - archivo.md
+    - _config.yml
+    - /_layouts
+    - /_includes
+    - /_data
+    - /assets/
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: "Apples"
+              value: "apples"
+            - name: "Bananas"
+              value: "bananas"
+    _posts/page:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "type"
+        field:
+          element: "hidden"
+          value: "pages"
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          value: ""
