@@ -69,13 +69,22 @@ section.page-content {
 
 
 .archive {
-  ul.posts {
+  dl.posts {
 
     list-style: none;
     padding-left: 0;
 
-    li.post {
+    dt {
+      @extend %sans-serif;
+      line-height: $line-height-computed;
+      margin-top: $line-height-computed;
+      font-weight: 200;
+      color: $gray-light;
+    }
+
+    dd.post {
       padding-bottom: 0;
+      margin-bottom: $line-height-computed/2;
     }
 
     time {
@@ -83,12 +92,14 @@ section.page-content {
       color: $gray-light;
       font-size: $font-size-smaller;
 
+
     }
 
     h2 {
       @extend %serif;
       font-size: $font-size-large;
       line-height: $line-height-computed;
+      margin-top: 0;
       margin-bottom: 0;
     }
 
