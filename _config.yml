@@ -47,16 +47,16 @@ prose:
         field:
           element: "hidden"
           value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
       - name: "tags"
         field:
           element: "multiselect"
-          label: "Add Tags"
-          placeholder: "Choose Tags"
-          options:
-            - name: "Apples"
-              value: "apples"
-            - name: "Bananas"
-              value: "bananas"
+          label: "Tags"
+          options: 'http://janrito.github.io/pages/tags.jsonp'
+          alterable: true
     _posts/page:
       - name: "layout"
         field:
@@ -66,6 +66,10 @@ prose:
         field:
           element: "hidden"
           value: "pages"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
       - name: "permalink"
         field:
           element: "text"
