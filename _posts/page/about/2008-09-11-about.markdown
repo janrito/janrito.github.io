@@ -3,8 +3,9 @@ layout: page
 date: 2008-09-11 03:42:40+00:00
 comments: false
 title: About
+permalink: about/
 translations:
-    es: /about/bio.html
+    es: /bio/
 ---
 
 ![portrait][portrait] 

@@ -3,6 +3,7 @@ layout: page
 date: 2008-09-11 03:42:40+00:00
 comments: false
 title: Bio
+permalink: bio/
 lang: es
 translations:
     en: /about/

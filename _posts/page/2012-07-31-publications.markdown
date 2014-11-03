@@ -1,5 +1,6 @@
 ---
 title: Publications
+permalink: publications/
 date: 2012-07-31 12:00:00+00:00
 comments: false
 layout: page
