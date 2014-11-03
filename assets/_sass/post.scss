@@ -75,8 +75,9 @@ article.post {
       @extend %aside-block;
 
       h1 {
+        color: $gray-base;
         font-size: $font-size-large;
-        line-height: $line-height-computed * 1.5;
+        line-height: $line-height-computed * 1;
       }
     }
   }
