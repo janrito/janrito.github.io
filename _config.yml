@@ -58,10 +58,10 @@ prose:
           options: 'http://janrito.github.io/api/tags.jsonp'
           alterable: true
       - name: "date"
-          field:
-            element: "text"
-            label: "Date (YYYY-MM-DD HH:MM:SS)"
-            value: "2014-06-08 10:30:00"
+        field:
+          element: "text"
+          label: "Date (YYYY-MM-DD HH:MM:SS)"
+          value: "2014-06-08 10:30:00"
     _posts/page:
       - name: "layout"
         field:
