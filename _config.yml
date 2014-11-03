@@ -1,22 +1,23 @@
 name: AG
 markdown: kramdown
 sass:
-    sass_dir: assets/_sass
-    style: :compressed
+  sass_dir: assets/_sass
+  style: :compressed
 paginate: 15
 highlighter: pygments
-relative_permalinks: false
+relative_permalinks: true
 permalink: /:month-:day-:year/:title/
 defaults:
   -
     scope:
       path: "" # empty string for all files
     values:
-      layout: "page"
+      layout: "blog"
       author: Alejandro Giacometti
       lang: en
   -
     scope:
-      path: "articles/"
+      path: "page/"
     values:
-      layout: "blog" # overrides previous default layout
+      layout: "page" # overrides previous default layout
+

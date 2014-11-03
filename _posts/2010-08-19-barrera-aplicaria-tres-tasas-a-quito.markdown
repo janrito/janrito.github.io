@@ -1,24 +1,22 @@
 ---
-author: janrito
 comments: true
-date: {}
+date: 2010-08-19 20:53:45+00:00
 layout: post
-slug: "barrera-aplicaria-tres-tasas-a-quito"
-title: ""
+slug: barrera-aplicaria-tres-tasas-a-quito
+title: Barrera aplicaría tres tasas a Quito
 wordpress_id: 680
-categories: 
-  - Comentario
-tags: 
-  - barrera
-  - censura
-  - comentario
-  - diario hoy
-  - Ecuador
-  - gasolina
-  - quito
-  - transporte público
-  - tráfico
-published: true
+categories:
+- Comentario
+tags:
+- barrera
+- censura
+- comentario
+- diario hoy
+- Ecuador
+- gasolina
+- quito
+- transporte público
+- tráfico
 ---
 
 Estamos muy conscientes del berrinche de los medios ecuatorianos y su cruzada por evadir ser regulados con el pretexto de defender la libertad de expresión. Sin embargo, pocos hablan de la censura _de facto_ que es producto del monopolio que ejercen los medios privados al ser los únicos dueños de la verdad. El producto es medios totalmente mediocres dominados por opiniones y muy poco análisis. Escribí más [extensamente al respecto y del excelente estudio de Isabel Ramos de la FLACSO](http://www.alejandrogiacometti.com/2010/07/convenientes-distracciones/).
