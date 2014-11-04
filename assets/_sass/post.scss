@@ -77,7 +77,8 @@ article.post {
       h1 {
         color: $gray-base;
         font-size: $font-size-large;
-        line-height: $line-height-computed * 1;
+        line-height: $line-height-computed;
+        margin-top: $line-height-computed;
       }
     }
   }
