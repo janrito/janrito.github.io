@@ -20,6 +20,7 @@ defaults:
     values:
       layout: "blog"
       lang: en
+      author: "Alejandro Giacometti"
   -
     scope:
       path: "page/"
