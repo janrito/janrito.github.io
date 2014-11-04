@@ -85,6 +85,7 @@ section.page-content {
 
 .archive {
   dl.posts {
+    @extend .dl-horizontal;
 
     list-style: none;
     padding-left: 0;
@@ -92,9 +93,7 @@ section.page-content {
     dt {
       @extend %sans-serif;
       line-height: $line-height-computed;
-      margin-top: $line-height-computed;
       font-weight: 200;
-      color: $gray-light;
     }
 
     dd.post {
