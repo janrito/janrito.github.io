@@ -6,11 +6,11 @@ slug: day-of-dh
 title: Day of DH
 wordpress_id: 431
 categories:
-- Digital Humanities
+  - articles
 tags:
-- dayofdh
-- dh
-- digital humanities
+  - dayofdh
+  - dh
+  - digital humanities
 ---
 
 

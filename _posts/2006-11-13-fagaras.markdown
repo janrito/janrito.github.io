@@ -7,17 +7,17 @@ slug: fagaras
 title: Făgăraș
 wordpress_id: 27
 categories:
-- Romania
+  - articles
 tags:
-- castle
-- europe
-- feudalism
-- immigration
-- migration
-- modernity
-- Romania
-- transylvania
-- travel
+  - castle
+  - europe
+  - feudalism
+  - immigration
+  - migration
+  - modernity
+  - Romania
+  - transylvania
+  - travel
 ---
 
 Caught in between the development of new economic centers and the shutting down of gigantic communist era factories, small towns in Romania struggle to find new life. Făgăraș, a once commercial and political center of the Feudalist Europe is a clear example of this phenomenon. Făgăraș was once the home of Doamna Stanca, wife of Mihai Viteazul, the man responsible for the first unification of the three Romanian Principates into roughly what is now Romania and part of the Republic of Moldova. The 'cetate' (fortress) in its center was modified from a previous military base to house the noble family. It later went through a series of modifications, and enlargements ([w](http://en.wikipedia.org/wiki/F%C4%83g%C4%83ra%C5%9F)) to house other prominent families, or serve different purposes. Today the 'castel' is turned into a museum that presents the history of the location and a few pieces of important artists of the area.

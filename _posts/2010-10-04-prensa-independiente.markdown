@@ -6,17 +6,17 @@ slug: prensa-independiente
 title: Prensa Independiente
 wordpress_id: 717
 categories:
-- Ecuador
+  - articles
 lang: es
 tags:
-- Ecuador
-- el comercio
-- entrevista
-- escepticismo
-- medios
-- monopolio
-- prensa independiente
-- quito
+  - Ecuador
+  - el comercio
+  - entrevista
+  - escepticismo
+  - medios
+  - monopolio
+  - prensa independiente
+  - quito
 ---
 
 >¿Por qué no dejan de lado la idea de la conspiración y reconocen que el autoritarismo con el que reacciona el Presidente caldeó los ánimos en el Regimiento Quito?

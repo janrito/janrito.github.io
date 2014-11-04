@@ -6,18 +6,17 @@ slug: amateur-digitisation
 title: Amateur Digitisation
 wordpress_id: 701
 categories:
-- Digital Humanities
-- imaging
+  - articles
 tags:
-- amateur
-- cluj
-- digital image
-- digital surrogate
-- digitisation
-- fagaras
-- manuscript
-- Romania
-- transylvania
+  - amateur
+  - cluj
+  - digital image
+  - digital surrogate
+  - digitisation
+  - fagaras
+  - manuscript
+  - Romania
+  - transylvania
 ---
 
 While on holiday in Cluj, Romania, I embarked on a small digitisation project. My girlfriend, Ruxandra, is from Cluj, and her family still lives here. Within their  library, her parents have kept this manuscript for about 60 years. The book was found in Făgăraş, a mountain town near the Carpathians between Sibiu and Braşov. Ruxandra's grandfather was an orthodox priest in Făgăraş. Sometime in the 1950's he found the book hidden on top of a beam of an old wooden house about to be demolished.

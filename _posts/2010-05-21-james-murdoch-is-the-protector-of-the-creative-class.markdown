@@ -6,15 +6,16 @@ slug: james-murdoch-is-the-protector-of-the-creative-class
 title: James Murdoch is the Protector of the Creative Class
 wordpress_id: 536
 categories:
-- Digital Humanities
+  - articles
 tags:
-- james murdoch
-- media
-- News Corporation
-- Newscorp
-- Public Media
-- UCL Centre for Digital Humanities
-- UCLDH
+  - james murdoch
+  - media
+  - News Corporation
+  - Newscorp
+  - Public Media
+  - UCL Centre for Digital Humanities
+  - UCLDH
+  - Digital Humanities
 ---
 
 James Murdoch gave a [speech](http://paidcontent.co.uk/article/419-james-murdoch-lecture-celebrating-copyrights-300th-birthday/) yesterday at the opening of the [UCL Centre for Digital Humanities](http://www.ucl.ac.uk/dh/). There was no question period. He managed to give a speech in a setting where about 99% of the audience fundamentally disagreed with him. His father was present, so maybe it was 98%. He set the tone early on:

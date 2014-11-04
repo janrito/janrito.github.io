@@ -6,16 +6,16 @@ slug: convenientes-distracciones
 title: Convenientes Distracciones
 wordpress_id: 607
 categories:
-- Ecuador
+  - articles
 tags:
-- Ecuador
-- Flacso
-- Isabel Ramos
-- ley de comunicación
-- ley de medios
-- medios públicos
-- monopolio
-- Revista Iconos
+  - Ecuador
+  - Flacso
+  - Isabel Ramos
+  - ley de comunicación
+  - ley de medios
+  - medios públicos
+  - monopolio
+  - Revista Iconos
 ---
 
 En la [edición de Mayo 2010](http://www.flacso.org.ec/html/pub1.php?p_number=LB_0000731) de la [Revista Íconos,](http://www.flacso.org.ec/html/iconos.html) Isabel Ramos de la [FLACSO Ecuador](http://www.flacso.org.ec/) comenta sobre el discurso publico en torno a la ley de comunicación. Según Ramos, aunque el debate publico se ha centrado en los controles sobre la libertad de expresión que la nueva ley pondría en efecto, poco se ha hablado del control sobre los medios que ejercen los monopolios:

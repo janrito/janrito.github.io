@@ -6,14 +6,14 @@ slug: upgrade-thesis
 title: Upgrade Thesis
 wordpress_id: 783
 categories:
-- Visualisation
+  - articles
 tags:
-- phd
-- research
-- thesis
-- transfer
-- word-cloud
-- wordle
+  - phd
+  - research
+  - thesis
+  - transfer
+  - word-cloud
+  - wordle
 ---
 
 
