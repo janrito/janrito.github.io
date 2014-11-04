@@ -4,6 +4,25 @@ require([
   'bootstrap/transition',
   'bootstrap/collapse',
   ], function ($, bt, bc) {
+
+    var resizePositioning = function () {
+      resizeViewPort();
+      imagesBaselineFix();
+    };
+
+    var imagesBaselineFix = function () {
+      var lineHeightComputed = parseInt($('main p').first().css('line-height').replace('px', ''));
+      $('main img').each(function() {
+            var $this = $(this),
+                height = $this.outerHeight(false),
+                topPadding = parseInt($this.parent('p').css('padding-top').replace('px','')) || 0,
+                extra =((height + topPadding) % (lineHeightComputed/2)),
+                newMargin = lineHeightComputed/2 - extra;
+
+          $this.css('margin-bottom', newMargin);
+      });
+    };
+
     var resizeViewPort = function () {
       /* resizes the main element,
          in order to always push footer to the bottom */
@@ -17,7 +36,7 @@ require([
 
     $( document ).ready(function() {
 
-      $(window).on('resize', resizeViewPort).trigger('resize');
+      $(window).on('resize', resizePositioning).trigger('resize');
       //debug
       console.log('hello');
       // $('#myModal').foundation('reveal', 'open');
