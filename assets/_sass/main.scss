@@ -22,8 +22,23 @@ section.page-content {
     font-size: $font-size-small;
     line-height: $line-height-computed;
     // this corrects baseline issues
-    padding-bottom: $line-height-computed - 2px;
-    padding-top: 2px;
+    padding-bottom: $line-height-computed - 1px;
+    padding-top: 1px;
+
+
+    @media (max-width: $screen-sm-max) {
+      padding-top: $line-height-computed/2 - 1px;
+      padding-bottom: $line-height-computed/2 - 1px;
+
+      border-top: 1px dashed $gray;
+      border-bottom: 1px dashed $gray-light;
+
+    }
+
+    & + .side-note {
+      border-top: none;
+      padding-top: 1px;
+    }
   }
 
   > p,
