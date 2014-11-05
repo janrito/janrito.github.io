@@ -5,10 +5,10 @@ safe: true
 sass:
   sass_dir: assets/_sass
   style: :compressed
-gems:
-  - jekyll-mentions
-  - jekyll-redirect-from
-  - jekyll-sitemap
+# gems:
+#   - jekyll-mentions
+#   - jekyll-redirect-from
+#   - jekyll-sitemap
 exclude: [Gemfile, Gemfile.lock, README.md, bower.json, cache.manifest, ]
 highlighter: pygments
 relative_permalinks: true
@@ -35,7 +35,7 @@ defaults:
 # prose.io
 prose:
   rooturl: '_posts'
-  siteurl: 'http://janrito.github.io'
+  siteurl: 'http://alejandro.giacometti.me'
   # relativeLinks: 'http://janrito.github.io/api/links.jsonp'
   media: 'images'
   ignore:
@@ -60,7 +60,7 @@ prose:
         field:
           element: "multiselect"
           label: "Tags"
-          options: 'http://janrito.github.io/api/tags.jsonp'
+          options: 'http://alejandro.giacometti.me/api/tags.jsonp'
           alterable: true
       - name: "date"
         field:
