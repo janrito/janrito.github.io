@@ -33,9 +33,8 @@
 
         {% for lang in site.data.languages %}
         {% if lang.abbr == page.lang or (lang.abbr == 'en' and page.lang == '' %}
-        <li class="active"><a href="#">{{ lang.abbr }}</a></li>
         {% else %}
-        <li class=""><a href="{{ page.translations[lang.abbr]}}">{{ lang.abbr }}</a></li>
+        <li class="translation"><a href="{{ page.translations[lang.abbr]}}">{{ lang.name }}</a></li>
         {% endif %}
         {% endfor %}
       </ul>
