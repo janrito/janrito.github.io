@@ -1,9 +1,10 @@
 {
-  "name": "alejandrogiacometti.com",
+  "name": "alejandro.giacometti.me",
   "version": "0.1",
   "dependencies": {
     "jquery": null,
     "requirejs": null,
+    "requirejs-google-analytics": null,
     "bootstrap-sass-official": null,
     "font-awesome": null,
     "fira": "https://github.com/mozilla/Fira.git",
