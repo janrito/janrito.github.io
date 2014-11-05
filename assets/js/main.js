@@ -1,9 +1,10 @@
 // Main
 require([
   'jquery',
+  'GA',
   'bootstrap/transition',
   'bootstrap/collapse',
-  ], function ($, bt, bc) {
+  ], function ($, GA, bt, bc) {
 
     var resizePositioning = function () {
       resizeViewPort();
@@ -40,5 +41,10 @@ require([
       //debug
       console.log('hello');
       // $('#myModal').foundation('reveal', 'open');
+    });
+
+    GA.ready(function (ga) {
+        // GA is fully loaded
+        console.log(ga);
     });
 });
