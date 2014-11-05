@@ -1,14 +1,13 @@
 # url: alejandro.giacometti.me
 name: AG
 markdown: kramdown
-safe: true
 sass:
   sass_dir: assets/_sass
   style: :compressed
-# gems:
-#   - jekyll-mentions
-#   - jekyll-redirect-from
-#   - jekyll-sitemap
+gems:
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-sitemap
 exclude: [Gemfile, Gemfile.lock, README.md, bower.json, cache.manifest, ]
 highlighter: pygments
 relative_permalinks: true
