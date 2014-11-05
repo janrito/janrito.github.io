@@ -5,6 +5,8 @@ safe: true
 sass:
   sass_dir: assets/_sass
   style: :compressed
+gems:
+  - jekyll-redirect-from
 exclude: [Gemfile, Gemfile.lock, README.md, bower.json, cache.manifest, ]
 highlighter: pygments
 relative_permalinks: true
