@@ -2,7 +2,7 @@
 comments: true
 date: 2010-11-26 13:53:19+00:00
 layout: post
-slug: upgrade-thesis
+redirect_from: /2010/11/upgrade-thesis
 title: Upgrade Thesis
 wordpress_id: 783
 categories:

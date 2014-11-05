@@ -2,7 +2,7 @@
 comments: true
 date: 2010-08-19 20:53:45+00:00
 layout: post
-slug: barrera-aplicaria-tres-tasas-a-quito
+redirect_from: /2010/08/barrera-aplicaria-tres-tasas-a-quito
 title: Barrera aplicaría tres tasas a Quito
 wordpress_id: 680
 categories:

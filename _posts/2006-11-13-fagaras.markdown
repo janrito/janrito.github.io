@@ -3,7 +3,7 @@ author: janrito
 comments: true
 date: 2006-11-13 22:34:50+00:00
 layout: post
-slug: fagaras
+redirect_from: /2006/11/fagaras
 title: Făgăraș
 wordpress_id: 27
 categories:

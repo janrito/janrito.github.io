@@ -2,7 +2,7 @@
 comments: true
 date: 2010-05-21 14:37:08+00:00
 layout: post
-slug: james-murdoch-is-the-protector-of-the-creative-class
+redirect_from: /2010/05/james-murdoch-is-the-protector-of-the-creative-class
 title: James Murdoch is the Protector of the Creative Class
 wordpress_id: 536
 categories:
