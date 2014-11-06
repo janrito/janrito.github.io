@@ -1,0 +1,5 @@
+baseurl: ""
+sass:
+  sass_dir: assets/_sass
+  style: :expanded
+keep_files: ['images',]

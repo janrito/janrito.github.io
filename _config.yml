@@ -1,4 +1,4 @@
-# url: alejandro.giacometti.me
+baseurl: "http://alejandro.giacometti.me"
 name: AG
 markdown: kramdown
 sass:
@@ -10,10 +10,14 @@ gems:
 - jekyll-sitemap
 exclude: [Gemfile, Gemfile.lock, README.md, bower.json, cache.manifest, ]
 highlighter: pygments
-relative_permalinks: true
+timezone: "Europe/London"
 permalink: /:year/:month/:title/
 author: "Alejandro Giacometti"
 location: "London, UK"
+description: >
+  This is the personal site of Alejandro Giacometti,
+  a Digital Humanities researcher, currently lives in London.
+meta_image: "/images/portrait.jpeg"
 
 defaults:
   -
@@ -24,12 +28,14 @@ defaults:
       layout: "blog"
       lang: en
       author: "Alejandro Giacometti"
+      meta_type: "article"
   -
     scope:
       path: "page/"
       type: "pages"
     values:
       layout: "page" # overrides previous default layout
+      meta_type: "website"
 
 # prose.io
 prose:
