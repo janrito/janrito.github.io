@@ -21,11 +21,6 @@ Public facing site. Nth iteration.
     + Install using the `bundler` command:
         `bundle install`
 4. Run local jekyll:
-    `bundle exec jekyll serve --watch `
-5. Until `github-pages` starts using `jekyll >= 2.0` scss files must be compiled manually and commited to the repository:
-
-    ```
-    scss assets/css/main.scss > assets/css/main.css
-    ```
+    `bundler exec jekyll serve --watch --config _config.yml,_config_dev.yaml`
 
 [jekyll-instructions]: https://help.github.com/articles/using-jekyll-with-pages
