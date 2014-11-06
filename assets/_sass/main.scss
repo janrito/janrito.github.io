@@ -161,7 +161,7 @@ section.page-content {
 .older_posts {
   dl.posts {
     dd.post {
-      margin-bottom: 0;
+      margin-bottom: $line-height-computed/4;
     }
   }
 }
