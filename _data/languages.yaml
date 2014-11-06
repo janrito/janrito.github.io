@@ -1,5 +1,7 @@
 - name: English
   abbr: en
+  locale: 'GB'
 
 - name: Español
   abbr: es
+  locale: 'EC'
