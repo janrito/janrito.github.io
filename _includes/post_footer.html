@@ -35,7 +35,7 @@
 
       on
 
-      <time datetime="{{page.date | date: "%a, %d %b %Y %H:%M:%S %z"}}">
+      <time datetime="{{page.date | date_to_xmlschema }}">
         {{ page.date | date_to_string }}
       </time>
 
