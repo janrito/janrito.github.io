@@ -1,5 +1,5 @@
-vendor/*.html
-vendor/*.md
-vendor/*.markdown
+vendor/**/*.html
+vendor/**/*.md
+vendor/**/*.markdown
 vendor/fira/source
 vendor/fira/otf/technical reports
