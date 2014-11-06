@@ -12,13 +12,13 @@ require([
     };
 
     var imagesBaselineFix = function () {
-      var lineHeightComputed = parseInt($('main p').first().css('line-height').replace('px', ''));
+      var lineHeight = $('main p').first().css('line-height') || '0',
+          lineHeightComputed = parseInt(lineHeight.replace('px', ''));
       $('main img').each(function() {
             var $this = $(this),
                 height = $this.outerHeight(false),
-                topPadding = parseInt($this.parent('p').css('padding-top').replace('px','')) || 0,
-                extra =((height + topPadding) % (lineHeightComputed/2)),
-                newMargin = lineHeightComputed/2 - extra;
+                extra =((height) % (lineHeightComputed)),
+                newMargin = lineHeightComputed - extra;
 
           $this.css('margin-bottom', newMargin);
       });
