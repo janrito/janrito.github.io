@@ -11,7 +11,8 @@ gems:
 exclude: [Gemfile, Gemfile.lock, README.md, bower.json, cache.manifest, ]
 highlighter: pygments
 timezone: "Europe/London"
-permalink: /:year/:month/:title/
+permalink: /:year-:month-:day/:title/
+n_recent_posts: 8
 author: "Alejandro Giacometti"
 location: "London, UK"
 description: >

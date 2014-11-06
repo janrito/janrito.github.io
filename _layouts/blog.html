@@ -10,48 +10,71 @@ layout: default
 
   {% assign entries=site.posts | where: "type", posts%}
 
+  <div class="listing">
+    <section class="postgroup recent_posts">
 
-  {%capture firstyear %}{{ entries.first.date | date: "%Y" }}{% endcapture %}
+      {%capture firstyear %}{{ entries.first.date | date: "%Y" }}{% endcapture %}
 
-  <dl class="posts">
-    {% for post in entries %}
-    {% capture currenttmonth %}{{ post.date | date: "%m" }}{% endcapture %}
-    {% capture currenttyear %}{{ post.date | date: "%Y" }}{% endcapture %}
+      <dl class="posts">
+        <dt>Recent Articles</dt>
+        {% for post in entries limit: site.n_recent_posts %}
+        {% capture currenttmonth %}{{ post.date | date: "%m" }}{% endcapture %}
+        {% capture currenttyear %}{{ post.date | date: "%Y" }}{% endcapture %}
 
-    {% if firstyear != currenttyear and currenttyear != tyear %}
-    <dt>{{post.date | date: "%Y" }}</dt>
-      {% capture tyear %}{{currenttyear}}{% endcapture %}
-    {% elsif (currenttyear != tyear and currenttmonth != tmonth) %}
-    <dt>{{post.date | date: "%b %Y" }}</dt>
-      {% comment %}<dt>{% include date.html date=post.date mode="month"%}</dt>{% endcomment %}
-      {% capture tmonth %}{{currenttmonth}}{% endcapture %}
-      {% capture tyear %}{{currenttyear}}{% endcapture %}
-    {% endif %}
-
-    <dd class="post">
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
-
-      <div class="categories">
-        {% if post.category %}
-        <i class="fa fa-bookmark"></i>
-        <span class="category">{{ post.category }}</span><wbr>
+        {% if firstyear != currenttyear and currenttyear != tyear %}
+        <dt>{{post.date | date: "%Y" }}</dt>
+          {% capture tyear %}{{currenttyear}}{% endcapture %}
+        {% elsif (currenttyear != tyear and currenttmonth != tmonth) %}
+        <dt>{{post.date | date: "%b %Y" }}</dt>
+          {% comment %}<dt>{% include date.html date=post.date mode="month"%}</dt>{% endcomment %}
+          {% capture tmonth %}{{currenttmonth}}{% endcapture %}
+          {% capture tyear %}{{currenttyear}}{% endcapture %}
         {% endif %}
 
-        {% if post.categories %}
-        <i class="fa fa-bookmark"></i>
-        {% for category in post.categories%}
-        <span class="category">{{ category }}</span>{% if forloop.rindex0 == 1 %} {% if page.lang =='es' %}y{% else %}and{% endif %} {% elsif forloop.rindex0 != 0 %}, {% endif %}<wbr>
+        <dd class="post">
+          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
+
+          <div class="categories">
+            {% if post.category %}
+            <i class="fa fa-bookmark"></i>
+            <span class="category">{{ post.category }}</span><wbr>
+            {% endif %}
+
+            {% if post.categories %}
+            <i class="fa fa-bookmark"></i>
+            {% for category in post.categories%}
+            <span class="category">{{ category }}</span>{% if forloop.rindex0 == 1 %} {{ site.data.locale[lang]["and"] }} {% elsif forloop.rindex0 != 0 %}, {% endif %}<wbr>
+            {% endfor %}
+            {% endif %}
+
+
+          </div>
+
+        </dd>
         {% endfor %}
+      </dl>
+    </section>
+
+    <section class="postgroup older_posts">
+
+
+      <dl class="posts">
+        {% capture tyear %}{% endcapture %}
+        {% for post in entries offset: site.n_recent_posts %}
+        {% capture currenttyear %}{{ post.date | date: "%Y" }}{% endcapture %}
+        {% if currenttyear != tyear %}
+        <dt>{{post.date | date: "%Y" }}</dt>
+          {% capture tyear %}{{currenttyear}}{% endcapture %}
         {% endif %}
-
-        {% comment %}<pre class="collapse">{{post | jsonify | xml_escape }}</pre>{% endcomment %}
-      </div>
-
-    </dd>
-    {% endfor %}
-  </dl>
+        <dd class="post">
+          <a href="{{ post.url }}">{{ post.title }}</a> | <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
+        </dd>
+        {% endfor %}
+      </dl>
+    </section>
+  </div>
 
   <footer>
     {% comment %}{% include pagination.html %}{% endcomment %}
