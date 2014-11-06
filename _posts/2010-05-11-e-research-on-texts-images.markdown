@@ -2,7 +2,7 @@
 comments: true
 date: 2010-05-11 09:52:05+00:00
 layout: post
-redirect_from: /2010/05/e-research-on-texts-images
+redirect_from: /2010/05/e-research-on-texts-images/
 title: e-Research on Texts & Images
 wordpress_id: 478
 categories:

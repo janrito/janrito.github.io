@@ -2,7 +2,7 @@
 comments: true
 date: 2010-03-19 13:03:29+00:00
 layout: post
-redirect_from: /2010/03/day-of-dh
+redirect_from: /2010/03/day-of-dh/
 title: Day of DH
 wordpress_id: 431
 categories:

@@ -2,7 +2,7 @@
 comments: true
 date: 2010-06-24 17:53:53+00:00
 layout: post
-redirect_from: /2010/06/universidades-gobierno-quiere-tener-la-sarten-por-el-mango
+redirect_from: /2010/06/universidades-gobierno-quiere-tener-la-sarten-por-el-mango/
 title: 'Universidades: Gobierno quiere tener la sartén por el mango'
 wordpress_id: 579
 lang: es

@@ -2,7 +2,7 @@
 comments: true
 date: 2009-11-17 10:55:00+00:00
 layout: post
-redirect_from: /2009/11/understanding-image-based-evidence
+redirect_from: /2009/11/understanding-image-based-evidence/
 title: Understanding Image-based Evidence
 wordpress_id: 378
 categories:

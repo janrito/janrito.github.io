@@ -2,7 +2,7 @@
 comments: true
 date: 2010-07-16 14:49:17+00:00
 layout: post
-redirect_from: /2010/07/convenientes-distracciones
+redirect_from: /2010/07/convenientes-distracciones/
 title: Convenientes Distracciones
 lang: es
 wordpress_id: 607

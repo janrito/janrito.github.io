@@ -2,7 +2,7 @@
 comments: true
 date: 2010-10-04 10:07:07+00:00
 layout: post
-redirect_from: /2010/10/prensa-independiente
+redirect_from: /2010/10/prensa-independiente/
 title: Prensa Independiente
 wordpress_id: 717
 categories:

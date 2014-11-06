@@ -2,7 +2,7 @@
 comments: true
 date: 2010-09-27 16:37:53+00:00
 layout: post
-redirect_from: /2010/09/amateur-digitisation
+redirect_from: /2010/09/amateur-digitisation/
 title: Amateur Digitisation
 wordpress_id: 701
 categories:

@@ -2,7 +2,7 @@
 comments: true
 date: 2009-10-14 19:13:48+00:00
 layout: post
-redirect_from: /2009/10/object-artefact-script
+redirect_from: /2009/10/object-artefact-script/
 title: Object Artefact Script
 wordpress_id: 382
 categories:

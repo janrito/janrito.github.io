@@ -2,7 +2,7 @@
 comments: true
 date: 2010-01-11 15:26:11+00:00
 layout: post
-redirect_from: /2010/01/el-espejismo-de-la-dolarizacion
+redirect_from: /2010/01/el-espejismo-de-la-dolarizacion/
 title: El Espejismo de la Dolarización
 wordpress_id: 351
 lang: es

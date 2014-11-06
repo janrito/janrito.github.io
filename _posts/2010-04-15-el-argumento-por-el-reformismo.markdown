@@ -2,7 +2,7 @@
 comments: true
 date: 2010-04-15 17:15:58+00:00
 layout: post
-redirect_from: /2010/04/el-argumento-por-el-reformismo
+redirect_from: /2010/04/el-argumento-por-el-reformismo/
 title: El Argumento por el Reformismo
 wordpress_id: 450
 lang: es
