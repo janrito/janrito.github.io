@@ -3,9 +3,9 @@
 @import 'settings';
 
 // import fonts
-@import 'charis',
-'fira',
-'adobe-source-code-pro';
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic&subset=latin,latin-ext);
+@import 'fira';
+@import 'adobe-source-code-pro';
 
 // import foundation
 @import '../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap';
@@ -14,13 +14,13 @@ $fa-font-path: '../vendor/font-awesome/fonts';
 @import '../vendor/font-awesome/scss/font-awesome';
 
 // modules
-@import 'functions',
-'general',
-'navigation',
-'main',
-'footer',
-'page',
-'post';
+@import 'functions';
+@import 'general';
+@import 'navigation';
+@import 'main';
+@import 'footer';
+@import 'page';
+@import 'post';
 
 // syntax highlighting CSS
 @import 'syntax';
