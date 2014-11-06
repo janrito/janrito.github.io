@@ -3,7 +3,7 @@ comments: true
 date: 2010-05-05 14:16:17+00:00
 layout: post
 redirect_from: /2010/05/grecia-euros-ecuador-dolares
-title: Grecia, el Euro, Ecuador *&* el Dólar
+title: Grecia, el Euro, Ecuador & el Dólar
 wordpress_id: 459
 lang: es
 categories:

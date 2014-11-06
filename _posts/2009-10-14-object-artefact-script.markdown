@@ -1,13 +1,12 @@
 ---
-author: janrito
 comments: true
 date: 2009-10-14 19:13:48+00:00
 layout: post
-slug: object-artefact-script
+redirect_from: /2009/10/object-artefact-script
 title: Object Artefact Script
 wordpress_id: 382
 categories:
-- Blog
+- articles
 tags:
 - conference
 - edinburgh
@@ -15,6 +14,7 @@ tags:
 - National e-Science Centre
 - report
 - scotland
+- digital humanities
 ---
 
 I’m in Edinburgh, Scotland. Attending the [Object Artefact Script](http://www.nesc.ac.uk/esi/events/1014/) workshop organized by the [National e-Science Centre](http://www.nesc.ac.uk/). My attendance here is mostly for learning purposes as I am new to this discipline. The program starts Today, Thursday,  October 8th until Friday, October 9th, 2009.
