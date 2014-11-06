@@ -8,6 +8,7 @@ permalink: bio/
 lang: es
 translations:
     en: /about/
+meta_type: profile
 ---
 
 
@@ -67,7 +68,7 @@ Puedes ver mis fotos en [flickr][], seguirme en [twitter][], o buscarme
 en [facebook][].
 
 
-[portrait]: http://graph.facebook.com/alejandro.giacometti/picture?type=large
+[portrait]: /images/portrait.jpeg
 [Informática Humanística]: http://en.wikipedia.org/wiki/Digital_humanities
     "Digital Humanities"
 [University College London]: http://www.ucl.ac.uk

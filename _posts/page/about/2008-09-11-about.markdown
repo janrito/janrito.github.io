@@ -7,6 +7,7 @@ title: About
 permalink: about/
 translations:
     es: /bio/
+meta_type: profile
 
 ---
 
@@ -63,7 +64,7 @@ emotional reactions.
 You can also find some of my pictures on [flickr][], follow me on
 [twitter][], and stalk me on [facebook][]
 
-[portrait]: http://graph.facebook.com/alejandro.giacometti/picture?type=large
+[portrait]: /images/portrait.jpeg
 [Digital Humanities]: http://en.wikipedia.org/wiki/Digital_humanities "Digital Humanities"
 [University College London]: http://www.ucl.ac.uk
 [Melissa Terras]: http://www.ucl.ac.uk/infostudies/melissa-terras/
