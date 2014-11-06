@@ -1,12 +1,12 @@
 
-
+{% assign lang= page.lang | default: 'en' %}
 <footer class="post-meta">
 
   {% if page.tags %}
   <div class="barcode">
     <i class="fa fa-tag"></i>
     <p class='tags'>
-    {% for tag in page.tags|sort %}<span class="tag">{{tag}}</span>{% if forloop.rindex0 == 1 %} and {% elsif forloop.rindex0 != 0 %}, {% endif %}<wbr>{% endfor %}.
+    {% for tag in page.tags|sort %}<span class="tag">{{tag}}</span>{% if forloop.rindex0 == 1 %} {{ site.data.locale[lang]["and"] }} {% elsif forloop.rindex0 != 0 %}, {% endif %}<wbr>{% endfor %}.
     </p>
   </div>
   {% endif %}
@@ -20,26 +20,26 @@
 
     <p>
       <span class="title">{{page.title}}</span>
-      was published
+      {{ site.data.locale[lang]["was published"] }}
       {% if page.category %}
-      in
+      {{ site.data.locale[lang]["in"] }}
       <span class="category">{{ page.category }}</span><wbr>
       {% endif %}
 
       {% if page.categories %}
-      in
+      {{ site.data.locale[lang]["in"] }}
       {% for category in page.categories%}
-      <span class="category">{{ category }}</span>{% if forloop.rindex0 == 1 %} and {% elsif forloop.rindex0 != 0 %}, {% endif %}<wbr>
+      <span class="category">{{ category }}</span>{% if forloop.rindex0 == 1 %} {{ site.data.locale[lang]["and"] }} {% elsif forloop.rindex0 != 0 %}, {% endif %}<wbr>
       {% endfor %}
       {% endif %}
 
-      on
+      {{ site.data.locale[lang]["__on_date"] }}
 
       <time datetime="{{page.date | date_to_xmlschema }}">
         {{ page.date | date_to_string }}
       </time>
 
-      by <span class="author">{% if page.author %}{{ page.author }}{% else %}{{ site.name }}{% endif %}</span><wbr>
+      {{ site.data.locale[lang]["by"] }} <span class="author">{% if page.author %}{{ page.author }}{% else %}{{ site.name }}{% endif %}</span><wbr>
 
     </p>
   </div>
