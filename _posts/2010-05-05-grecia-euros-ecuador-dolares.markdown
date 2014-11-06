@@ -1,13 +1,13 @@
 ---
-author: janrito
 comments: true
 date: 2010-05-05 14:16:17+00:00
 layout: post
-slug: grecia-euros-ecuador-dolares
-title: Grecia, el Euro, Ecuador & el Dólar
+redirect_from: /2010/05/grecia-euros-ecuador-dolares
+title: Grecia, el Euro, Ecuador *&* el Dólar
 wordpress_id: 459
+lang: es
 categories:
-- Comentario
+- articles
 tags:
 - banca
 - de-reglamentación
@@ -21,9 +21,9 @@ tags:
 - grecia
 ---
 
-<blockquote>Coincidencialmente los griegos proclamaron su independencia de los turcos, el mismo año – 1822 – cuando nosotros lo hicimos de los españoles, pero desde entonces la trayectoria fue del todo borrascosa
-
-- Patricio Quevedo Terán, [El Comercio](http://www.elcomercio.com/2010-05-05/Home/TABs-Interaccion/Opinion/Columnista/EC100505P10PQUEVEDO.aspx).</blockquote>
+>Coincidencialmente los griegos proclamaron su independencia de los turcos, el mismo año – 1822 – cuando nosotros lo hicimos de los españoles, pero desde entonces la trayectoria fue del todo borrascosa
+>
+>-- <cite>Patricio Quevedo Terán, [El Comercio](http://www.elcomercio.com/2010-05-05/Home/TABs-Interaccion/Opinion/Columnista/EC100505P10PQUEVEDO.aspx).</cite>
 
 
 Patricio Quevedo  escribe sobre la desafortunada situación en Grecia. Además de compartir el año de independencia, existe otro paralelo: Grecia adopto el Euro en enero del 2001, una moneda que no esta totalmente bajo su control. Al igual que el Ecuador, Grecia ha sacrificado poder de control sobre políticas monetarias a favor de mantener una moneda estable. El Euro ha tenido un efecto variado en la economía de Grecia, y expertos, nacionales e internacionales, no terminan de decidir si el cambio ha sido beneficioso para Grecia o la Eurozona.

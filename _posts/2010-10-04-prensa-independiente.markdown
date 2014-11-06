@@ -21,6 +21,6 @@ tags:
 
 >¿Por qué no dejan de lado la idea de la conspiración y reconocen que el autoritarismo con el que reacciona el Presidente caldeó los ánimos en el Regimiento Quito?
 >
-> [No debe perseguirse a la Policía](http://www.elcomercio.com/web/noticias/04_ENTREVISTA.html) - El Comercio
+> --<cite>[No debe perseguirse a la Policía](http://www.elcomercio.com/web/noticias/04_ENTREVISTA.html) - El Comercio</cite>
 
 La prensa privada se autotitula *independiente*. El ejemplo anterior es el tipo de preguntas que nos producen carcajadas de escepticismo.

@@ -4,6 +4,7 @@ date: 2010-07-16 14:49:17+00:00
 layout: post
 redirect_from: /2010/07/convenientes-distracciones
 title: Convenientes Distracciones
+lang: es
 wordpress_id: 607
 categories:
   - articles
@@ -31,7 +32,7 @@ En la [edición de Mayo 2010](http://www.flacso.org.ec/html/pub1.php?p_number=LB
 >
 por lo menos cuatro concesionarios controlan canales de VHF en prácticamente todo el país (entre 21 y 23 provincias)”, mientras que siete concentran frecuencias > radiofónicas en diez provincias
 > 
-> -- Isabel Ramos, [*Mucho ruido y pocas nueces: cobertura mediática y participación ciudadana en el debate de la nueva ley de comunicación en Ecuador*](http://www.flacso.> org.ec/docs/i37ramos.pdf)
+>--<cite>Isabel Ramos, [*Mucho ruido y pocas nueces: cobertura mediática y participación ciudadana en el debate de la nueva ley de comunicación en Ecuador*](http://www.flacso.> org.ec/docs/i37ramos.pdf)</cite>
 
 
 Seguramente para los medios privados la libertad de expresión es su derecho a libremente publicar sus opinión. Sin embargo, existe ya un control _de facto _sobre la totalidad de la opinión. Estas pocas compañías son las únicas que están en posición de expresar opiniones. He ahí la razon por el gran escepticismo con el que se ha recibido la implementación de los medios públicos.
