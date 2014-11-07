@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: internal
 ---
 
 <section class="archive">
@@ -11,7 +11,7 @@ layout: default
   {% assign entries=site.posts | where: "type", posts%}
 
   <div class="listing">
-    <section class="postgroup recent_posts">
+    <section class="postgroup recent-posts">
 
       {%capture firstyear %}{{ entries.first.date | date: "%Y" }}{% endcapture %}
 
@@ -57,7 +57,7 @@ layout: default
       </dl>
     </section>
 
-    <section class="postgroup older_posts">
+    <section class="postgroup older-posts">
 
 
       <dl class="posts">
