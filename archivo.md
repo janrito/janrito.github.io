@@ -4,5 +4,5 @@ title: Archivo
 permalink: /archivo/
 lang: es
 translations:
-  en: /
+  en: /archive/
 ---
