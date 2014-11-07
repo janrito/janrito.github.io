@@ -1,3 +1,26 @@
+body.frontpage {
+  background: $gray-base;
+  color: $gray-dark;
+
+  section.page-content {
+    @extend %sans-serif;
+    margin-top: $line-height-computed;
+
+    @media (min-width: $screen-md-min) {
+      margin-top: 15%;
+    }
+
+    .contact-list {
+      font-size: $font-size-h2;
+      line-height: $line-height-computed * 2;
+    }
+
+    h1 small {
+      color: $gray;
+    }
+  }
+}
+
 
 main {
   @include make-row();
@@ -5,21 +28,19 @@ main {
   > article,
   > section.archive {
     @include make-xs-column(12);
+    padding-bottom: ($line-height-computed * 2);
 
     .listing {
       @include make-row();
 
-      .recent_posts {
+      .recent-posts {
         @include make-md-column(6);
       }
 
-      .older_posts {
+      .older-posts {
         @include make-md-column(6);
       }
     }
-
-    padding-bottom: ($line-height-computed * 2);
-
   }
 }
 
@@ -63,6 +84,7 @@ section.page-content {
   > ul,
   > ol,
   > dl,
+  > nav,
   > pre,
   > img,
   > blockquote,
@@ -131,8 +153,8 @@ section.page-content {
       @extend %serif;
       font-size: $font-size-large;
       line-height: $line-height-computed;
-      margin-top: 0;
       margin-bottom: 0;
+      margin-top: 0;
     }
 
     section.excerpt {
@@ -158,100 +180,10 @@ section.page-content {
   }
 }
 
-.older_posts {
+.older-posts {
   dl.posts {
     dd.post {
       margin-bottom: $line-height-computed/4;
     }
   }
 }
-
-
-// /* structure */
-
-// header.main-header,
-// footer.main-footer{
-// }
-
-
-// main.main-content,
-// footer.main-footer {
-//   @include grid-row();
-//   padding-bottom: rem-calc(32px);
-//   padding-top: rem-calc(32px);
-// }
-
-// main.main-content {
-
-//   > article,
-//   > section {
-//     @include main-block;
-
-//     .side-note {
-//       @include aside-panel;
-//     }
-
-//     > header {
-//       @extend .sans-serif;
-//       border-bottom: 1px solid #ddd;
-//       margin-bottom: rem-calc(16);
-
-//     }
-
-//     > .footnotes {
-//       margin-top: rem-calc(12);
-//       margin-bottom: rem-calc(12);
-
-//       ol {
-//         border-top: 3px solid #ddd;
-//       }
-//       p , ol{
-//         font-size: rem-calc(12);
-//       }
-//     }
-
-//     ul.posts {
-
-//       list-style: none;
-//       margin-left: 0;
-
-//       li.post {
-//         padding-bottom: rem-calc(12px);
-//       }
-
-//       time {
-//         @extend .sans-serif;
-//         color: #999;
-//         font-size: rem-calc(12);
-
-//       }
-
-//       h2 {
-//         @extend .serif;
-
-//         display: inline;
-//         font-size: rem-calc(18);
-//       }
-
-//       section.excerpt {
-//         color: #999;
-//         margin-top: rem-calc(12);
-
-
-//       }
-
-//       .categories {
-//         @extend .sans-serif;
-//         //margin-top: - rem-calc(12);
-//         color: #999;
-//         font-size: rem-calc(12);
-
-//       }
-//     }
-
-//     .pagination {
-//       @include aside-block;
-//       @extend .sans-serif;
-//     }
-//   }
-// }

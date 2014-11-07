@@ -25,18 +25,13 @@ footer {
 
   &.main-footer {
     padding-top: $line-height-computed;
+
     > .footer-container {
       @include make-row();
 
       aside {
         @include make-md-column(4);
         @include make-md-column-offset(2);
-      }
-    }
-
-    aside {
-      ul {
-        @extend .list-inline;
       }
     }
 

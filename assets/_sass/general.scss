@@ -16,7 +16,6 @@
 }
 
 
-
 p.reference {
   padding-left: 2rem;
   text-indent: -2rem;
@@ -29,15 +28,19 @@ h1 {
   margin-top: $line-height-computed / 2;
   padding-bottom: 0;
   padding-top: 0;
+
+  small {
+    font-weight: 200;
+  }
 }
 
 h2 {
+  font-weight: normal;
   line-height: $line-height-computed * 2;
   margin-bottom: 0;
   margin-top: 0;
   padding-bottom: 0;
   padding-top: 0;
-  font-weight: normal;
 }
 
 h3 {
@@ -65,11 +68,11 @@ h5 {
 }
 
 h6 {
+  line-height: $line-height-computed;
   margin-bottom: 0;
   margin-top: 0;
   padding-bottom: 0;
   padding-top: 0;
-  line-height: $line-height-computed;
 }
 
 p {
@@ -77,8 +80,8 @@ p {
 }
 
 blockquote {
-  line-height: $line-height-computed;
   border-left-color: $gray-light;
+  line-height: $line-height-computed;
 }
 
 .media-container {
@@ -90,6 +93,20 @@ blockquote {
 }
 
 p img {
-    max-width: 100%;
-    display: block;
+  @extend .img-responsive;
+  // max-width: 100%;
+  // display: block;
+}
+
+
+.contact-list {
+
+  ul {
+    @extend .list-inline;
+
+    li.active a {
+      color: $link-hover-color;
+
+    }
+  }
 }

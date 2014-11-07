@@ -1,24 +1,24 @@
 //== Tomorrow Theme
 
 //
-$tm_background_colour:      #ffffff;
-$tm_current_line_colour:    #efefef;
-$tm_selection_colour:       #d6d6d6;
-$tm_foreground_colour:      #4d4d4c;
-$tm_comment_colour:         #8e908c;
-$tm_red_colour:             #c82829;
-$tm_orange_colour:          #f5871f;
-$tm_yellow_colour:          #eab700;
-$tm_green_colour:           #718c00;
-$tm_aqua_colour:            #3e999f;
-$tm_blue_colour:            #4271ae;
-$tm_purple_colour:          #8959a8;
+$tm-background-colour:      #ffffff;
+$tm-current-line-colour:    #efefef;
+$tm-selection-colour:       #d6d6d6;
+$tm-foreground-colour:      #4d4d4c;
+$tm-comment-colour:         #8e908c;
+$tm-red-colour:             #c82829;
+$tm-orange-colour:          #f5871f;
+$tm-yellow-colour:          #eab700;
+$tm-green-colour:           #718c00;
+$tm-aqua-colour:            #3e999f;
+$tm-blue-colour:            #4271ae;
+$tm-purple-colour:          #8959a8;
 
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$gray-base:              $tm_foreground_colour;
+$gray-base:              $tm-foreground-colour;
 $gray-darker:            lighten($gray-base, 13.5%);
 $gray-dark:              lighten($gray-base, 20%);
 $gray:                   lighten($gray-base, 33.5%);
@@ -26,25 +26,25 @@ $gray-light:             lighten($gray-base, 46.7%);
 $gray-lighter:           lighten($gray-base, 93.5%);
 
 
-$brand-primary:         $tm_red_colour;
-$brand-success:         $tm_green_colour;
-$brand-info:            $tm_blue_colour;
-$brand-warning:         $tm_orange_colour;
-$brand-danger:          $tm_red_colour;
+$brand-primary:         $tm-red-colour;
+$brand-success:         $tm-green-colour;
+$brand-info:            $tm-blue-colour;
+$brand-warning:         $tm-orange-colour;
+$brand-danger:          $tm-red-colour;
 
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               $tm_background_colour;
+$body-bg:               $tm-background-colour;
 //** Global text color on `<body>`.
 $text-color:            $gray-dark;
 
 //** Global textual link color.
 $link-color:            $gray-darker;
 //** Link hover color set via `darken()` function.
-// $link-hover-color:      darken($link-color, 15%) !default;
+$link-hover-color:      darken($link-color, 15%);
 //** Link hover decoration.
 $link-hover-decoration: none;
 
@@ -63,14 +63,14 @@ $font-family-base:        $font-family-serif;
 $font-size-base:          18px;
 // $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 // $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
-$font-size-smaller:       ceil(($font-size-base * 0.7));
+$font-size-smaller:       ceil(($font-size-base * .7));
 
 $font-size-h1:            floor(($font-size-base * 2.6));
 $font-size-h2:            floor(($font-size-base * 2.15));
 $font-size-h3:            ceil(($font-size-base * 1.7));
 $font-size-h4:            ceil(($font-size-base * 1.25));
 $font-size-h5:            $font-size-base;
-$font-size-h6:            ceil(($font-size-base * 0.85));
+$font-size-h6:            ceil(($font-size-base * .85));
 
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        1.6666666667;

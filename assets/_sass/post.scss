@@ -1,9 +1,9 @@
 article.post {
   > footer.post-meta {
     @include make-row();
-    margin-top: $line-height-computed * 2;
-    margin-bottom: $line-height-computed * 2;
     color: $gray-light;
+    margin-bottom: $line-height-computed * 2;
+    margin-top: $line-height-computed * 2;
 
     .post-footer-main {
       @extend %main-block;
@@ -33,24 +33,25 @@ article.post {
 
 
     .barcode {
+      @extend %aside-block;
       @include make-row();
       color: $gray-light;
+
       p.tags {
+        @extend %sans-serif;
+
         @include make-xs-column(9);
         @include make-sm-column(10);
         @include make-md-column(8);
         @include make-lg-column(9);
 
-        @extend %sans-serif;
-
         font-size: $font-size-smaller;
         font-weight: 200;
         letter-spacing: .05em;
         text-transform: uppercase;
-        .tag {
 
-        }
       }
+
       i {
         @include make-xs-column(3);
         @include make-sm-column(2);
@@ -62,7 +63,7 @@ article.post {
         line-height: $line-height-computed * 3;
         padding-right: $line-height-computed;
       }
-      @extend %aside-block;
+
     }
   }
 
