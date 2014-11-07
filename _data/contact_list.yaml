@@ -1,0 +1,20 @@
+- title: Home
+  url: /
+  icon: home
+
+- title: Archive
+  url: /archive/
+  icon: archive
+
+
+- title: "e-mail me at alejandro@giacometti.me"
+  url: "mailto:alejandro@giacometti.me"
+  icon: envelope-o
+
+- title: "@janrito on github"
+  url: http://github.com/janrito
+  icon: github
+
+- title: "@janrito on twitter"
+  url: http://twitter.com/janrito
+  icon: twitter
