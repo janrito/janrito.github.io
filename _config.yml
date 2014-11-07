@@ -1,4 +1,4 @@
-baseurl: "http://alejandro.giacometti.me"
+baseurl: "http://alejandro.giacometti.me/"
 name: AG
 markdown: kramdown
 sass:

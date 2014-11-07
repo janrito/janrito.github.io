@@ -1,4 +1,4 @@
-baseurl: ""
+baseurl: "/"
 sass:
   sass_dir: assets/_sass
   style: :expanded
