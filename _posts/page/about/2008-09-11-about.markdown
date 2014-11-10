@@ -14,41 +14,25 @@ meta_type: profile
 ![portrait][portrait] 
 {:.side-note}
 
-I am a [Digital Humanities][] postgraduate student at [University College
-London][]. My current research is on the application of medical image
-processing methods to recover information from ancient damaged documents. My
-advisors are  [Melissa Terras][] from the [Department of Information
-Studies][] and [Adam Gibson][] from the [Department of Medical Physics and
-Bioengineering][]. I am also affiliated to the [UCL Centre for Digital
-Humanities][].
+I am a [Digital Humanist](dh)[^dh] -- which for me means that I get to play with technology in order to make it useful to research in the humanities. I work at the [Department of Digital Humanities](kcldh) at [King's College London][kcl].
 
-I recently finished my MA in [Humanities Computing][] under the supervision of
-[Stan Ruecker][] at the [University of Alberta][].  My research centred around
-an rich-prospect interface: the Texttiles Browser, an experiment in leveraging
-available metadata to visualise and browse medium sized text collections. My
-[thesis][] title is: *The Texttiles browser: an experiment in rich-prospect
-browsing for text collections*.
+<address markdown="1">**Alejandro Giacometti**  
+e. [alejandro@giacometti.me](mailto:alejandro.giacometti.me)  
+t. +44 20 7848 1381  
+Office #217  
 
-[alejandro@giacometti.me](mailto:alejandro.giacometti.me)  
-+44 7 838 562 819  
-+1 978 253 4289  
-{:.side-note}
-
-Dept. Medical Physics & Bioengineering  
-3.18 Malet Place Engineering Building  
-University College London  
-Gower Street  
-London  
-WC1E 6BT  
+Digital Humanities, King’s College London  
+26-29 Drury Lane  
+London, WC2B 5RL  
 United Kingdom  
-{:.side-note}
+</address>{:.side-note}
 
-My research interests are visualisations, image processing and analysis, and
-the role of semantic metadata in information sharing. I am also interested in
-the web as an application platform to build environments that enhance
-communication, foster institutional transparency, and enable the free flow of
-information. I irregularly [post][] relevant links and updates about my
-research.
+I have a newly minted PhD in Image Science from [University College London][ucl], where I worked with my supervisors [Melissa Terras][] from the [Department of Information Studies][dis] and [UCL Centre for Digital
+Humanities][ucldh] and [Adam Gibson][] from the [Department of Medical Physics][medphys]. My dissertation was on the application of an imaging method – Multispectral Imaging – to the recovery of writing from cultural heritage documents.
+
+I also did an MA in [Humanities Computing][huco] with [Stan Ruecker][] at the [University of Alberta][uofa].  My research centred around an rich-prospect interface: the Texttiles Browser, an experiment in leveraging available metadata to visualise and browse medium sized text collections. My [thesis][mathesis] title is: *The Texttiles browser: an experiment in rich-prospect browsing for text collections*.
+
+My research interests are imaging and digitisation of cultural heritage material, in particular the use of signal processing and analysis to enhance recovery. I am also interested in design, visualisation and interfaces to explore humanities datasets. 
 
 
 ## mensapredia ##
@@ -65,20 +49,28 @@ You can also find some of my pictures on [flickr][], follow me on
 [twitter][], and stalk me on [facebook][]
 
 [portrait]: /images/portrait.jpeg
-[Digital Humanities]: http://en.wikipedia.org/wiki/Digital_humanities "Digital Humanities"
-[University College London]: http://www.ucl.ac.uk
-[Melissa Terras]: http://www.ucl.ac.uk/infostudies/melissa-terras/
-[Department of Information Studies]: http://www.infostudies.ucl.ac.uk/
-[Adam Gibson]: http://www.ucl.ac.uk/medphys/staff/people/agibson/www/index
-[Department of Medical Physics and Bioengineering]: http://www.ucl.ac.uk/medphys/
-[UCL Centre for Digital Humanities]: http://www.ucl.ac.uk/dh/
-[Humanities Computing]: http://huco.ualberta.ca/
-[Stan Ruecker]: http://www.ualberta.ca/~sruecker/
-[University of Alberta]: http://www.ualberta.ca
-[thesis]: http://repository.library.ualberta.ca/dspace/handle/10048/437
-[post]: category/blog.html "Blog"
-[comment]: category/mensapredia.html "Mensa Predia"
-[section]: category/periodismo_sensacionalista.html "Periodismo Sensacionalista"
-[flickr]: http://www.flickr.com/photos/janrito/
-[twitter]: http://twitter.com/janrito
+
+[^dh]:  
+    Digital Humanities is an academic discipline which has had an extremely difficult time defining itself. In fact, every single digital humanities conference, event, workshop, colloquium, interview and informal discussion over coffee which I have attended has inevitably included a lengthy session on on what Digital Humanities means. 
+
+    I am not interested in that discussion any more because; it prevents me from getting on to do more interesting stuff.
+
+
+
+[dh]: http://en.wikipedia.org/wiki/Digital_humanities "Digital Humanities"
+[kcl]: http://www.kcl.ac.uk "King's College London"
+[kcldh]: http://www.kcl.ac.uk/artshums/depts/ddh/index.aspx "Department of Digital Humanities at King's College London"
+[ucl]: http://www.ucl.ac.uk "University College London"
+[Melissa Terras]: http://www.ucl.ac.uk/infostudies/melissa-terras/ "Melissa Terras"
+[dis]: http://www.infostudies.ucl.ac.uk/ "Department of Information Studies at University College London"
+[Adam Gibson]: http://www.ucl.ac.uk/medphys/staff/people/agibson/www/index "Adam Gibson"
+[medphys]: http://www.ucl.ac.uk/medphys/ "Department of Medical Physics"
+[ucldh]: http://www.ucl.ac.uk/dh/ "UCL Centre for Digital Humanities"
+[huco]: http://huco.ualberta.ca/ "Humanities Computing at University of Alberta"
+[Stan Ruecker]: http://www.ualberta.ca/~sruecker/ "Stan Ruecker"
+[uofa]: http://www.ualberta.ca "University of Alberta"
+[mathesis]: http://repository.library.ualberta.ca/dspace/handle/10048/437
+
+[twitter]: http://twitter.com/janrito "@janrito at Twitter"
 [facebook]: http://www.facebook.com/alejandro.giacometti
+
