@@ -37,6 +37,10 @@ defaults:
     values:
       layout: "page" # overrides previous default layout
       meta_type: "website"
+  - scope:
+      path: "assets/"
+    values:
+      sitemap: false
 
 # prose.io
 prose:
