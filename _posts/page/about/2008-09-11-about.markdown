@@ -6,7 +6,7 @@ type: pages
 title: About
 permalink: about/
 translations:
-    es: /bio/
+    es: /acerca-de/
 meta_type: profile
 
 ---
@@ -14,14 +14,18 @@ meta_type: profile
 ![portrait][portrait] 
 {:.side-note}
 
-I am a [Digital Humanist](dh)[^dh] -- which for me means that I get to play with technology in order to make it useful for research in the humanities. I work at the [Department of Digital Humanities](kcldh) at [King's College London][kcl].
+I am a [Digital Humanist][dh][^dh] -- which for me means that I get to play with technology in order to make it useful for research in the humanities. I work at the [Department of Digital Humanities][kcldh] at [King's College London][kcl].
 
-<address markdown="1">**Alejandro Giacometti**  
-e. [alejandro@giacometti.me](mailto:alejandro.giacometti.me)  
-t. +44 20 7848 1381  
-Office #217  
+<address markdown="1">
+Contact
+: e. [alejandro@giacometti.me](mailto:alejandro.giacometti.me)  
+  t. +44 20 7848 1381  
 
-Digital Humanities, King’s College London  
+Office
+: \#217  
+
+Post
+: Digital Humanities, King’s College London  
 26-29 Drury Lane  
 London, WC2B 5RL  
 United Kingdom  
@@ -42,7 +46,7 @@ You can follow me on [@janrito][twitter] on twitter or find me on [@alejandrogia
 [portrait]: /images/portrait.jpeg
 
 [^dh]:  
-    Digital Humanities is an academic discipline which has had an extremely difficult time defining itself. In fact, every single digital humanities conference, event, workshop, colloquium, interview and informal discussion over coffee which I have attended has inevitably included a lengthy session on on what Digital Humanities means. 
+    Digital Humanities is an academic discipline which has had an extremely difficult time defining itself. In fact, every single digital humanities conference, event, workshop, colloquium, interview and informal discussion over coffee which I have attended has inevitably included a lengthy session on what Digital Humanities means. 
 
     I am not interested in that discussion any more because; it prevents me from getting on to do more interesting stuff.
 
