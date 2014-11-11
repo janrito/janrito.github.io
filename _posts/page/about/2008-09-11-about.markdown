@@ -46,7 +46,8 @@ You can follow me on [@janrito][twitter] on twitter or find me on [@alejandrogia
 
     I am not interested in that discussion any more because; it prevents me from getting on to do more interesting stuff.
 
-[^saintas]: I have a Bacherlor of Arts in Computer Science from Saint Anselm College. Saint A's is a beautiful liberal arts college in New England. It's campus is featured on the media sometimes as the debates for the New Hampshire presidential primaries are often held there.
+[^saintas]: 
+    I have a Bacherlor of Arts in Computer Science from Saint Anselm College. Saint A's is a beautiful liberal arts college in New England. It's campus is featured on the media sometimes as the debates for the New Hampshire presidential primaries are often held there.
 
 
 [dh]: http://en.wikipedia.org/wiki/Digital_humanities "Digital Humanities"

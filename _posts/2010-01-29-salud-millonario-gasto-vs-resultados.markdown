@@ -3,11 +3,12 @@ author: janrito
 comments: true
 date: 2010-01-29 15:58:54+00:00
 layout: post
-slug: salud-millonario-gasto-vs-resultados
+redirect_from: /2010/01/salud-millonario-gasto-vs-resultados
 title: 'Salud: Millonario Gasto vs. Resultados'
 wordpress_id: 355
+lang: es
 categories:
-- Periodismo Sensacionalista
+- articles
 tags:
 - analisis
 - diario hoy
@@ -18,11 +19,10 @@ tags:
 - sensacionalismo
 ---
 
-Análisis de Hoy
-[Publicado](http://www.hoy.com.ec/noticias-ecuador/salud-millonario-gasto-vs-resultados-390016.html) en [Hoy](http://www.hoy.com.ec/), Enero 29, 2010.
 
-
-<blockquote>HOY recogió testimonios de personas que tienen que esperar hasta cinco horas para acceder a una consulta médica que, en el mejor de los casos, consiste en un fugaz chequeo del enfermo, debido a la urgencia con que atienden los médicos, ante la inmensa lista que deben atender a diario.</blockquote>
+> HOY recogió testimonios de personas que tienen que esperar hasta cinco horas para acceder a una consulta médica que, en el mejor de los casos, consiste en un fugaz chequeo del enfermo, debido a la urgencia con que atienden los médicos, ante la inmensa lista que deben atender a diario.
+>
+> -- <cite>Análisis de Hoy [Publicado](http://www.hoy.com.ec/noticias-ecuador/salud-millonario-gasto-vs-resultados-390016.html) en [Hoy](http://www.hoy.com.ec/), Enero 29, 2010.</cite>
 
 
 Este _análisis_ de Hoy es casi el ejemplo perfecto de periodismo sensacionalista. El titulo sugiere que el artículo compara el crecimiento de gasto en la salud y sus efectos en el servicio que se provee. Podemos asumir que la opinión del diario es que a pesar de que el gasto ha excedido años anteriores pero el servicio no se ha mejorado. Por consiguiente, el artículo presentaría evidencia no solo de que el gasto ha aumentado, por ejemplo, cifras de el gasto en salud en la ultima década. Tal vez se expondrían también el gasto presupuestado vs. el gasto real. Si fueran extremadamente diligentes agregarían un desglosado del presupuesto, anotando los porcentajes que se gastan en medicinas, insumos, salarios, equipos, desarrollo, nuevas construcciones, etc., y como han cambiado estos porcentajes en durante el tiempo y acorde con las políticas de cada gobierno.<!-- more -->
