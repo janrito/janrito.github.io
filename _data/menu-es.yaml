@@ -1,8 +1,8 @@
 - name: Archivo
   url: /archivo/
 
-- name: Bio
-  url: /bio/
+- name: Acerca de
+  url: /acerca-de/
 
 - name: Publications
   url: /publications/
