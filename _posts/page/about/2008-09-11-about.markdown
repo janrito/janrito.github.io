@@ -14,7 +14,7 @@ meta_type: profile
 ![portrait][portrait] 
 {:.side-note}
 
-I am a [Digital Humanist](dh)[^dh] -- which for me means that I get to play with technology in order to make it useful to research in the humanities. I work at the [Department of Digital Humanities](kcldh) at [King's College London][kcl].
+I am a [Digital Humanist](dh)[^dh] -- which for me means that I get to play with technology in order to make it useful for research in the humanities. I work at the [Department of Digital Humanities](kcldh) at [King's College London][kcl].
 
 <address markdown="1">**Alejandro Giacometti**  
 e. [alejandro@giacometti.me](mailto:alejandro.giacometti.me)  
@@ -27,13 +27,13 @@ London, WC2B 5RL
 United Kingdom  
 </address>{:.side-note}
 
-I have a newly minted PhD in Image Science from [University College London][ucl], where I worked with my supervisors [Melissa Terras][] from the [Department of Information Studies][dis] and [UCL Centre for Digital Humanities][ucldh] and [Adam Gibson][] from the [Department of Medical Physics][medphys]. My dissertation was on the application of an imaging method – Multispectral Imaging – to the recovery of writing from cultural heritage documents. The title of my dissertation is: *Evaluating Multispectral Imaging Processing Methodologies for Analysing Cultural Heritage Documents*. 
+I have a newly minted PhD in Image Science from [University College London][ucl], where I worked with my supervisors [Melissa Terras][] from the [Department of Information Studies][dis] and [UCL Centre for Digital Humanities][ucldh] and [Adam Gibson][] from the [Department of Medical Physics][medphys]. My dissertation dealt with the application of an imaging method – Multispectral Imaging – to the recovery of writing from damaged cultural heritage documents. The title of my dissertation is: *Evaluating Multispectral Imaging Processing Methodologies for Analysing Cultural Heritage Documents*. 
 
-I also did an MA in [Humanities Computing][huco] with [Stan Ruecker][] at the [University of Alberta][uofa].  My research centred around an rich-prospect interface: the Texttiles Browser, an experiment in leveraging available metadata to visualise and browse medium sized text collections. My [thesis][mathesis] title is: *The Texttiles browser: an experiment in rich-prospect browsing for text collections*. 
+I also did an MA in [Humanities Computing][huco] with [Stan Ruecker][] at the [University of Alberta][uofa].  My research centred around a rich-prospect interface: the Texttiles Browser, an experiment in leveraging available metadata to visualise and browse medium-sized text collections. My [thesis][mathesis] title is: *The Texttiles browser: an experiment in rich-prospect browsing for text collections*. 
 
 My research interests are imaging and digitisation of cultural heritage material, in particular the use of image processing and analysis to enhance recovery. I am also interested in design, visualisation and interfaces to explore humanities datasets. 
 
-I grew up in Ecuador, I went to university in the US and have lived in Canada, Romania and the UK. I have a degree in Computer Science[^saintas], one in Humanities Computing and another one in Medical Physics. The themes on this site might touch upon any of the variety of topics that I care about.
+I grew up in Ecuador, I went to university in the US and have lived in Canada, Romania and the UK. I have a degree in Computer Science[^saintas], one in Humanities Computing and another one in Medical Physics. The themes on this site might touch upon any of the variety of topics that I'm interested in.
 
 You can follow me on [@janrito][twitter] on twitter or find me on [@alejandrogiacometti][instagram] on instagram and [@janrito][github] on github. 
 
