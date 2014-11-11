@@ -172,6 +172,16 @@ section.page-content {
       line-height: $line-height-computed;
 
     }
+
+    .languages {
+      @extend %sans-serif;
+      @extend .list-inline;
+      color: $gray-light;
+      display: inline;
+      font-size: $font-size-smaller;
+      line-height: $line-height-computed;
+
+    }
   }
 
   .pagination {
