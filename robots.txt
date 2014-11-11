@@ -1,0 +1,8 @@
+---
+title: robots.txt
+---
+User-agent: *
+Disallow: /assets/
+Disallow: /api/
+Disallow: /images/
+Sitemap: {{ site.baseurl }}/sitemap.xml
