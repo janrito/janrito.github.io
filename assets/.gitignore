@@ -1,5 +1,8 @@
 vendor/**/*.html
 vendor/**/*.md
 vendor/**/*.markdown
+vendor/**/*.mdown
 vendor/fira/source
 vendor/fira/otf/technical reports
+vendor/lunr.js/example
+vendor/lunr.js/test
