@@ -1,0 +1,25 @@
+#search-form {
+  .form-group {
+    @include make-row();
+
+    .input-group {
+      @include make-md-column(2);
+
+      &:first-child {
+        @include make-md-column(10);
+      }
+
+    }
+  }
+}
+
+#search-results {
+  @extend .list-unstyled;
+  @include make-row();
+
+  .result {
+    @extend %main-block;
+    margin-bottom: $line-height-computed;
+
+  }
+}

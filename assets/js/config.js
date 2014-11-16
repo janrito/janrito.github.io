@@ -13,7 +13,7 @@ requirejs.config({
   baseUrl: "/assets",
   // urlArgs: "bust=" + (new Date()).getTime(),
   paths: {
-    "jquery": "vendor/jquery/dist/jquery",
+    "jquery": "vendor/jquery/dist/jquery.min",
 
     /* Bootstrap */
     'bootstrap': 'vendor/bootstrap-sass-official/assets/javascripts/bootstrap',
@@ -21,6 +21,11 @@ requirejs.config({
     // Google Analytics
     'EventEmitter': 'vendor/event-emitter/dist/EventEmitter',
     'GA': 'vendor/requirejs-google-analytics/dist/GoogleAnalytics',
+
+    // lunr.js
+    'lunr': 'vendor/lunr.js/lunr.min',
+
+    'mustache': 'vendor/mustache/mustache',
 
   },
   shim: {
@@ -37,8 +42,4 @@ requirejs.config({
     'bootstrap/tooltip':    { deps: ['jquery'], exports: '$.fn.tooltip' },
     'bootstrap/transition': { deps: ['jquery'], exports: '$.fn.transition' }
   },
-
-  // deps: [
-  // 'js/main'
-  // ]
 });
