@@ -3,8 +3,8 @@
 <meta property="og:type" content="{{ meta_type }}" />
 
 <meta property="og:title" content="{{ page.title | xml_escape }}" />
-<meta property="og:url" content="{{site.baseurl }}{{ page.url }}" />
-<meta property="og:image" content="{{site.baseurl }}{{ site.meta_image }}" />
+<meta property="og:url" content="{{ site.baseurl }}{{ page.url | replace: "//", "/" }}" />
+<meta property="og:image" content="{{ site.baseurl }}{{ site.meta_image }}" />
 
 <meta property="og:description" content="{{ site.description | xml_escape }}" />
 {% assign current_lang = page.lang | default: 'en' %}

@@ -1,4 +1,4 @@
-baseurl: "http://alejandro.giacometti.me/"
+baseurl: "http://alejandro.giacometti.me"
 name: AG
 markdown: kramdown
 sass:
@@ -23,17 +23,22 @@ meta_image: "/images/portrait.jpeg"
 defaults:
   -
     scope:
+      path: ""
+    values:
+      lang: en
+      meta_type: "website"
+      author: "Alejandro Giacometti"
+      js_main: 'main'
+  -
+    scope:
       path: "" # empty string for all files
       type: "posts"
     values:
       layout: "blog"
-      lang: en
-      author: "Alejandro Giacometti"
       meta_type: "article"
   -
     scope:
       path: "page/"
-      type: "pages"
     values:
       layout: "page" # overrides previous default layout
       meta_type: "website"

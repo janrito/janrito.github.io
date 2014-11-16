@@ -6,7 +6,7 @@
       <span class="icon-bar"></span>
     </button>
 
-    <a class="navbar-brand" href="{{ site.baseurl }}">
+    <a class="navbar-brand" href="{{ site.baseurl }}/">
       {{ site.name }}</a>
 
   </div>
@@ -20,7 +20,7 @@
     {% for mi in site.data[lmenu] %}
     {% capture active%}{% if mi.name == page.title%}active{% endif %}{% for lang in site.data.languages %}{%if mi.url == page.translations[lang.abbr] and mi.url != page.url %}active{% endif %}{% endfor %}{% endcapture %}
       <li class="{{ active }}">
-        <a href="{{ mi.url }}">{{ mi.name }}</a>
+        <a href="{{ site.baseurl }}{{ mi.url }}">{{ mi.name }}</a>
       </li>
     {% endfor %}
     </ul>
@@ -32,7 +32,7 @@
     {% for lang in site.data.languages %}
     {% if lang.abbr == page.lang or (lang.abbr == 'en' and page.lang == '' %}
     {% else %}
-      <li class="translation"><a href="{{ page.translations[lang.abbr]}}">{{ lang.name }}</a></li>
+      <li class="translation"><a href="{{ site.baseurl }}{{ page.translations[lang.abbr] }}">{{ lang.name }}</a></li>
     {% endif %}
     {% endfor %}
     </ul>

@@ -38,8 +38,7 @@ requirejs.config({
     'bootstrap/transition': { deps: ['jquery'], exports: '$.fn.transition' }
   },
 
-  deps: [
-  'js/main'
-  ]
+  // deps: [
+  // 'js/main'
+  // ]
 });
-

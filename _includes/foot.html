@@ -1,1 +1,2 @@
-<script data-main="{{ site.baseurl }}assets/js/config" src="{{ site.baseurl }}/assets/vendor/requirejs/require.js"></script>
+{% assign js_main = page.js_main | default: "main" %}
+<script data-main="{{ site.baseurl }}/assets/js/{{ js_main }}" src="{{ site.baseurl }}/assets/vendor/requirejs/require.js"></script>

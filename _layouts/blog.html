@@ -32,7 +32,7 @@ layout: internal
         {% endif %}
 
         <dd class="post">
-          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+          <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
           <time datetime="{{ post.date | date_to_xmlschema }}">{% include date.html date=post.date lang=page_lang format="full" %}</time>
           &nbsp;
