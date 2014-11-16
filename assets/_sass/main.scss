@@ -42,6 +42,15 @@ main {
       }
     }
   }
+
+  > section.archive {
+
+    header {
+      @media (min-width: $screen-sm-min) {
+        text-align: center;
+      }
+    }
+  }
 }
 
 section.post-content,
@@ -121,7 +130,6 @@ section.page-content {
 
 
 .archive {
-
 
   dl.posts {
     @extend .dl-horizontal;

@@ -16,7 +16,6 @@ layout: internal
       {%capture firstyear %}{{ entries.first.date | date: "%Y" }}{% endcapture %}
 
       <dl class="posts">
-        <dt>{{ site.data.locale[page_lang]["Recent Articles"] }}</dt>
         {% for post in entries limit: site.n_recent_posts %}
         {% assign post_lang = post.lang | default: 'en' %}
 
