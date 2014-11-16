@@ -31,7 +31,7 @@ Edinburgh is a beautiful city. Last night I had a chance to walk through Grassma
 ### Written Things, Human Agents, Inhabited Worlds: Revealing processes of mutual constitution through digital technologies
 
 
-**Kathryn Piquette **_[[abstract](http://wiki.esi.ac.uk/Object_Artefact_Script_Piquette)]_
+**Kathryn Piquette** _[[abstract](http://wiki.esi.ac.uk/Object_Artefact_Script_Piquette)]_
 
 Too much emphasis is put on the text as an independent object of study, separating it from the object. Kathryn has developed some methods in order to study and capture the text as well as the material. She argues that meaning is only created in a particular context. She has found [Atlas.ti](http://en.wikipedia.org/wiki/Atlas.ti) to be a useful tool to aid her research. Atlas.ti is used to combine multimedia (pictures, video, text) using functions to annotate, select and organize. The study of materials is important because it shows us the object as changing, reused, engaged, etc.  James Gibson’s properties of materials and the environment: Medium, Substances, and Surfaces, already makes an argument for the study of the object in context. She is interested in seeing how digital tools can help capture this context. An example is [Digital Karnak](http://dlib.etc.ucla.edu/projects/Karnak/) project from UCLA, which is a digital representation of the temple of Karnak, offering videos, a 3d reconstruction, with patterns of construction, modification and destruction. Some other issues might arise, like misleading visualizations.
 
@@ -47,7 +47,7 @@ Digitization has already a lens of interpretation, and we need to come to terms 
 ### A puzzling letter form, or how ways-of-seeing and ways-of-looking differ
 
 
-**[Ségolène Tarte](http://www.oerc.ox.ac.uk/people/segolene-tarte) **_[[abstract](http://wiki.esi.ac.uk/Object_Artefact_Script_Tarte)]_
+[**Ségolène Tarte**](http://www.oerc.ox.ac.uk/people/segolene-tarte) _[[abstract](http://wiki.esi.ac.uk/Object_Artefact_Script_Tarte)]_
 
 Ségolène works at [E-Science and Ancient Documents](http://esad.classics.ox.ac.uk/) (ESAD) project at Oxford University. The aim of the ESAD project is to develop a web-based interpretation support system. It is very important that the system is not conceived as a replacement of the expert. The project aims to understand how the expert thinks in order to provide support and help her do her job better. An expert reader takes into account a set of _levels of reading_ in order to build a meaningful document. Digitization can help only with a few levels: Physical attributes of the documents, and Features of a character.  Image Processing can help with the levels of reading: Features of character and Possible character. Knowledge bases: Possible Character Possible sequence of characters, Possible word or morphemic unit, Grammar, Meaning or sense of a word, and Meaning or sense of a phase or group of words.
 
@@ -104,7 +104,7 @@ Kings College London - Visualization Lab’s  concept of paradata.
 ### Object, text and image: concepts and technology
 
 
-**[Dot Porter](http://dho.ie/node/43) **_[[abstract](http://wiki.esi.ac.uk/Object_Artefact_Script_Porter)]_
+[**Dot Porter**](http://dho.ie/node/43) _[[abstract](http://wiki.esi.ac.uk/Object_Artefact_Script_Porter)]_
 
 Dot talks about the relationship between the text and materiality of objects. She uses Beowulf as an example. There is only one manuscript of the poem, and every version is derived from this original manuscript. Digital means would allow us to make it available to researchers without putting the manuscript in danger. Her main question is how do we use this digital technologies in an editorial process. What kind of information about the digital process do we use, keep, etc. What kind of information do we make available in the final edition.
 
@@ -138,16 +138,9 @@ An SVG trace consists of shapes and regions which both together map to a transcr
 
 Project Objectives:
 
-
-
-	
-  * Working prototype by the end of 2009
-
-	
-  * Research other texts (papyri, [Archimedes palimpsest](http://www.archimedespalimpsest.org/))
-
-	
-  * Incorporate a transcription tools ([SoSOL](http://idp.atlantides.org/trac/idp/wiki/SoSOL-UseCase-EB))
+- Working prototype by the end of 2009
+- Research other texts (papyri, [Archimedes palimpsest](http://www.archimedespalimpsest.org/))
+- Incorporate a transcription tools ([SoSOL](http://idp.atlantides.org/trac/idp/wiki/SoSOL-UseCase-EB))
 
 
 
@@ -165,7 +158,7 @@ It does not create a perfect representation of the text, and it is meant to be u
 ### TILE: The Text Image Linking Environment and Image-based Editing
 
 
-**[Dot Porter](http://dho.ie/node/43) **
+[**Dot Porter**](http://dho.ie/node/43)
 
 Text Image Linking Environment [TILE](http://mith.info/tile/) is a project that aims to semi-automate the linking of text regions in xml encodings. It will probably use Hugh’s img2xml open source code to define the regions. They have funding to develop the tool and have some actual projects test it and give feedback. The [Mapas Project](http://mapas.uoregon.edu/) and the [Homer Multitext Project](http://www.chs.harvard.edu/wa/pageR?tn=ArticleWrapper&bdc=12&mn=1169), the [Chymistry of Isaac Newton](http://webapp1.dlib.indiana.edu/newton/),  the [Algernon Charles Swinburne Project](http://swinburnearchive.indiana.edu/swinburne/www/swinburne/) have shown interest.
 
@@ -247,7 +240,7 @@ Methods for preserving inscriptions used by researchers are damaging to the obje
 
 Divide between disciplines are relatively new, but we have sometimes strong divisions between them. Additionally adding the ‘Digital’ term might create more divisions. Why is this?
 
-**Further Reading: **[Writing as Material Practice](http://www.ucl.ac.uk/~tcrnkep/)
+**Further Reading:** [Writing as Material Practice](http://www.ucl.ac.uk/~tcrnkep/)
 
 
 ### Discussion and collaboration networking
