@@ -1,31 +1,27 @@
-{% assign date = include.date %}
-{% assign lang = include.lang | default "en" %}
-{% assign mode = include.mode | default "full" %}
-{% assign num_month = post.date | date: '%m' %}
-{% capture month %}
-    {% if lang == "es" %}
-        {% if num_month == '1' %}ene
-        {% elsif num_month == '2' %}febr
-        {% elsif num_month == '3' %}mar
-        {% elsif num_month == '4' %}abr
-        {% elsif num_month == '5' %}may
-        {% elsif num_month == '6' %}jun
-        {% elsif num_month == '7' %}jul
-        {% elsif num_month == '8' %}ago
-        {% elsif num_month == '9' %}sep
-        {% elsif num_month == '10' %}oct
-        {% elsif num_month == '11' %}nov
-        {% else %}dic
-        {% endif %}
-    {% else %}
-    {{ post.date | date: '%b'}}
-    {% endif %}
-{% endcapture %}
-
-{% if mode =='year' %}
-{{post.date | date: "%Y" }}
-{% elsif mode == 'month year' %}
-{{month}} {{post.date | date: "%Y" }}
-{% else %}
-{{post.date | date: "%-d" }} {{month}} {{post.date | date: "%Y" }}
+{% assign date = include.date %}{% assign lang = include.lang | default "en" %}{% assign mode = include.mode | default "full" %}{% assign num_month = post.date | date: '%m' %}{% capture month %}
+{% if lang == "es" %}
+{% if num_month == '1' %}ene
+{% elsif num_month == '2' %}febr
+{% elsif num_month == '3' %}mar
+{% elsif num_month == '4' %}abr
+{% elsif num_month == '5' %}may
+{% elsif num_month == '6' %}jun
+{% elsif num_month == '7' %}jul
+{% elsif num_month == '8' %}ago
+{% elsif num_month == '9' %}sep
+{% elsif num_month == '10' %}oct
+{% elsif num_month == '11' %}nov
+{% else %}dic
 {% endif %}
+{% else %}
+{{ post.date | date: '%b'}}
+{% endif %}
+{% endcapture %}{% capture formatted_date %}
+{% if mode =='year' %}
+{{ post.date | date: "%Y" }}
+{% elsif mode == 'month year' %}
+{{ month | strip_newlines | strip }} {{ post.date | date: "%Y" }}
+{% else %}
+{{ post.date | date: "%-d" }} {{ month | strip_newlines | strip }} {{ post.date | date: "%Y" }}
+{% endif %}
+{% endcapture %}{{ formatted_date | strip_newlines | strip }}

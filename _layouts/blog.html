@@ -27,8 +27,7 @@ layout: internal
         <dt>{% include date.html date=post.date lang=page_lang mode="year"%}</dt>
           {% capture tyear %}{{currenttyear}}{% endcapture %}
         {% elsif (currenttyear != tyear and currenttmonth != tmonth) %}
-        <dt>
-          {% include date.html date=post.date lang=page_lang mode="month year"%}</dt>
+        <dt>{% include date.html date=post.date lang=page_lang mode="month year"%}</dt>
           {% capture tmonth %}{{currenttmonth}}{% endcapture %}
           {% capture tyear %}{{currenttyear}}{% endcapture %}
         {% endif %}
@@ -36,7 +35,7 @@ layout: internal
         <dd class="post">
           <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 
-          <time datetime="{{ post.date | date_to_xmlschema }}">{% include date.html date=post.date lang=page_lang format="full"%}</time>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{% include date.html date=post.date lang=page_lang format="full" %}</time>
           &nbsp;
           <div class="categories">
             {% if post.category %}
