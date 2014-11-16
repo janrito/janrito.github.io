@@ -6,6 +6,7 @@
     "requirejs": null,
     "requirejs-google-analytics": null,
     "lunr.js": null,
+    "mustache": null,
     "bootstrap-sass-official": null,
     "font-awesome": null,
     "fira": "https://github.com/mozilla/Fira.git",
