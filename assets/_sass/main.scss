@@ -131,13 +131,13 @@ section.page-content {
 
     dt {
       @extend %sans-serif;
-      line-height: $line-height-computed;
       font-weight: 200;
+      line-height: $line-height-computed;
     }
 
     dd.post {
+      margin-bottom: $line-height-computed/2 - 2px;
       padding-bottom: 0;
-      margin-bottom: $line-height-computed/2;
     }
 
     time {
@@ -193,7 +193,7 @@ section.page-content {
 .older-posts {
   dl.posts {
     dd.post {
-      margin-bottom: $line-height-computed/4;
+      margin-bottom: $line-height-computed/4 - 2px;
     }
   }
 }

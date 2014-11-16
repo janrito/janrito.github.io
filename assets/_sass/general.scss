@@ -15,11 +15,11 @@
   font-weight: 400;
 }
 
-
-p.reference {
-  padding-left: 2rem;
-  text-indent: -2rem;
+body {
+  line-height: $line-height-computed;
 }
+
+
 
 h1 {
   font-weight: 200;
@@ -79,9 +79,18 @@ p {
   margin-bottom: $line-height-computed/2;
 }
 
+dd, dt {
+  line-height: $line-height-computed;
+}
+
 blockquote {
   border-left-color: $gray-light;
   line-height: $line-height-computed;
+}
+
+p.reference {
+  padding-left: 2rem;
+  text-indent: -2rem;
 }
 
 .media-container {
