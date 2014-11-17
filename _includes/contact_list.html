@@ -1,11 +1,15 @@
 <nav class="contact-list">
   <ul>
     {% for ci in site.data.contact_list %}
+    {% if ci == 'bar' %}
+    <li class="disabled">|</li>
+    {% else %}
     <li class="{% if page.url == ci.url %}active{% endif %}">
       <a href="{{ ci.url }}" title="{{ ci.title }}">
         <i class="fa fa-{{ ci.icon }}"></i>
       </a>
     </li>
+    {% endif %}
     {% endfor %}
   </ul>
 </nav>

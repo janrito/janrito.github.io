@@ -24,6 +24,11 @@ requirejs.config({
 
     // lunr.js
     'lunr': 'vendor/lunr.js/lunr.min',
+    'lunr.stemmer.support': 'vendor/lunr-languages/min/lunr.stemmer.support.min',
+    'lunr.es': 'vendor/lunr-languages/min/lunr.es.min',
+
+    // localforage
+    "localforage": 'vendor/localforage/dist/localforage.min',
 
     'mustache': 'vendor/mustache/mustache',
 

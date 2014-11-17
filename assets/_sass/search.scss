@@ -1,12 +1,33 @@
 #search-form {
+  border-bottom: 1px dashed $gray-light;
+  margin-bottom: $line-height-computed;
+
+  .help-block {
+    @extend %sans-serif;
+
+    font-size: $font-size-smaller;
+    line-height: $line-height-computed;
+  }
+
+  input,
+  button {
+    @extend %sans-serif;
+
+  }
+
+
   .form-group {
     @include make-row();
 
     .input-group {
+      @include make-xs-column(4);
       @include make-md-column(2);
 
+
       &:first-child {
+        @include make-xs-column(8);
         @include make-md-column(10);
+
       }
 
     }
@@ -21,5 +42,16 @@
     @extend %main-block;
     margin-bottom: $line-height-computed;
 
+    .categories,
+    .tags {
+      @extend %sans-serif;
+
+      color: $gray-light;
+      font-size: $font-size-smaller;
+      line-height: $line-height-computed;
+    }
   }
+
+
 }
+

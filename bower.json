@@ -6,6 +6,8 @@
     "requirejs": null,
     "requirejs-google-analytics": null,
     "lunr.js": null,
+    "lunr-languages": "https://github.com/MihaiValentin/lunr-languages.git",
+    "localforage": null,
     "mustache": null,
     "bootstrap-sass-official": null,
     "font-awesome": null,

@@ -109,12 +109,12 @@ p img {
 
 
 .contact-list {
-
+  color: $gray-lighter;
   ul {
     @extend .list-inline;
 
     li.active a {
-      color: $link-hover-color;
+      color: $brand-primary;
 
     }
   }

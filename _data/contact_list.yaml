@@ -6,6 +6,11 @@
   url: /archive/
   icon: archive
 
+- title: Search
+  url: /search/
+  icon: search
+
+- bar
 
 - title: "e-mail me at alejandro@giacometti.me"
   url: "mailto:alejandro@giacometti.me"

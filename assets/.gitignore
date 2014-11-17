@@ -6,4 +6,6 @@ vendor/fira/source
 vendor/fira/otf/technical reports
 vendor/lunr.js/example
 vendor/lunr.js/test
+vendor/lunr-languages/build
+vendor/lunr-languages/demos
 vendor/mustache/wrappers
