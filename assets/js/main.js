@@ -7,7 +7,7 @@ require(['config'], function (config) {
 
       GA.ready(function (ga) {
           // GA is fully loaded
-          console.log(ga);
+          console.log('analytics is loaded');
       });
   });
 
