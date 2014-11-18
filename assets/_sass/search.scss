@@ -20,16 +20,7 @@
     @include make-row();
 
     .input-group {
-      @include make-xs-column(4);
-      @include make-md-column(2);
-
-
-      &:first-child {
-        @include make-xs-column(8);
-        @include make-md-column(10);
-
-      }
-
+      @include make-xs-column(12);
     }
   }
 }

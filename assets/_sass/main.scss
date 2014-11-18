@@ -26,7 +26,7 @@ main {
   @include make-row();
 
   > article,
-  > section.archive
+  > section.archive,
   > section.search {
     @include make-xs-column(12);
     padding-bottom: ($line-height-computed * 2);

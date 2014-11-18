@@ -112,21 +112,34 @@ require(['config'], function (config) {
               if (err) {
                 retreivalfailed  = true;
               } else {
-                var dataDump = JSON.parse(value);
-                console.time('load');
-                idx = lunr.Index.load(dataDump);
-                console.timeEnd('load');
+                try {
+                  var dataDump = JSON.parse(value);
+                  console.time('load');
+                  idx = lunr.Index.load(dataDump);
+                  console.timeEnd('load');
+                } catch (err) {
+                  retreivalfailed = true;
+                }
               }
               if (retreivalfailed || !idx || !pages) {
                 console.log('localstorage retreival failed, attempting to build new index');
                 // if it fails, build it from jsonp index
-                request_by_ajax();
+                retreive_by_ajax();
               }
             });
           }
         });
 
+        // bind event on keypress
+        $('#q').keypress(function (e) {
+          if (e.which == 13) {
+            // submit form
+            $('#search-form').trigger('submit');
 
+            // prevent default, and stop propagation
+            return false;
+          }
+        });
 
         // bind event on search submit
         $('#search-form').on('submit', do_query);

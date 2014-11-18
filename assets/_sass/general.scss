@@ -114,8 +114,10 @@ p img {
     @extend .list-inline;
 
     li.active a {
-      color: $brand-primary;
-
+      color: darken($brand-primary, 6.5%);
+      &:hover {
+        color: darken($brand-primary, 13%);
+      }
     }
   }
 }
