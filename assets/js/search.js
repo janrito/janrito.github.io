@@ -139,7 +139,7 @@ require(['config'], function (config) {
             // prevent default, and stop propagation
             return false;
           }
-        });
+        }).trigger('focus');
 
         // bind event on search submit
         $('#search-form').on('submit', do_query);
