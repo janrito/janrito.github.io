@@ -3,12 +3,12 @@ en: |
   #### Colophon
 
   This site is statically generated using [Jekyll] and it is hosted by [gihub pages].
-  The serif type is [PT Serif], the sans-serif is [Fira Sans] and the occasional monospace is [Adobe Source Code Pro].
+  The serif type is [Gentium Basic], the sans-serif is [Open Sans] and the occasional monospace is [Adobe Source Code Pro].
 
   [jekyll]: http://jekyllrb.com/
   [gihub pages]: https://pages.github.com/
-  [PT Serif]: http://www.paratype.com/public/
-  [Fira Sans]: http://mozilla.github.io/Fira/
+  [Gentium Basic]: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=Gentium_basic
+  [Open Sans]: http://www.google.com/fonts/specimen/Open+Sans
   [Adobe Source Code Pro]: http://store1.adobe.com/cfusion/store/html/index.cfm?event=displayFontPackage&code=1960
   [Bootstrap]: http://getbootstrap.com/
 
@@ -17,11 +17,11 @@ es: |
   #### Colofón
 
   Este sitio es estáticamente generado usando [Jekyll] y es alojado en [gihub pages].
-  Usa el tipo serif [PT Serif], el tipo sans-serif [Fira Sans] y ocasionalmente el tipo monoespaciado [Adobe Source Code Pro].
+  Usa el tipo serif [Gentium Basic], el tipo sans-serif [Open Sans] y ocasionalmente el tipo monoespaciado [Adobe Source Code Pro].
 
   [jekyll]: http://jekyllrb.com/
   [gihub pages]: https://pages.github.com/
-  [PT Serif]: http://www.paratype.com/public/
-  [Fira Sans]: http://mozilla.github.io/Fira/
+  [Gentium Basic]: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=Gentium_basic
+  [Open Sans]: http://www.google.com/fonts/specimen/Open+Sans
   [Adobe Source Code Pro]: http://store1.adobe.com/cfusion/store/html/index.cfm?event=displayFontPackage&code=1960
   [Bootstrap]: http://getbootstrap.com/

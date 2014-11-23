@@ -11,7 +11,6 @@
     "mustache": null,
     "bootstrap-sass-official": null,
     "font-awesome": null,
-    "fira": "https://github.com/mozilla/Fira.git",
     "adobe-source-code-pro": "http://softlayer-ams.dl.sourceforge.net/project/sourcecodepro.adobe/SourceCodePro_WebFontsOnly-1.017.zip"
   },
   "main": "assets/js/main.js",

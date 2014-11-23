@@ -15,8 +15,11 @@ body.frontpage {
       line-height: $line-height-computed * 2;
     }
 
-    h1 small {
-      color: $gray;
+    h1 {
+      font-weight: 200;
+      small {
+        color: $gray;
+      }
     }
   }
 }
