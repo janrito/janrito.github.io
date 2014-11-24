@@ -2,7 +2,7 @@ article.post,
 article.page {
   > footer.post-meta {
     @include make-row();
-    color: $gray-light;
+    color: $gray;
     margin-bottom: $line-height-computed * 2;
     margin-top: $line-height-computed * 2;
 
@@ -19,7 +19,7 @@ article.page {
     }
 
     i {
-      color: $gray-light;
+      color: $gray;
     }
 
     p,
@@ -36,7 +36,7 @@ article.page {
     .barcode {
       @extend %aside-block;
       @include make-row();
-      color: $gray-light;
+      color: $gray;
 
       p.tags {
         @extend %sans-serif;
@@ -47,7 +47,7 @@ article.page {
         @include make-lg-column(9);
 
         font-size: $font-size-smaller;
-        font-weight: 200;
+        font-weight: 300;
         letter-spacing: .05em;
         text-transform: uppercase;
 

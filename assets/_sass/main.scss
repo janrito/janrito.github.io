@@ -76,7 +76,7 @@ section.page-content {
     @media (max-width: $screen-sm-max) {
       padding-top: $line-height-computed/2;
       padding-bottom: $line-height-computed/2;
-      background: $gray-light;
+      // background: $gray-light;
 
     }
 
@@ -112,8 +112,8 @@ section.page-content {
 }
 
 .footnotes {
-  border-top: 1px solid $gray-light;
-  margin-top: $line-height-computed - 1px;
+  border-top: 4px solid $gray;
+  margin-top: $line-height-computed - 4px;
   padding-top: ($line-height-computed/2);
 
   p, ul, ol {
@@ -139,7 +139,7 @@ section.page-content {
 
     dt {
       @extend %sans-serif;
-      font-weight: 200;
+      font-weight: 300;
       line-height: $line-height-computed;
     }
 
@@ -150,7 +150,7 @@ section.page-content {
 
     time {
       @extend %sans-serif;
-      color: $gray-light;
+      color: $gray;
       font-size: $font-size-smaller;
       line-height: $line-height-computed;
 
@@ -166,7 +166,7 @@ section.page-content {
     }
 
     section.excerpt {
-      color: $gray-lighter;
+      color: $gray;
       margin-top: $line-height-computed;
 
 
@@ -174,7 +174,7 @@ section.page-content {
 
     .categories {
       @extend %sans-serif;
-      color: $gray-light;
+      color: $gray;
       display: inline;
       font-size: $font-size-smaller;
       line-height: $line-height-computed;
@@ -184,7 +184,7 @@ section.page-content {
     .languages {
       @extend %sans-serif;
       @extend .list-inline;
-      color: $gray-light;
+      color: $gray;
       display: inline;
       font-size: $font-size-smaller;
       line-height: $line-height-computed;
