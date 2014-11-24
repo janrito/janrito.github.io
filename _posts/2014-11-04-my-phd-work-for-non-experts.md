@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: "My PhD Work for non-experts"
+title: "My PhD Work for non‑experts"
 date: 2014-11-04 12:00:00
 categories: 
   - articles

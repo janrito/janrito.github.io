@@ -62,29 +62,25 @@ section.page-content {
   @include make-row();
   @include clearfix();
 
+
   .side-note {
     @extend %aside-block;
 
-    font-size: $font-size-small;
+    font-size: $font-size-smaller;
     line-height: $line-height-computed;
     // this corrects baseline issues
-    padding-bottom: $line-height-computed - 1px;
-    padding-top: 1px;
+    padding-bottom: $line-height-computed;
+    padding-top: 0px;
 
 
     @media (max-width: $screen-sm-max) {
-      padding-top: $line-height-computed/2 - 1px;
-      padding-bottom: $line-height-computed/2 - 1px;
-
-      border-top: 1px dashed $gray;
-      border-bottom: 1px dashed $gray-light;
+      padding-top: $line-height-computed/2;
+      padding-bottom: $line-height-computed/2;
+      background: $gray-light;
 
     }
 
-    & + .side-note {
-      border-top: none;
-      padding-top: 1px;
-    }
+
   }
 
   > p,
@@ -117,7 +113,7 @@ section.page-content {
 
 .footnotes {
   border-top: 1px solid $gray-light;
-  margin-top: $line-height-computed;
+  margin-top: $line-height-computed - 1px;
   padding-top: ($line-height-computed/2);
 
   p, ul, ol {
@@ -148,7 +144,7 @@ section.page-content {
     }
 
     dd.post {
-      margin-bottom: $line-height-computed/2 - 2px;
+      margin-bottom: $line-height-computed/2;
       padding-bottom: 0;
     }
 
@@ -205,7 +201,7 @@ section.page-content {
 .older-posts {
   dl.posts {
     dd.post {
-      margin-bottom: $line-height-computed/4 - 2px;
+      margin-bottom: $line-height-computed/4;
     }
   }
 }

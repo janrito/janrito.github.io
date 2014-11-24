@@ -15,6 +15,10 @@
   font-weight: 400;
 }
 
+%condensed {
+  font-family: 'Open Sans Condensed';
+}
+
 body {
   line-height: $line-height-computed;
 }
@@ -86,6 +90,8 @@ dd, dt {
 blockquote {
   border-left-color: $gray-light;
   line-height: $line-height-computed;
+  font-size: $font-size-base;
+  color: $gray;
 }
 
 p.reference {
@@ -107,6 +113,10 @@ p img {
   // display: block;
 }
 
+.lead {
+  line-height: $line-height-computed;
+}
+
 
 .contact-list {
   color: $gray-lighter;
@@ -120,4 +130,8 @@ p img {
       }
     }
   }
+}
+
+.form-control {
+  height: $line-height-computed * 1.5;
 }

@@ -1,17 +1,25 @@
-#search-form {
+.search-form {
   border-bottom: 1px dashed $gray-light;
-  margin-bottom: $line-height-computed;
+  margin-bottom: $line-height-computed - 1px;
 
   .help-block {
     @extend %sans-serif;
 
     font-size: $font-size-smaller;
     line-height: $line-height-computed;
+    margin-bottom: $line-height-computed/4;
+    margin-top: $line-height-computed/4;
   }
 
   input,
   button {
     @extend %sans-serif;
+
+    font-size: $font-size-smaller;
+    line-height: $line-height-computed;
+    padding-bottom: $line-height-computed/4;
+    padding-top: $line-height-computed/4;
+
 
   }
 
@@ -25,7 +33,7 @@
   }
 }
 
-#search-results {
+.search-results {
   @extend .list-unstyled;
   @include make-row();
 
