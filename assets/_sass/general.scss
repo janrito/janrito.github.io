@@ -56,7 +56,7 @@ h3 {
 }
 
 h4 {
-  line-height: $line-height-computed;
+  line-height: $line-height-computed * 1.5;
   margin-bottom: 0;
   margin-top: 0;
   padding-bottom: 0;
@@ -79,6 +79,12 @@ h6 {
   padding-top: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  a {
+    color: darken($brand-primary, 25%);
+  }
+}
+
 p {
   margin-bottom: $line-height-computed/2;
 }
@@ -97,6 +103,10 @@ blockquote {
 p.reference {
   padding-left: 2rem;
   text-indent: -2rem;
+}
+
+hr {
+  border-top: solid $gray-light 2px;
 }
 
 .media-container {
