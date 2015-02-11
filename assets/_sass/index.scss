@@ -3,9 +3,9 @@
 @import 'settings';
 
 // import fonts
-@import url(http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic,700italic);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+@import url(http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic,700italic&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin,latin-ext);
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900);
 
 // import foundation
