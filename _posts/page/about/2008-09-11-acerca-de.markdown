@@ -48,7 +48,7 @@ Soy [@janrito][twitter] en twitter, [@alejandrogiacometti][instagram] en instagr
 [portrait]: /images/portrait.jpeg
 
 [^dh]:  
-    Las humanidades Digitales son una disciiplina académica que ha tenido una dificultad enorme en definirse a si misma. De hecho, en cada conferencia, evento, taller, coloquio, entrevista y discución informal que yo he tomado parte, ha habido una larga sesión sobre que significan las Humanidades Digitales.
+    Las humanidades Digitales son una disciplina académica que ha tenido una dificultad enorme en definirse a si misma. De hecho, en cada conferencia, evento, taller, coloquio, entrevista y discución informal que yo he tomado parte, ha habido una larga sesión sobre que significan las Humanidades Digitales.
 
     Yo ya no estoy interesado en esta discusión, porque me impide seguir adelante y dedicarme a hacer cosas mas interesantes.
 
