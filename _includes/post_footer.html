@@ -37,9 +37,7 @@
 
       <time datetime="{{page.date | date_to_xmlschema }}">
         {{ page.date | date_to_string }}
-      </time>
-
-      {{ site.data.locale[lang]["by"] }} <span class="author">{% if page.author %}{{ page.author }}{% else %}{{ site.name }}{% endif %}</span><wbr>
+      </time>.
 
     </p>
   </div>
