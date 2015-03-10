@@ -33,7 +33,7 @@ London, WC2B 5RL
 United Kingdom  
 </address>{:.side-note}
 
-Terminé mi doctorado en Image Science en la [University College London][ucl], donde trabajé con mis supervisores [Melissa Terras][] del [Department of Information Studies][dis] y [UCL Centre for Digital Humanities][ucldh]; y [Adam Gibson][] de el [Department of Medical Physics][medphys]. Mi disertación trata sobre la aplicación de un método de captura de imágenes – imagen multiespectral – para virtualmente recuperar texto de documentos de patrimonio cultural que han sido dañados. El título de mi disertación es:  *Evaluating Multispectral Imaging Processing Methodologies for Analysing Cultural Heritage Documents*. 
+Terminé mi doctorado en Image Analysis en la [University College London][ucl], donde trabajé con mis supervisores [Melissa Terras][] del [Department of Information Studies][dis] y [UCL Centre for Digital Humanities][ucldh]; y [Adam Gibson][] de el [Department of Medical Physics][medphys]. Mi disertación trata sobre la aplicación de un método de captura de imágenes – imagen multiespectral – para virtualmente recuperar texto de documentos de patrimonio cultural que han sido dañados. El título de mi disertación es:  *Evaluating Multispectral Imaging Processing Methodologies for Analysing Cultural Heritage Documents*. 
 
 Obtuve también una maestría en [Humanidades Digitales][dh] con [Stan Ruecker][] en la [University of Alberta][uofa]. Mi proyecto fue el desarrollo de un prototipo experimental: *Texttiles Browser*. El prototipo es un explorador de  colecciones de texto, y pretende usar meta-datos para su visualización y exploración. Mi [tésis][mathesis] se titula: *The Texttiles browser: an experiment in rich-prospect browsing for text collections*.
 
