@@ -65,9 +65,13 @@ section.page-content {
 
   .side-note {
     @extend %aside-block;
-    // this corrects baseline issues
     padding-bottom: $line-height-computed;
-    padding-top: 0px;
+    // this corrects baseline issues
+    padding-top: 2px;
+
+    & + .side-note {
+      padding-top: 0px;
+    }
 
 
     @media (max-width: $screen-sm-max) {

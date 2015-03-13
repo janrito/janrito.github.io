@@ -7,3 +7,6 @@ vendor/lunr.js/test
 vendor/lunr-languages/build
 vendor/lunr-languages/demos
 vendor/mustache/wrappers
+vendor/charis-sil/documentation
+vendor/charis-sil/*ttf
+vendor/charis-sil/*txt
