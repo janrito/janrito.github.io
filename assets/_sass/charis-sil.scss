@@ -1,0 +1,28 @@
+// use Adobe Source Code Pro - Regular in .woff format
+
+$charis-sil-location: '../vendor/charis-sil/web';
+
+/* use Charis SIL - Regular in .woff format */
+@font-face {
+  font-family: CharisSILW;
+  src: url('#{$charis-sil-location}/CharisSIL-R.woff');
+}
+/* use Charis SIL - Italic in .woff format */
+@font-face {
+  font-family: CharisSILW;
+  font-style: italic;
+  src: url('#{$charis-sil-location}/CharisSIL-I.woff');
+}
+
+@font-face {
+  font-family: CharisSILW;
+  font-weight: bold;
+  src: url('#{$charis-sil-location}/CharisSIL-B.woff');
+}
+
+@font-face {
+  font-family: CharisSILW;
+  font-weight: bold;
+  font-style: italic;
+  src: url('#{$charis-sil-location}/CharisSIL-BI.woff');
+}

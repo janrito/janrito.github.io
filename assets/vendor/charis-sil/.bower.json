@@ -1,0 +1,11 @@
+{
+  "name": "charis-sil",
+  "_cacheHeaders": {
+    "Content-Length": "5199291",
+    "Content-Type": "application/zip",
+    "Content-Disposition": "attachment; filename=\"CharisSIL-5.000-web.zip\""
+  },
+  "_source": "http://scripts.sil.org/cms/scripts/render_download.php?format=file&media_id=CharisSIL-5.000-web.zip&filename=CharisSIL-5.000-web.zip",
+  "_target": "*",
+  "_originalSource": "http://scripts.sil.org/cms/scripts/render_download.php?format=file&media_id=CharisSIL-5.000-web.zip&filename=CharisSIL-5.000-web.zip"
+}
