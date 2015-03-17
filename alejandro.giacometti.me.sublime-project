@@ -1,0 +1,93 @@
+{
+    "folders":
+    [
+        {
+            "follow_symlinks": true,
+            "path": "/Users/alejandro/Documents/largeprojects/janrito.github.io"
+        }
+    ],
+    "settings":
+    {
+        "Jekyll":
+        {
+            // This should point to your "_posts" directory.
+            // NOTE: This should be an absolute path. Also, the path should
+            // match your system convention. For example, Windows machines should
+            // have a path similar to "C:\\Users\\username\\site\\_posts".
+            // *nix systems should have a path similar to "/Users/username/site/_posts".
+            "posts_path": "`/Users/alejandro/Documents/largeprojects/janrito.github.io/_posts",
+
+            // This should point to your "_drafts" directory.
+            // NOTE: This should be an absolute path. Also, the path should
+            // match your system convention. For example, Windows machines should
+            // have a path similar to "C:\\Users\\username\\site\\_drafts".
+            // *nix systems should have a path similar to "/Users/username/site/_drafts".
+            "drafts_path": "/Users/alejandro/Documents/largeprojects/janrito.github.io/_drafts",
+
+            // If you have multiple Jekyll blogs, but don't use Sumblime Projects,
+            // you can optionally have sublime-jekyll look for the `_posts` or `_drafts`
+            // folders open in your sidebar. This should have a value of true or false.
+            "automatically_find_paths": false,
+
+            // This string value should represent the default syntax for a new post.
+            // Valid options are: "Markdown", "Textile"
+            "default_post_syntax": "Markdown",
+
+            /** *****************************************************************************
+             * Post Front-matter Defaults
+             *
+             * Set these values to make your life easier when composing new posts. This is
+             * similar to setting your defaults as part of the `_config.yml` file:
+             *
+             * http://jekyllrb.com/docs/configuration/#front-matter-defaults
+             * ******************************************************************************
+             */
+
+            // This string value should represent the default layout for new posts.
+            "default_post_layout": "post",
+
+            // This value should represent the default categories for new posts.
+            // Each category should be entered as a list item in string format
+            // with commas separating values ["cat1", "cat2"]. To remove this key
+            // from your front-matter completely, pass a value of `null`.
+            "default_post_categories": ["articles"],
+
+            // This value should represent the default tags for new posts.
+            // Each tag should be entered as a list item in string format
+            // with commas separating values ["tag1", "tag2"]. To remove this key
+            // from your front-matter completely, pass a value of `null`.
+            "default_post_tags": [],
+
+            // A boolean specifying if you want new posts to be marked as published.
+            // To remove this key from your front-matter completely, pass a value of `null`.
+            "default_post_published": true,
+
+            // If you need to add additional front-matter `key: value` information to
+            // your posts, you can store them in a dictionary object using a format
+            // like {"foo": "bar", "baz": "qux"}. This dictionary will be appended to
+            // any of the enabled default keys above (Reminder: the `title` and `layout`
+            // keys will always be included, so **DO NOT** include them in the extras dictionary).
+            "default_post_extras": {
+                "author": "Alejandro Giacometti"
+                },
+
+            /** ***********************************************************************************
+             * If for some reason you want to change the way either the date
+             * or the datetime string is formatted, you can override those formats
+             * here using valid Python datetime.strftime() format codes.
+             *
+             * If you need a refresher on these codes, have a look at the Python
+             * documentation found here:
+             *
+             * http://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior
+             * ******************************************************************************
+             */
+
+            // A valid Python strftime string
+            "insert_date_format": "%Y-%m-%d",
+
+            // A valid Python strftime string
+            "insert_datetime_format": "%Y-%m-%d %H:%M:%S"// This should point to your "_posts" directory.
+        }
+    }
+}
