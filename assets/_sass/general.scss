@@ -124,11 +124,13 @@ p img {
 
 .contact-list {
   color: $gray-light;
+
   ul {
     @extend .list-inline;
 
     li.active a {
       color: darken($brand-primary, 6.5%);
+
       &:hover {
         color: darken($brand-primary, 13%);
       }

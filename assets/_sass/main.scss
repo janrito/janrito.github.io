@@ -109,11 +109,15 @@ section.page-content {
     &.wide {
       @extend %wide-block;
     }
+
+    &.framed {
+      border: 1px solid $gray;
+    }
   }
 }
 
 .footnotes {
-  border-top: 4px solid $gray;
+  border-top: 2px solid $gray;
   margin-top: $line-height-computed - 4px;
   padding-top: ($line-height-computed/2);
 
