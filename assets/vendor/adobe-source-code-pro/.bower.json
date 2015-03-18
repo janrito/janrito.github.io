@@ -1,11 +1,13 @@
 {
   "name": "adobe-source-code-pro",
   "_cacheHeaders": {
-    "Last-Modified": "Wed, 02 Oct 2013 21:24:24 GMT",
-    "Content-Length": "1546125",
-    "Content-Type": "application/octet-stream"
+    "ETag": "\"5599e55b3f62c0d18ef961d175303204b00bb4de\"",
+    "Content-Length": "2329732",
+    "Content-Type": "application/x-gzip",
+    "Content-Disposition": "attachment; filename=source-code-pro-1.017R.tar.gz"
   },
-  "_source": "http://softlayer-ams.dl.sourceforge.net/project/sourcecodepro.adobe/SourceCodePro_WebFontsOnly-1.017.zip",
+  "_release": "e-tag:5599e55b3",
+  "_source": "https://github.com/adobe-fonts/source-code-pro/archive/1.017R.tar.gz",
   "_target": "*",
-  "_originalSource": "http://softlayer-ams.dl.sourceforge.net/project/sourcecodepro.adobe/SourceCodePro_WebFontsOnly-1.017.zip"
+  "_originalSource": "https://github.com/adobe-fonts/source-code-pro/archive/1.017R.tar.gz"
 }
