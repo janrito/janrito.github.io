@@ -141,3 +141,8 @@ p img {
 .form-control {
   height: $line-height-computed * 1.5;
 }
+
+.tooltip {
+  @extend %sans-serif;
+  font-weight: 200;
+}

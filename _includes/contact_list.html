@@ -5,7 +5,7 @@
     <li class="disabled">|</li>
     {% else %}
     <li class="{% if page.url == ci.url %}active{% endif %}">
-      <a href="{{ ci.url }}" title="{{ ci.title }}">
+      <a href="{{ ci.url }}" title="{{ ci.title }}" data-toggle='tooltip' data-placement='bottom'>
         <i class="fa fa-{{ ci.icon }}"></i>
       </a>
     </li>

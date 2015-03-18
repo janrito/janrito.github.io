@@ -17,7 +17,8 @@ require(['config'], function (config) {
     'jquery',
     'bootstrap/transition',
     'bootstrap/collapse',
-    ], function ($, bt, bc) {
+    'bootstrap/tooltip',
+    ], function ($, bt, bc, btol) {
 
       var resizePositioning = function () {
         resizeViewPort();
@@ -55,6 +56,8 @@ require(['config'], function (config) {
       $( document ).ready(function() {
 
         $(window).on('resize', resizePositioning).trigger('resize');
+        $('[data-toggle="tooltip"]').tooltip();
+
         console.log('hello');
 
       });

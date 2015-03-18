@@ -204,3 +204,21 @@ $navbar-default-brand-hover-bg:            transparent;
 $navbar-default-toggle-hover-bg:           $gray-darker;
 $navbar-default-toggle-icon-bar-bg:        $gray;
 $navbar-default-toggle-border-color:       $gray-dark;
+
+
+//== Tooltips
+//
+//##
+
+//** Tooltip max width
+// $tooltip-max-width:           200px !default;
+//** Tooltip text color
+$tooltip-color:               $gray;
+//** Tooltip background color
+$tooltip-bg:                  $gray-base;
+$tooltip-opacity:             .3;
+
+//** Tooltip arrow width
+// $tooltip-arrow-width:         5px !default;
+//** Tooltip arrow color
+// $tooltip-arrow-color:         $tooltip-bg !default;
