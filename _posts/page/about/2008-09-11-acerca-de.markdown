@@ -18,30 +18,19 @@ meta_type: profile
 
 Soy un investigador en [Humanidades Digitales][dh][^dh], me dedico a trabajar con tecnología con el fin de aportar, facilitar o transformar la investigación en las humanidades. Trabajo en el [Department of Digital Humanities][kcldh] en [King's College London][kcl].
 
-<address markdown="1">
-Contacto
-: e. [alejandro@giacometti.me](mailto:alejandro.giacometti.me)  
-  t. +44 20 7848 1381  
+<address class='side-note' markdown="1">
+###### Contacto
+e. [alejandro@giacometti.me](mailto:alejandro.giacometti.me)  
 
-Oficina
-: \#217  
-
-Dirección Postal
-: Digital Humanities, King’s College London  
-26-29 Drury Lane  
-London, WC2B 5RL  
-United Kingdom  
-</address>{:.side-note}
-
-Terminé mi doctorado en Image Analysis en la [University College London][ucl], donde trabajé con mis supervisores [Melissa Terras][] del [Department of Information Studies][dis] y [UCL Centre for Digital Humanities][ucldh]; y [Adam Gibson][] de el [Department of Medical Physics][medphys]. Mi disertación trata sobre la aplicación de un método de captura de imágenes – imagen multiespectral – para virtualmente recuperar texto de documentos de patrimonio cultural que han sido dañados. El título de mi disertación es:  *Evaluating Multispectral Imaging Processing Methodologies for Analysing Cultural Heritage Documents*. 
+Terminé mi doctorado en Image Analysis en la [University College London][ucl], donde trabajé con mis supervisores [Melissa Terras][] del [Department of Information Studies][dis] y [UCL Centre for Digital Humanities][ucldh]; y [Adam Gibson][] de el [Department of Medical Physics][medphys]. Mi disertación trata sobre la aplicación de un método de captura de imágenes – imagen multiespectral – para virtualmente recuperar texto de documentos de patrimonio cultural que han sido dañados. El título de mi disertación es:  *Evaluating Multispectral Imaging Processing Methodologies for Analysing Cultural Heritage Documents*.
 
 Obtuve también una maestría en [Humanidades Digitales][dh] con [Stan Ruecker][] en la [University of Alberta][uofa]. Mi proyecto fue el desarrollo de un prototipo experimental: *Texttiles Browser*. El prototipo es un explorador de  colecciones de texto, y pretende usar meta-datos para su visualización y exploración. Mi [tésis][mathesis] se titula: *The Texttiles browser: an experiment in rich-prospect browsing for text collections*.
 
-Mis intereses académicos son la digitalización y modalidades de imagen en el contexto de objetos de patrimonio cultural. En particular me interesa el uso de técnicas de análisis y procesamiento de datos con el objetivo de recuperar información. Me interesa también el diseño, visualización e interfaces para explorar colecciones de datos de las humanidades, culturales, etc. 
+Mis intereses académicos son la digitalización y modalidades de imagen en el contexto de objetos de patrimonio cultural. En particular me interesa el uso de técnicas de análisis y procesamiento de datos con el objetivo de recuperar información. Me interesa también el diseño, visualización e interfaces para explorar colecciones de datos de las humanidades, culturales, etc.
 
 Crecí en el Ecuador, fui a la universidad en los Estados Unidos, y he vivido en Canadá, Rumanía y el Reino Unido. Tengo un título en ciencias computacionales[^saintas], uno en humanidades digitales y otro en física medica. En este sitio trato de los diversos temas que me interesan.
 
-Soy [@janrito][twitter] en twitter, [@alejandrogiacometti][instagram] en instagram y [@janrito][github] en github. 
+Soy [@janrito][twitter] en twitter, [@alejandrogiacometti][instagram] en instagram y [@janrito][github] en github.
 
 
 
@@ -52,8 +41,8 @@ Soy [@janrito][twitter] en twitter, [@alejandrogiacometti][instagram] en instagr
 
     Yo ya no estoy interesado en esta discusión, porque me impide seguir adelante y dedicarme a hacer cosas mas interesantes.
 
-[^saintas]: 
-    Terminé un Bachelor of Arts en ciencias computacionales de la Saint Anselm College. Saint A's es un colegio de artes liberales con un hermoso campus situado en New England, que aparece ocasionalmente en los medios ya es la sede de los debates para las primarías presidenciales de New Hampshire. 
+[^saintas]:
+    Terminé un Bachelor of Arts en ciencias computacionales de la Saint Anselm College. Saint A's es un colegio de artes liberales con un hermoso campus situado en New England, que aparece ocasionalmente en los medios ya es la sede de los debates para las primarías presidenciales de New Hampshire.
 
 
 [dh]: http://en.wikipedia.org/wiki/Digital_humanities "Digital Humanities"
