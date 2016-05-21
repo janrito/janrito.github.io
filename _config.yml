@@ -9,7 +9,7 @@ gems:
 - jekyll-redirect-from
 - jekyll-sitemap
 exclude: [Gemfile, Gemfile.lock, README.md, bower.json, cache.manifest, ]
-highlighter: pygments
+highlighter: rouge
 timezone: "Europe/London"
 permalink: /:year-:month-:day/:title/
 n_recent_posts: 8
