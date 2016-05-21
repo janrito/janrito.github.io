@@ -36,7 +36,7 @@ For a period of two weeks, I collected tweets and linked online articles associa
 Digital journalism, citizen reporting, online reviews, and social media have multiplied, resulting in a massive expansion of the necessary effort that companies must make in order to monitor how the public feels about their brand. Monitoring the web for new stories has become a complex task, which often involves an army of digital media professionals constantly checking google alerts, twitter trends and a seemingly endless list of new channels into which *netizens* migrate periodically. The amount of content is immense, enough to make anyone want to breakdown and cry, then crawl into a corner shivering uncontrollably.
 
 <figure markdown="1">
-  <div class="embed-responsive embed-responsive-16by9">
+  <div class="embed-responsive embed-responsive-4by3">
     <iframe class="embed-responsive-item" src="//giphy.com/embed/11ms6vNvALKmic?html5=true"></iframe>
   </div>
 
@@ -219,6 +219,17 @@ The value that worked best for the four brands using this method was 6. This num
 ## Final Words
 
 This application was built in three weeks during the [Insight Data Science] program. Most of the methods and technologies were new to me when I started this project and I've really enjoyed learning about them and using them for a practical application. If you have questions or if you want to know more about any of its parts please send me a message [alejandro.giacometti@gmail.com](mailto:alejandro.giacometti@gmail.com) or tweet me at [@janrito].
+
+***
+
+##### Slides
+
+Here are some slides I used to talk about the project and my move into Data Science.
+
+
+<div class="embed-responsive embed-responsive-4by3">
+  <iframe src="//www.slideshare.net/slideshow/embed_code/44449097" ></iframe>
+</div>
 
 
 
