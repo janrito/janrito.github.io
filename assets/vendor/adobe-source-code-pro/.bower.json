@@ -1,13 +1,27 @@
 {
-  "name": "adobe-source-code-pro",
-  "_cacheHeaders": {
-    "ETag": "\"5599e55b3f62c0d18ef961d175303204b00bb4de\"",
-    "Content-Length": "2329732",
-    "Content-Type": "application/x-gzip",
-    "Content-Disposition": "attachment; filename=source-code-pro-1.017R.tar.gz"
+  "name": "source-code-pro",
+  "version": "1.017",
+  "main": "source-code-pro.css",
+  "homepage": "https://github.com/adobe-fonts/source-code-pro",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adobe-fonts/source-code-pro.git"
   },
-  "_release": "e-tag:5599e55b3",
-  "_source": "https://github.com/adobe-fonts/source-code-pro/archive/1.017R.tar.gz",
+  "authors": [
+    {
+      "name": "Paul D. Hunt"
+    }
+  ],
+  "description": "Source Code Pro font family by Adobe",
+  "license": "SIL OFL 1.1",
+  "_cacheHeaders": {
+    "ETag": "\"b46816fb0d20d26746808e5845dc5c5e9e2251b6\"",
+    "Content-Length": "7682204",
+    "Content-Type": "application/x-gzip",
+    "Content-Disposition": "attachment; filename=source-code-pro-2.010R-ro-1.030R-it.tar.gz"
+  },
+  "_release": "e-tag:b46816fb0",
+  "_source": "https://github.com/adobe-fonts/source-code-pro/archive/2.010R-ro/1.030R-it.tar.gz",
   "_target": "*",
-  "_originalSource": "https://github.com/adobe-fonts/source-code-pro/archive/1.017R.tar.gz"
+  "_originalSource": "https://github.com/adobe-fonts/source-code-pro/archive/2.010R-ro/1.030R-it.tar.gz"
 }

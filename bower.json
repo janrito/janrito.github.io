@@ -1,6 +1,6 @@
 {
   "name": "alejandro.giacometti.me",
-  "version": "0.1",
+  "version": "0.2",
   "dependencies": {
     "jquery": null,
     "requirejs": null,
@@ -11,8 +11,8 @@
     "mustache": null,
     "bootstrap-sass-official": null,
     "font-awesome": null,
-    "charis-sil": "http://scripts.sil.org/cms/scripts/render_download.php?format=file&media_id=CharisSIL-5.000-web.zip&filename=CharisSIL-5.000-web.zip",
-    "adobe-source-code-pro": "https://github.com/adobe-fonts/source-code-pro/archive/1.017R.tar.gz"
+    "charis-sil": "http://software.sil.org/downloads/charis/CharisSIL-5.000-web.zip",
+    "adobe-source-code-pro": "https://github.com/adobe-fonts/source-code-pro/archive/2.010R-ro/1.030R-it.tar.gz"
   },
   "main": "assets/js/main.js",
   "ignore": [

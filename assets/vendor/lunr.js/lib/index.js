@@ -18,6 +18,7 @@ lunr.Index = function () {
   this.tokenStore = new lunr.TokenStore
   this.corpusTokens = new lunr.SortedSet
   this.eventEmitter =  new lunr.EventEmitter
+  this.tokenizerFn = lunr.tokenizer
 
   this._idfCache = {}
 
@@ -32,7 +33,7 @@ lunr.Index = function () {
  * The handler can be bound to many events at the same time.
  *
  * @param {String} [eventName] The name(s) of events to bind the function to.
- * @param {Function} handler The serialised set to load.
+ * @param {Function} fn The serialised set to load.
  * @memberOf Index
  */
 lunr.Index.prototype.on = function () {
@@ -44,7 +45,7 @@ lunr.Index.prototype.on = function () {
  * Removes a handler from an event being emitted by the index.
  *
  * @param {String} eventName The name of events to remove the function from.
- * @param {Function} handler The serialised set to load.
+ * @param {Function} fn The serialised set to load.
  * @memberOf Index
  */
 lunr.Index.prototype.off = function (name, fn) {
@@ -71,6 +72,7 @@ lunr.Index.load = function (serialisedData) {
   idx._fields = serialisedData.fields
   idx._ref = serialisedData.ref
 
+  idx.tokenizer = lunr.tokenizer.load(serialisedData.tokenizer)
   idx.documentStore = lunr.Store.load(serialisedData.documentStore)
   idx.tokenStore = lunr.TokenStore.load(serialisedData.tokenStore)
   idx.corpusTokens = lunr.SortedSet.load(serialisedData.corpusTokens)
@@ -112,6 +114,9 @@ lunr.Index.prototype.field = function (fieldName, opts) {
  * This should only be changed before adding documents to the index, changing
  * the ref property without resetting the index can lead to unexpected results.
  *
+ * The value of ref can be of any type but it _must_ be stably comparable and
+ * orderable.
+ *
  * @param {String} refName The property to use to uniquely identify the
  * documents in the index.
  * @param {Boolean} emitEvent Whether to emit add events, defaults to true
@@ -120,6 +125,28 @@ lunr.Index.prototype.field = function (fieldName, opts) {
  */
 lunr.Index.prototype.ref = function (refName) {
   this._ref = refName
+  return this
+}
+
+/**
+ * Sets the tokenizer used for this index.
+ *
+ * By default the index will use the default tokenizer, lunr.tokenizer. The tokenizer
+ * should only be changed before adding documents to the index. Changing the tokenizer
+ * without re-building the index can lead to unexpected results.
+ *
+ * @param {Function} fn The function to use as a tokenizer.
+ * @returns {lunr.Index}
+ * @memberOf Index
+ */
+lunr.Index.prototype.tokenizer = function (fn) {
+  var isRegistered = fn.label && (fn.label in lunr.tokenizer.registeredFunctions)
+
+  if (!isRegistered) {
+    lunr.utils.warn('Function is not a registered tokenizer. This may cause problems when serialising the index')
+  }
+
+  this.tokenizerFn = fn
   return this
 }
 
@@ -145,26 +172,39 @@ lunr.Index.prototype.add = function (doc, emitEvent) {
       emitEvent = emitEvent === undefined ? true : emitEvent
 
   this._fields.forEach(function (field) {
-    var fieldTokens = this.pipeline.run(lunr.tokenizer(doc[field.name]))
+    var fieldTokens = this.pipeline.run(this.tokenizerFn(doc[field.name]))
 
     docTokens[field.name] = fieldTokens
-    lunr.SortedSet.prototype.add.apply(allDocumentTokens, fieldTokens)
+
+    for (var i = 0; i < fieldTokens.length; i++) {
+      var token = fieldTokens[i]
+      allDocumentTokens.add(token)
+      this.corpusTokens.add(token)
+    }
   }, this)
 
   this.documentStore.set(docRef, allDocumentTokens)
-  lunr.SortedSet.prototype.add.apply(this.corpusTokens, allDocumentTokens.toArray())
 
   for (var i = 0; i < allDocumentTokens.length; i++) {
     var token = allDocumentTokens.elements[i]
-    var tf = this._fields.reduce(function (memo, field) {
-      var fieldLength = docTokens[field.name].length
+    var tf = 0;
 
-      if (!fieldLength) return memo
+    for (var j = 0; j < this._fields.length; j++){
+      var field = this._fields[j]
+      var fieldTokens = docTokens[field.name]
+      var fieldLength = fieldTokens.length
 
-      var tokenCount = docTokens[field.name].filter(function (t) { return t === token }).length
+      if (!fieldLength) continue
 
-      return memo + (tokenCount / fieldLength * field.boost)
-    }, 0)
+      var tokenCount = 0
+      for (var k = 0; k < fieldLength; k++){
+        if (fieldTokens[k] === token){
+          tokenCount++
+        }
+      }
+
+      tf += (tokenCount / fieldLength * field.boost)
+    }
 
     this.tokenStore.add(token, { ref: docRef, tf: tf })
   };
@@ -252,7 +292,7 @@ lunr.Index.prototype.idf = function (term) {
       idf = 1
 
   if (documentFrequency > 0) {
-    idf = 1 + Math.log(this.tokenStore.length / documentFrequency)
+    idf = 1 + Math.log(this.documentStore.length / documentFrequency)
   }
 
   return this._idfCache[cacheKey] = idf
@@ -283,7 +323,7 @@ lunr.Index.prototype.idf = function (term) {
  * @memberOf Index
  */
 lunr.Index.prototype.search = function (query) {
-  var queryTokens = this.pipeline.run(lunr.tokenizer(query)),
+  var queryTokens = this.pipeline.run(this.tokenizerFn(query)),
       queryVector = new lunr.Vector,
       documentSets = [],
       fieldBoosts = this._fields.reduce(function (memo, f) { return memo + f.boost }, 0)
@@ -319,7 +359,14 @@ lunr.Index.prototype.search = function (query) {
         if (pos > -1) queryVector.insert(pos, tf * idf * similarityBoost)
 
         // add all the documents that have this key into a set
-        Object.keys(self.tokenStore.get(key)).forEach(function (ref) { set.add(ref) })
+        // ensuring that the type of key is preserved
+        var matchingDocuments = self.tokenStore.get(key),
+            refs = Object.keys(matchingDocuments),
+            refsLen = refs.length
+
+        for (var i = 0; i < refsLen; i++) {
+          set.add(matchingDocuments[refs[i]].ref)
+        }
 
         return memo.union(set)
       }, new lunr.SortedSet)
@@ -381,6 +428,7 @@ lunr.Index.prototype.toJSON = function () {
     version: lunr.version,
     fields: this._fields,
     ref: this._ref,
+    tokenizer: this.tokenizerFn.label,
     documentStore: this.documentStore.toJSON(),
     tokenStore: this.tokenStore.toJSON(),
     corpusTokens: this.corpusTokens.toJSON(),
