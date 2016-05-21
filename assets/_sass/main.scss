@@ -97,6 +97,7 @@ section.page-content {
   > nav,
   > pre,
   > img,
+  > figure,
   > blockquote,
   > div.footnotes,
   > div.highlight {
@@ -111,7 +112,15 @@ section.page-content {
     }
 
     &.framed {
-      border: 1px solid $gray;
+      @include make-row();
+      margin-bottom: $line-height-computed;
+      padding: $line-height-computed 1em;
+      background-color: $tm-current-line-colour;
+      border: 1px solid $tm-selection-colour;
+      .caption {
+        @include make-xs-column(12);
+        margin-bottom: 0
+      }
     }
   }
 }
