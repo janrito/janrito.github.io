@@ -1,4 +1,4 @@
-# janrito.github.io 
+# janrito.github.io
 
 
 Public facing site. Nth iteration.
@@ -13,10 +13,10 @@ Public facing site. Nth iteration.
     `gem install bundler`
 3. Install the `github-pages` bundle, which contains the gems needed for `jekyll dev`
     + `Gemfile` should include the appropriate packages:
-        
+
         ```
         source 'https://rubygems.org'
-        gem 'github-pages'
+        gem 'github-pages', group: :jekyll_plugins
         ```
     + Install using the `bundler` command:
         `bundle install`
