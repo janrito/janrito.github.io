@@ -115,7 +115,8 @@ Giacometti, Alejandro, Adam Gibson & Melissa Terras. *Multi-spectral Image Proce
 Giacometti, Alejandro, Adam Gibson & Melissa Terras. *Image Processing & Ancient Documents.* Presented to the Biomedical Optics Research Laboratory at the UCL Department of Medical Physics & Bioengineering. University College London, London, UK. February 24, 2010. 
 {: .reference}
 
-
+[epmi]: http://dx.doi.org/10.5334/bat.h "Cultural Heritage Destruction: Experiments with Parchment and Multispectral Imaging."
+[vcd]: http://dx.doi.org/10.1093/llc/fqv036 "The value of critical destruction: Evaluating multispectral image processing methods for the analysis of primary historical texts"
 [chd]: http://ewic.bcs.org/content/ConMediaFile/20441 "Cultural Heritage Destruction: Documenting Parchment Degradation via Multispectral Imaging"
 [misd]: http://www.dh2012.uni-hamburg.de/conference/programme/abstracts/mapping-the-information-science-domain/ "Mapping the Information Science Domain"
 [mids]: http://link.springer.com/chapter/10.1007%2F978-3-642-36700-7_12 "Multispectral Imaging of Degraded Parchment"
