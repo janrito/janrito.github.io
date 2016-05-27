@@ -9,14 +9,14 @@ type: pages
 
 ### Papers ###
 
-[<i class="fa fa-link"> </i>][epmi] Campagnolo, Alberto, Alejandro Giacometti, Lindsay MacDonald, Simon Mahony, Melissa Terras, & Adam Gibson (2016) 'Cultural Heritage Destruction: Experiments with Parchment and Multispectral Imaging.'  In: Bodard, G & Romanello, M (eds.) *Digital Classics Outside the Echo-Chamber: Teaching, Knowledge Exchange & Public Engagement*, Pp. 121–146. London: Ubiquity Press. DOI: 10.5334/bat.h
+[<i class="fa fa-link"> </i>][epmi] Campagnolo, Alberto, Alejandro Giacometti, Lindsay MacDonald, Simon Mahony, Melissa Terras, & Adam Gibson (2016) 'Cultural Heritage Destruction: Experiments with Parchment and Multispectral Imaging.'  In: Bodard, G & Romanello, M (eds.) *Digital Classics Outside the Echo-Chamber: Teaching, Knowledge Exchange & Public Engagement*, Pp. 121–146. London: Ubiquity Press. `DOI: 10.5334/bat.h`
 {: .reference}
 
 Giacometti, Alejandro, Alberto Campagnolo, Lindsay MacDonald, Simon Mahony, Stuart Robson, Tim Weyrich, Melissa Terras, & Adam Gibson (2016) 'Visualising macroscopic degradation of parchment and writing via multispectral images.' Driscoll, M.J. (ed.), *Care and conservation of manuscripts 15: Proceedings of the fifteenth international seminar held at the University of Copenhagen 2nd–4th April 2014*.  Copenhagen: Museum Tusculanum Press.
 {: .reference}
 
-[<i class="fa fa-link"> </i>][vcd] Giacometti, Alejandro, Alberto Campagnolo, Lindsay MacDonald, Simon Mahony, Stuart Robson, Tim Weyrich, Melissa Terras, Adam Gibson (2015) *The value of critical destruction: Evaluating multispectral image processing methods for the analysis of primary historical texts*. In Digital Scholarship in the Humanities Oct 2015, fqv036; DOI: 10.1093/llc/fqv036
-{:. reference}
+[<i class="fa fa-link"> </i>][vcd] Giacometti, Alejandro, Alberto Campagnolo, Lindsay MacDonald, Simon Mahony, Stuart Robson, Tim Weyrich, Melissa Terras, Adam Gibson (2015) *The value of critical destruction: Evaluating multispectral image processing methods for the analysis of primary historical texts*. In Digital Scholarship in the Humanities Oct 2015, fqv036; `DOI: 10.1093/llc/fqv036`
+{: .reference}
 
 [<i class="fa fa-link"> </i>][mids] MacDonald, Lindsay, Alejandro Giacometti, Alberto Campagnolo, Stuart Robson, Melissa Terras & Adam Gibson. *Multispectral Imaging of Degraded Parchment*. In Computational Color Imaging Workshop (CCIW) 2013. Chiba University, Chiba, Japan. March 3-5, 2013.
 {: .reference}
