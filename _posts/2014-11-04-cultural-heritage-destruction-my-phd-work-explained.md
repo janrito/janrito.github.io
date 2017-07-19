@@ -9,9 +9,6 @@ description:  The use of multispectral imaging and methods of image analytics wi
 ---
 
 
-## Why?
-
-
 ![One of the samples. It shows the original sample, damaged sample and recovery.](/images/I305R_tryptic.png)
 One of the samples. It shows the original sample, damaged sample and recovery.
 {:.side-note}
