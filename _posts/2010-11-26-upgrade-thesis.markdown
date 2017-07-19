@@ -5,15 +5,6 @@ layout: post
 redirect_from: /2010/11/upgrade-thesis/
 title: Upgrade Thesis
 wordpress_id: 783
-categories:
-  - articles
-tags:
-  - phd
-  - research
-  - thesis
-  - transfer
-  - word-cloud
-  - wordle
 ---
 
 

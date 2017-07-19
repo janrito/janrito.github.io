@@ -5,15 +5,6 @@ layout: post
 redirect_from: /2009/11/understanding-image-based-evidence/
 title: Understanding Image-based Evidence
 wordpress_id: 378
-categories:
-- article
-tags:
-- digital humanities
-- conference
-- OeRC
-- oxford
-- report
-- University of Oxford
 ---
 
 #### [ e-Science and Ancient Documents ]
