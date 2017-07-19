@@ -12,7 +12,7 @@ exclude: [Gemfile, Gemfile.lock, README.md, bower.json, cache.manifest, ]
 highlighter: rouge
 timezone: "Europe/London"
 permalink: /:year-:month-:day/:title/
-n_recent_posts: 8
+n_recent_posts: 4
 author: "Alejandro Giacometti"
 location: "London, UK"
 description: >
@@ -46,57 +46,3 @@ defaults:
       path: "assets/"
     values:
       sitemap: false
-
-# prose.io
-prose:
-  rooturl: '_posts'
-  siteurl: 'http://alejandro.giacometti.me'
-  # relativeLinks: 'http://janrito.github.io/api/links.jsonp'
-  media: 'images'
-  ignore:
-    - index.md
-    - archivo.md
-    - _config.yml
-    - /_layouts
-    - /_includes
-    - /_data
-    - /assets/
-  metadata:
-    _posts:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Title"
-      - name: "tags"
-        field:
-          element: "multiselect"
-          label: "Tags"
-          options: 'http://alejandro.giacometti.me/api/tags.jsonp'
-          alterable: true
-      - name: "date"
-        field:
-          element: "text"
-          label: "Date (YYYY-MM-DD HH:MM:SS)"
-          value: "2014-06-08 10:30:00"
-    _posts/page:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "page"
-      - name: "type"
-        field:
-          element: "hidden"
-          value: "pages"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Title"
-      - name: "permalink"
-        field:
-          element: "text"
-          label: "Permalink"
-          value: ""
