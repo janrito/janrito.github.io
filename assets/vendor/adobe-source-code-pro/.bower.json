@@ -15,13 +15,13 @@
   "description": "Source Code Pro font family by Adobe",
   "license": "SIL OFL 1.1",
   "_cacheHeaders": {
-    "ETag": "\"b46816fb0d20d26746808e5845dc5c5e9e2251b6\"",
-    "Content-Length": "7682204",
+    "ETag": "\"482adcaccf9777f2850974e08c60e706b1ad9169\"",
+    "Content-Length": "8245124",
     "Content-Type": "application/x-gzip",
-    "Content-Disposition": "attachment; filename=source-code-pro-2.010R-ro-1.030R-it.tar.gz"
+    "Content-Disposition": "attachment; filename=source-code-pro-2.030R-ro-1.050R-it.tar.gz"
   },
-  "_release": "e-tag:b46816fb0",
-  "_source": "https://github.com/adobe-fonts/source-code-pro/archive/2.010R-ro/1.030R-it.tar.gz",
+  "_release": "e-tag:482adcacc",
+  "_source": "https://github.com/adobe-fonts/source-code-pro/archive/2.030R-ro/1.050R-it.tar.gz",
   "_target": "*",
-  "_originalSource": "https://github.com/adobe-fonts/source-code-pro/archive/2.010R-ro/1.030R-it.tar.gz"
+  "_originalSource": "https://github.com/adobe-fonts/source-code-pro/archive/2.030R-ro/1.050R-it.tar.gz"
 }

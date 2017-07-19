@@ -25,7 +25,8 @@
     "tag": "0.1.11",
     "commit": "b13f85e8819bccb25025818e13971937596a9018"
   },
-  "_source": "git://github.com/thomaswelton/requirejs-google-analytics.git",
-  "_target": "*",
-  "_originalSource": "requirejs-google-analytics"
+  "_source": "https://github.com/thomaswelton/requirejs-google-analytics.git",
+  "_target": "~0.1.11",
+  "_originalSource": "requirejs-google-analytics",
+  "_direct": true
 }
