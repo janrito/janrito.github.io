@@ -36,85 +36,139 @@ $fa-font-path: '../vendor/font-awesome/fonts';
 
 
 body {
-    font-family: $font-family-base;
-    font-weight: normal;
-    background-color: $color-initial;
-    color: $base04;
+  font-family: $font-family-base;
+  font-weight: normal;
+  background-color: $color-initial;
+  color: $base04;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: $font-family-sans-serif;
+  font-family: $font-family-sans-serif;
 }
 
-
 .archive, .page, .post {
+  max-width: 100%;
+  @media (min-width: 80.0rem) {
     max-width: 80rem;
+  }
 
-    header h1 {
-        font-family: 'Open Sans Condensed';
-        font-weight: 700;
-    }
-    article h2 {
-        font-family: 'Open Sans Condensed';
-        font-weight: 700;
-    }
 
-    article h3 {
-        font-size: 1.6rem;
-        font-weight: 100;
+  header h1 {
+    font-family: 'Open Sans Condensed';
+    font-weight: 700;
+  }
+  article h2 {
+    font-family: 'Open Sans Condensed';
+    font-weight: 700;
+  }
+
+  article h3 {
+    font-size: 1.6rem;
+    font-weight: 100;
+  }
+  p, blockquote, ol, ul {
+    @media (min-width: 80.0rem) {
+      max-width: 55rem;
     }
+  }
+
+  .wide {
+    max-width: 100%;
+  }
 }
 
 .side-about, .post-meta {
-    font-size: 1.4rem;
-    font-family: $font-family-sans-serif;
-    font-weight: 100;
+  font-size: 1.4rem;
+  font-family: $font-family-sans-serif;
+  font-weight: 100;
 }
 
 .post-meta {
-    img {
-        float: left;
-        margin-right: 2rem;
-        max-width: 10rem;
+  img {
+    float: left;
+    margin-right: 2rem;
+    max-width: 10rem;
 
-    }
-    .title {
-        font-style: italic;
-    }
+  }
+  .title {
+    font-style: italic;
+  }
 }
 
 .caption {
-    font-family: $font-family-sans-serif;
-    font-size: 1.2rem;
-    font-weight: light;
+  font-family: $font-family-sans-serif;
+  font-size: 1.2rem;
+  font-weight: light;
 }
 .side-note {
-    font-family: $font-family-sans-serif;
-    font-size: 1.2rem;
-    font-weight: light;
+  font-family: $font-family-sans-serif;
+  font-size: 1.2rem;
+  font-weight: light;
+  clear: right;
+  display: block;
+
+  @media (min-width: 55.0rem) {
     float: right;
-    clear: right;
-    display: block;
     width: 25rem;
     margin-left: 2rem;
+  }
 
-    img {
-        display: block;
-    }
-}
-.colophon, .footnotes {
-    font-family: $font-family-sans-serif;
-    p, ol {
-        font-size: 1.2rem;
-    }
+
+  img {
+    display: block;
+  }
 }
 
 .footnotes ol {
-    list-style: decimal outside
+  border-top: 0.1rem solid $color-tertiary;
+  margin-top: 3.0rem;
+  padding-top: 3.0rem;
+}
+
+.colophon, .footnotes {
+  font-family: $font-family-sans-serif;
+  p, ol {
+    font-size: 1.2rem;
+  }
+}
+
+ol, ul {
+  list-style-position: outside
 }
 
 p.reference {
+  font-size: 1.4rem;
   padding-left: 2rem;
   text-indent: -2rem;
 }
 
+dl {
+  dt {
+    font-weight: bold;
+  }
+  dd {
+    margin-left: 0;
+  }
+}
+
+/* responsive media embed */
+.embed {
+  position: relative;
+  width: 100%;
+  height: 0;
+  &.embed-4by3 {
+    padding-bottom: 75%;
+  }
+  &.embed-16by9 {
+    padding-bottom: 56.25%;
+  }
+
+  iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border: none;
+  }
+}
