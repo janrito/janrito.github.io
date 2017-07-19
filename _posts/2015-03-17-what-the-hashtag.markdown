@@ -7,11 +7,10 @@ description: I have spent the last two months in New York City as a fellow at In
 
 ---
 
-I have spent the last two months in New York City as a fellow at [Insight Data Science]. It has been an exciting time. I've met some extremely intelligent people and got to meet and talk to people solving problems with data in very diverse environments. During the programme I built brand media monitoring tool called **[What the Hashtag!?][wth]**.
-
-
 *A <del>[review][]</del> of how the application works and what problem it is intended to solve, details about the methodology that I used, a description of the technology stack, and a discussion on validating the model is available <del>[here][review]</del>*. **UPDATE:** I have retired the old site and added the full review here.
-{:.caption}
+{:.side-note}
+
+I have spent the last two months in New York City as a fellow at [Insight Data Science]. It has been an exciting time. I've met some extremely intelligent people and got to meet and talk to people solving problems with data in very diverse environments. During the programme I built brand media monitoring tool called **[What the Hashtag!?][wth]**.
 
 ## Summary
 
@@ -28,15 +27,12 @@ For a period of two weeks, I collected tweets and linked online articles associa
 
 Digital journalism, citizen reporting, online reviews, and social media have multiplied, resulting in a massive expansion of the necessary effort that companies must make in order to monitor how the public feels about their brand. Monitoring the web for new stories has become a complex task, which often involves an army of digital media professionals constantly checking google alerts, twitter trends and a seemingly endless list of new channels into which *netizens* migrate periodically. The amount of content is immense, enough to make anyone want to breakdown and cry, then crawl into a corner shivering uncontrollably.
 
-<figure markdown="1">
-  <div class="embed-responsive embed-responsive-4by3">
-    <iframe class="embed-responsive-item" src="//giphy.com/embed/11ms6vNvALKmic?html5=true"></iframe>
-  </div>
+<div class="embed embed-4by3">
+  <iframe class="embed-responsive-item" src="//giphy.com/embed/11ms6vNvALKmic?html5=true"></iframe>
+</div>
 
-  A digital media professional overwhelmed with his daily reading material.
-  {:.caption}
-
-</figure>
+A digital media professional overwhelmed with his daily reading material.
+{:.caption}
 
 
 Like most people, I now consume most of my media online. I read a few newspapers daily, follow a not-so-small number of RSS feeds on [feedly], visit [hacker news] and [reddit] on a regular basis, and my [facebook] and [twitter] feeds provide me with an endless stream of articles about interesting subjects.
@@ -57,11 +53,10 @@ Over a period of two weeks, during the [Insight Data science] program I collecte
 
 Indeed, the data shows a curious phenomenon — there is a large number of tweets with a link  associated with a brand — 350,000 tweets tagged with Google, for example. But there is a much smaller number of unique URLs, indicating that there is a relatively small number of stories that most social media users are linking to. There is still an incredible amount of content to go through, approximately 3,000 URLs. But this number looks a lot less scary than the number of tweets.
 
-**Upper**: Tweets which contain a link and are associated with the Google, Facebook, Apple, and Uber brands. **Lower**: Unique URLs linked to in those tweets. Data collected for two weeks.
-{: .caption .side-note}
-
 ![**Upper**: Tweets which contain a link and are associated with the Google, Facebook, Apple, and Uber brands. **Lower**: Unique URLs linked to in those tweets. Data collected for two weeks.][tweets_per_brand]
 
+**Upper**: Tweets which contain a link and are associated with the Google, Facebook, Apple, and Uber brands. **Lower**: Unique URLs linked to in those tweets. Data collected for two weeks.
+{: .caption .side-note}
 
 More interestingly, there seems to be a few unique URLs which dominate in popularity, tens of thousands of tweets are linking to those stories. That is a clue that these stories must be important (but not necessarily, I'll get into that later). There are also a large number of URLs which have been linked by a relatively low number of tweets. Many more articles have been tweeted by a single person than those that have been tweeted repeatedly.
 
@@ -220,11 +215,9 @@ This application was built in three weeks during the [Insight Data Science] prog
 Here are some slides I used to talk about the project and my move into Data Science.
 
 
-<div class="embed-responsive embed-responsive-4by3">
+<div class="embed embed-4by3">
   <iframe src="//www.slideshare.net/slideshow/embed_code/44449097" ></iframe>
 </div>
-
-
 
 
 [apple_topics]: /images/wth/apple_topics.png "apple topics"
