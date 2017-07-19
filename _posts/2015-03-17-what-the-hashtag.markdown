@@ -3,22 +3,15 @@ author: Alejandro Giacometti
 date: 2015-03-17 13:13:13+00:00
 layout: post
 title: What the Hashtag!?
-categories:
-  - articles
-tags:
-  - data science
-  - insight
-  - topic modeling
-  - latent dirichlet allocation
-  - twitter
-  - brands
+description: I have spent the last two months in New York City as a fellow at Insight Data Science. During the programme I built brand media monitoring tool called **What the Hashtag!?**
+
 ---
 
 I have spent the last two months in New York City as a fellow at [Insight Data Science]. It has been an exciting time. I've met some extremely intelligent people and got to meet and talk to people solving problems with data in very diverse environments. During the programme I built brand media monitoring tool called **[What the Hashtag!?][wth]**.
 
 
 *A <del>[review][]</del> of how the application works and what problem it is intended to solve, details about the methodology that I used, a description of the technology stack, and a discussion on validating the model is available <del>[here][review]</del>*. **UPDATE:** I have retired the old site and added the full review here.
-{:.side-note}
+{:.caption}
 
 ## Summary
 

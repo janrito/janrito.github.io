@@ -5,12 +5,7 @@ title: "Cultural Heritage Destruction: <wbr>My&nbsp;PhD&nbsp;Work Explained"
 date: 2014-11-04 12:00:00
 redirect_from:
   - /2014-11-04/my-phd-work-for-non-experts/
-categories: 
-  - articles
-tags: 
-  - digital humanities
-  - UCLDH
-  - phd
+description:  The use of multispectral imaging and methods of image analytics within the cultural heritage sector
 ---
 
 
@@ -32,20 +27,20 @@ Multispectral imaging has been used to extract subtle clues from manuscripts and
 
 Multispectral imaging technology works by recording light from a series of narrow bands of the visible and near-infrared spectrum which is reflected off, or passes through a document. It is useful because it captures information about the physical characteristics of the document without the need of extracting physical samples from the document for chemical testing. This information comes from capturing not only the spatial characteristics of the document — given by their coordinates in an image — but also information about the relationship of the object with light at different spectra.
 
+![Multispectral images are captured in a similar process as colour images. A colour image is a combination of three separate images captured at selected ranges of the visible spectrum representing  blue, red and green tones. A multispectral image is captured is a combination of a series of images captured at discrete short ranges of the light spectrum. Multispectral images may include captures from the near-infrared and ultraviolet spectra.](/images/multispectral.png)
+
 Multispectral images are captured in a similar process as colour images. A colour image is a combination of three separate images captured at selected ranges of the visible spectrum representing  blue, red and green tones. 
-{:.side-note}
+{:.caption}
 
 A multispectral image is a combination of a series of images captured at discrete short ranges of the light spectrum. They may also include captures from the near-infrared and ultraviolet spectra.
-{:.side-note}
-
-![Multispectral images are captured in a similar process as colour images. A colour image is a combination of three separate images captured at selected ranges of the visible spectrum representing  blue, red and green tones. A multispectral image is captured is a combination of a series of images captured at discrete short ranges of the light spectrum. Multispectral images may include captures from the near-infrared and ultraviolet spectra.](/images/multispectral.png)
+{:.caption}
 
 In practical terms, a multispectral image set looks like a series of images which vary slightly in appearance; usually in contrast. Each of the images in the series shows how the document reacts to a particular narrow wavelength. The relative intensity of the ink, the parchment, and perhaps other elements present in the document change slowly in each subsequent image. If viewed in sequence, slow variations in contrast can be observed. For example, a single character can be observed as it initially  gains contrast with a darker background in the narrow wavelengths. Around the longer wavelengths, in the visible spectrum and into the near-infrared, contrast suddenly drops significantly, rendering contrast in the *900 nm* image to almost nothing.
 
-Square section of sample O601R multispectral image stack at each wavelength. Significant variation of intensity an contrast in the writing and parchment can be observed.
-{:.side-note}
-
 ![Square section of sample O601R multispectral image stack at each wavelength. Significant variation of intensity an contrast in the writing and parchment can be observed.](/images/O601R_multispec.png)
+
+Square section of sample O601R multispectral image stack at each wavelength. Significant variation of intensity an contrast in the writing and parchment can be observed.
+{:.caption}
 
 Individual images can teach us something about the document. In this example, the fact that the contrast is lighter on the near-infrared images suggests that the ink is iron-gall based, which is known to be transparent in the near-infrared. Taken together, however, the images reveal subtle variations which will help us quantitatively distinguish certain areas of an image, for example, the writing. 
 
@@ -63,7 +58,7 @@ We designed an experiment to deliberately damage samples of a deaccessioned 1753
 {:.wide}
 
 Cut samples of a deaccessioned 1753 manuscript. Each sample was treated with a different damage agent.
-{:.side-note}
+{:.caption}
 
 
 The images of the damaged samples were then processed using the traditional methods of recovery, principal component analysis, independent component analysis and linear spectral mixture analysis. The aim of these analytical methods is to identify trends in those subtle variations between materials in the multispectral images, which can be extracted from the rest of the data in order to visualise a single layer or material from the document — in this case, the writing, rendering it more clearly legible.
