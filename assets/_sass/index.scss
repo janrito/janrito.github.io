@@ -1,6 +1,6 @@
 
 // settings
-@import 'settings';
+// @import 'settings';
 
 // import fonts
 // @import url(http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic,700italic&subset=latin,latin-ext);
@@ -9,21 +9,111 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin,latin-ext);
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900);
 
-// import foundation
-@import '../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap';
+// import milligram
+@import '../vendor/milligram-scss/dist/milligram';
 
 $fa-font-path: '../vendor/font-awesome/fonts';
 @import '../vendor/font-awesome/scss/font-awesome';
 
 // modules
-@import 'functions';
-@import 'general';
-@import 'navigation';
-@import 'main';
-@import 'footer';
-@import 'page';
-@import 'post';
-@import 'search';
+// @import 'functions';
+// @import 'general';
+// @import 'main';
+// @import 'footer';
+// @import 'page';
+// @import 'post';
+// @import 'search';
 
-// syntax highlighting CSS
-@import 'syntax';
+// // syntax highlighting CSS
+// @import 'syntax';
+
+$font-family-sans-serif:  'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif:       CharisSILW, Georgia, "Times New Roman", Times, serif;
+$font-family-monospace:   'Adobe Source Code Pro', Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-base:        $font-family-serif;
+
+//modules
+@import 'navigation';
+
+
+body {
+    font-family: $font-family-base;
+    font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-sans-serif;
+}
+
+
+.archive, .page, .post {
+    max-width: 80rem;
+
+    header h1 {
+        font-family: 'Open Sans Condensed';
+        font-weight: 700;
+    }
+    article h2 {
+        font-family: 'Open Sans Condensed';
+        font-weight: 700;
+    }
+
+    article h3 {
+        font-size: 1.6rem;
+        font-weight: 100;
+    }
+}
+
+.side-about, .post-meta {
+    font-size: 1.4rem;
+    font-family: $font-family-sans-serif;
+    font-weight: 100;
+}
+
+.post-meta {
+    img {
+        float: left;
+        margin-right: 2rem;
+        max-width: 10rem;
+
+    }
+    .title {
+        font-style: italic;
+    }
+}
+
+.caption {
+    font-family: $font-family-sans-serif;
+    font-size: 1.2rem;
+    font-weight: light;
+}
+.side-note {
+    font-family: $font-family-sans-serif;
+    font-size: 1.2rem;
+    font-weight: light;
+    float: right;
+    clear: right;
+    display: block;
+    width: 25rem;
+    margin-left: 2rem;
+
+    img {
+        display: block;
+    }
+}
+.colophon, .footnotes {
+    font-family: $font-family-sans-serif;
+    p, ol {
+        font-size: 1.2rem;
+    }
+}
+
+.footnotes ol {
+    list-style: decimal outside
+}
+
+p.reference {
+  padding-left: 2rem;
+  text-indent: -2rem;
+}
+
