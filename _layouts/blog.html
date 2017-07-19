@@ -1,100 +1,37 @@
 ---
 layout: internal
 ---
+{% assign entries=site.posts | where: "type", posts%}
 
 <section class="archive">
+  <section>
+    {% for post in entries limit: site.n_recent_posts%}
+    <div class="row">
+      <article class="column">
+        <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+        {% if post.description %}{{ post.description | markdownify}}{% endif %}
+      </article>
+    </div>
 
+    {% endfor %}
+  </section>
 
-  {% assign entries=site.posts | where: "type", posts%}
-  {% assign page_lang = page.lang | default: 'en' %}
-  <div class="listing">
-    <section class="postgroup recent-posts">
-      {%capture firstyear %}{{ entries.first.date | date: "%Y" }}{% endcapture %}
+  <section>
 
-      <dl class="posts">
-        {% for post in entries limit: site.n_recent_posts %}
-        {% assign post_lang = post.lang | default: 'en' %}
+    {% for post in entries offset: site.n_recent_posts %}
+    {% capture mod %}{{ forloop.index0 | modulo:2 }}{% endcapture %}
 
-        {% capture currenttmonth %}{{ post.date | date: "%m" }}{% endcapture %}
-        {% capture currenttyear %}{{ post.date | date: "%Y" }}{% endcapture %}
-
-        {% if firstyear != currenttyear and currenttyear != tyear %}
-        <dt>{% include date.html date=post.date lang=page_lang mode="year"%}</dt>
-          {% capture tyear %}{{currenttyear}}{% endcapture %}
-        {% elsif (currenttyear != tyear and currenttmonth != tmonth) %}
-        <dt>{% include date.html date=post.date lang=page_lang mode="month year"%}</dt>
-          {% capture tmonth %}{{currenttmonth}}{% endcapture %}
-          {% capture tyear %}{{currenttyear}}{% endcapture %}
-        {% endif %}
-
-        <dd class="post">
-          <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-
-          <time datetime="{{ post.date | date_to_xmlschema }}">{% include date.html date=post.date lang=page_lang format="full" %}</time>
-          &nbsp;
-          <div class="categories">
-            {% if post.category %}
-            <i class="fa fa-bookmark"></i>
-            <span class="category">{{ post.category }}</span><wbr>
-            {% endif %}
-
-            {% if post.categories %}
-            <i class="fa fa-bookmark"></i>
-            {% for category in post.categories%}
-            <span class="category">{{ category }}</span>{% if forloop.rindex0 == 1 %} {{ site.data.locale[page_lang]["and"] }} {% elsif forloop.rindex0 != 0 %}, {% endif %}<wbr>
-            {% endfor %}
-            {% endif %}
-          </div>
-          &nbsp;
-          <ul class="languages">
-          {% for available_lang in site.data.languages %}
-          {% if post_lang == available_lang.abbr %}
-            <li class="active"><i class="fa fa-flag"></i> {{ available_lang.name }}</li>
-          {% elsif post.translations contains available_lang %}
-            <li>
-              <a href="{{post.translations[available_lang]}}">{{ available_lang.name }}</a>
-            </li>
-          {% endif %}
-          {% endfor %}
-          </ul>
-
-        </dd>
-        {% endfor %}
-      </dl>
-    </section>
-
-    <section class="postgroup older-posts">
-
-
-      <dl class="posts">
-        {% capture tyear %}{% endcapture %}
-        {% for post in entries offset: site.n_recent_posts %}
-        {% assign post_lang = post.lang | default: 'en' %}
-
-        {% capture currenttyear %}{{ post.date | date: "%Y" }}{% endcapture %}
-        {% if currenttyear != tyear %}
-        <dt>{% include date.html date=post.date lang=page_lang mode="year"%}</dt>
-          {% capture tyear %}{{currenttyear}}{% endcapture %}
-        {% endif %}
-        <dd class="post">
-          <a href="{{ post.url }}">{{ post.title }}</a><br/>
-          <time datetime="{{ post.date | date_to_xmlschema }}">{% include date.html date=post.date lang=page_lang mode="full"%}</time>
-          &nbsp;<ul class="languages">
-          {% for available_lang in site.data.languages %}
-          {% if post_lang == available_lang.abbr %}
-            <li class="active">«{{ available_lang.abbr }}»</li>
-          {% elsif post.translations contains available_lang %}
-            <li>
-              «<a href="{{post.translations[available_lang]}}">{{ available_lang.abbr }}</a>»
-            </li>
-          {% endif %}
-          {% endfor %}
-          </ul>
-        </dd>
-        {% endfor %}
-      </dl>
-    </section>
-  </div>
+    {% if mod == '0' or forloop.first %}
+    <div class="row">
+    {% endif %}
+      <article class="column column-50">
+        <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+      </article>
+    {% if mod == '1' or forloop.last %}
+    </div>
+    {% endif %}
+    {% endfor %}
+  </section>
 
   <footer>
     {% comment %}{% include pagination.html %}{% endcomment %}

@@ -1,0 +1,10 @@
+This site is statically generated using [Jekyll] and it is hosted by [gihub pages].
+The serif type is [Charis SIL], the sans-serif is [Open Sans] and the occasional monospace is [Adobe Source Code Pro].
+
+[jekyll]: http://jekyllrb.com/
+[gihub pages]: https://pages.github.com/
+[Charis SIL]: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=charissilfont
+[Open Sans]: http://www.google.com/fonts/specimen/Open+Sans
+[Adobe Source Code Pro]: http://store1.adobe.com/cfusion/store/html/index.cfm?event=displayFontPackage&code=1960
+[Bootstrap]: http://getbootstrap.com/
+

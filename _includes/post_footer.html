@@ -1,45 +1,13 @@
 
-{% assign lang= page.lang | default: 'en' %}
 <footer class="post-meta">
+  {% capture mini_about %}{% include mini_about.md %}{% endcapture %}
+  {{ mini_about | markdownify }}
 
-  {% if page.tags %}
-  <div class="barcode">
-    <i class="fa fa-tag"></i>
-    <p class='tags'>
-    {% for tag in page.tags|sort %}<span class="tag">{{tag}}</span>{% if forloop.rindex0 == 1 %} {{ site.data.locale[lang]["and"] }} {% elsif forloop.rindex0 != 0 %}, {% endif %}<wbr>{% endfor %}.
-    </p>
-  </div>
-  {% endif %}
-
-  <div class="post-footer-main">
-    {% if page.footer %}
-      {{ page.footer | markdownify }}
-    {% elsif site.data.postfooter[page.lang] %}
-      {{ site.data.postfooter[page.lang] | markdownify }}
-    {% endif %}
-
-    <p>
-      <span class="title">{{page.title}}</span>
-      {{ site.data.locale[lang]["was published"] }}
-      {% if page.category %}
-      {{ site.data.locale[lang]["in"] }}
-      <span class="category">{{ page.category }}</span><wbr>
-      {% endif %}
-
-      {% if page.categories %}
-      {{ site.data.locale[lang]["in"] }}
-      {% for category in page.categories%}
-      <span class="category">{{ category }}</span>{% if forloop.rindex0 == 1 %} {{ site.data.locale[lang]["and"] }} {% elsif forloop.rindex0 != 0 %}, {% endif %}<wbr>
-      {% endfor %}
-      {% endif %}
-
-      {{ site.data.locale[lang]["__on_date"] }}
-
-      <time datetime="{{page.date | date_to_xmlschema }}">
-        {{ page.date | date_to_string }}
-      </time>.
-
-    </p>
-  </div>
-
+  <p>
+    <span class="title">{{page.title}}</span>
+    was published on
+    <time datetime="{{page.date | date_to_xmlschema }}">
+      {{ page.date | date_to_string }}
+    </time>
+  </p>
 </footer>

@@ -1,42 +1,9 @@
-<div class="nav-container">
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-
-    <a class="navbar-brand" href="{{ site.baseurl }}/">
-      {{ site.name }}</a>
-
-  </div>
-
-  <div class="collapse navbar-collapse" id="bs-navbar-collapse">
-  <!-- main navigation -->
-
-  {% capture lmenu %}menu-{% if page.lang %}{{ page.lang }}{% else %}en{% endif %}{% endcapture %}
-
-    <ul class="main-navigation">
-    {% for mi in site.data[lmenu] %}
-    {% capture active%}{% if mi.name == page.title%}active{% endif %}{% for lang in site.data.languages %}{%if mi.url == page.translations[lang.abbr] and mi.url != page.url %}active{% endif %}{% endfor %}{% endcapture %}
-      <li class="{{ active }}">
-        <a href="{{ site.baseurl }}{{ mi.url }}">{{ mi.name }}</a>
-      </li>
-    {% endfor %}
-    </ul>
-
-
-    {% if page.translations %}
-    <!-- language navigation -->
-    <ul class="language-navigation">
-    {% for lang in site.data.languages %}
-    {% if lang.abbr == page.lang or (lang.abbr == 'en' and page.lang == '' %}
-    {% else %}
-      <li class="translation"><a href="{{ site.baseurl }}{{ page.translations[lang.abbr] }}">{{ lang.name }}</a></li>
-    {% endif %}
-    {% endfor %}
-    </ul>
-    {% endif %}
-  </div>
-</div>
+<ul class="navigation" role="navigation">
+{% for mi in site.data.menu %}
+{% capture active%}{% if mi.name == page.title%}active{% endif %}{% endcapture %}
+  <li class="{{ active }}">
+    <a href="{{ site.baseurl }}{{ mi.url }}">{{ mi.name }}</a>
+  </li>
+{% endfor %}
+</ul>
 
