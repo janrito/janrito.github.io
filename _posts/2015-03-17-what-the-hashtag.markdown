@@ -27,9 +27,7 @@ For a period of two weeks, I collected tweets and linked online articles associa
 
 Digital journalism, citizen reporting, online reviews, and social media have multiplied, resulting in a massive expansion of the necessary effort that companies must make in order to monitor how the public feels about their brand. Monitoring the web for new stories has become a complex task, which often involves an army of digital media professionals constantly checking google alerts, twitter trends and a seemingly endless list of new channels into which *netizens* migrate periodically. The amount of content is immense, enough to make anyone want to breakdown and cry, then crawl into a corner shivering uncontrollably.
 
-<div class="embed embed-4by3">
-  <iframe class="embed-responsive-item" src="//giphy.com/embed/11ms6vNvALKmic?html5=true"></iframe>
-</div>
+{% include media.html url="//giphy.com/embed/11ms6vNvALKmic?html5=true" aspect_ratio="4by3" %}
 
 A digital media professional overwhelmed with his daily reading material.
 {:.caption}
@@ -82,19 +80,24 @@ The application has been tracking four brands, Google, Facebook, Apple, and Uber
 
 We [begin](/) by looking at the brands that the app is tracking. The size of the brand in the tagcloud is related to the amount of unique textual content found in the dataset for the specific brand. This is not particularly important, but it is an interesting way of displaying the brands that are being tracked.
 
-<figure class="framed wide" markdown="1">
+<figure class="wide" markdown="1">
+
+<div class="row" markdown="1">
 
 ![][uber_col1]
-{:.col-xs-4 }
+{:.column }
 
 ![][uber_col2]
-{:.col-xs-4 }
+{:.column }
 
 ![][uber_col3]
-{:.col-xs-4 }
+{:.column }
 
+</div>
+
+<figcaption>
 When we click into a brand — in this case uber — we are presented with a page with a listing of the stories associated with the brand through popular tweets. The stories are organised at the top by popularity, and by topic from then on.
-{:.caption}
+</figcaption>
 
 </figure>
 

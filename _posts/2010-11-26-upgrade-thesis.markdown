@@ -9,6 +9,7 @@ wordpress_id: 783
 
 
 ![Transfer Thesis Wordle](/images/transfer-thesis-word-cloud.png)
+{: .wide}
 
 Last friday, I had the transfer VIVA for to upgrade from MPhil to PhD student. My project consists of designing a phantom test to evaluate image processing methods on multi-spectral images of Palimpsestic documents. The examiners were [Prof. Daniel Alexander][dax] from [CMIC] and [Simon Mahony][sma] from the [UCLDH], they had some very insightful comments and suggestions. It is great finishing this phase of my research project.
 

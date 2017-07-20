@@ -5,6 +5,7 @@ layout: video
 redirect_from: /2011/06/tedxjuandefuca-stan-ruecker-rich-prospect-browsing/
 wordpress_id: 1518
 title: TEDxJuanDeFuca Stan Ruecker Rich Prospect Browsing
+aspect_ratio: 16by9
 video_url: //www.youtube.com/embed/Nd2h9U_H0n8
 description: Stan gave a TEDx talk in Juan De Fuca about Bubblelines, the Dynamic Table of Contexts, and Texttiles. The youtube video was published yesterday.
 
