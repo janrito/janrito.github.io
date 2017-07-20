@@ -8,12 +8,13 @@ $font-family-base:        $font-family-serif;
 // @import 'settings';
 
 // import fonts
-@import url(https://fonts.googleapis.com/css?family=Lora);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400&subset=latin,latin-ext);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin,latin-ext);
-@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900);
+@import url(//fonts.googleapis.com/css?family=Lora);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400&subset=latin,latin-ext);
+@import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin,latin-ext);
+@import url(//fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900);
 
 // import milligram
+@import '../vendor/normalize.css/normalize.css';
 @import '../vendor/milligram-scss/dist/milligram';
 
 $fa-font-path: '../vendor/font-awesome/fonts';
@@ -46,6 +47,36 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-sans-serif;
 }
 
+blockquote {
+  font-family: $font-family-sans-serif;
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 2rem;
+  line-height: 2.56rem;
+  font-style: italic;
+  font-weight: 100;
+
+  footer {
+    margin-left: 2rem;
+    font-size: 1.6rem;
+    line-height: 2.56rem;
+    font-style: normal;
+    font-weight: 100;
+    &:before {
+      content: "– ";
+    }
+    cite {
+      font-style: italic;
+    }
+  }
+}
+
+figure {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .archive, .page, .post {
   max-width: 100%;
   @media (min-width: 80.0rem) {
@@ -66,8 +97,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.6rem;
     font-weight: 100;
   }
-  p, blockquote, ol, ul {
-    @media (min-width: 80.0rem) {
+  p, blockquote, ol, ul, hr, figure {
+    @media (min-width: 55.0rem) {
       max-width: 55rem;
     }
   }
@@ -79,15 +110,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .side-about, .post-meta {
   font-size: 1.4rem;
+  line-height: 2.56rem;
   font-family: $font-family-sans-serif;
   font-weight: 100;
+  img {
+    vertical-align: baseline;
+  }
 }
 
 .post-meta {
   img {
     float: left;
     margin-right: 2rem;
-    max-width: 10rem;
+    max-height: 12.8rem; // five lines
 
   }
   .title {
@@ -95,14 +130,19 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.caption {
+.caption, figure figcaption {
   font-family: $font-family-sans-serif;
   font-size: 1.2rem;
+  line-height: 2.56rem;
   font-weight: light;
+  > img {
+    padding-bottom: 1.6rem;
+  }
 }
 .side-note {
   font-family: $font-family-sans-serif;
   font-size: 1.2rem;
+  line-height: 2.56rem;
   font-weight: light;
   clear: right;
   display: block;
@@ -117,6 +157,10 @@ h1, h2, h3, h4, h5, h6 {
   img {
     display: block;
   }
+
+  > img {
+    margin-bottom: 1.6rem;
+  }
 }
 
 .footnotes ol {
@@ -129,6 +173,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-sans-serif;
   p, ol {
     font-size: 1.2rem;
+    line-height: 2.56rem;
   }
 }
 
@@ -138,6 +183,7 @@ ol, ul {
 
 p.reference {
   font-size: 1.4rem;
+  line-height: 2.56rem;
   padding-left: 2rem;
   text-indent: -2rem;
 }
