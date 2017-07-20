@@ -4,19 +4,29 @@ layout: internal
 {% assign entries=site.posts | where: "type", posts%}
 
 <section class="archive">
+  <h2>Archive</h2>
   <section>
     {% for post in entries limit: site.n_recent_posts%}
     <div class="row">
       <article class="column">
         <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-        {% if post.description %}{{ post.description | markdownify}}{% endif %}
+        {% if post.description %}
+          {{ post.description | markdownify}}
+        {% else %}
+          <p>
+            {{ post.content | markdownify | strip_html | truncatewords: 30 }}
+          </p>
+        {% endif %}
       </article>
     </div>
 
     {% endfor %}
   </section>
 
+  <hr />
+
   <section>
+    <h2>More</h2>
 
     {% for post in entries offset: site.n_recent_posts %}
     {% capture mod %}{{ forloop.index0 | modulo:2 }}{% endcapture %}
