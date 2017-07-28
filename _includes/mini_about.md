@@ -1,8 +1,8 @@
 ![portrait][portrait]
 
-Alejandro Giacometti is a Data Scientist at [EDITED], a former New York [Insight] Fellow and Digital Humanist.
+I'm Alejandro Giacometti, Data Scientist at [EDITED], New York [Insight] Alumn and Digital Humanist.
 
-He has a PhD in Image Science from University College London
+I have a PhD in Image Science from University College London
 and an MA in Humanities Computing from the University of Alberta.
 
 
