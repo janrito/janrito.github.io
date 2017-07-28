@@ -1,0 +1,14 @@
+session_name: "alejandro_giacometti_me"
+start_directory: "."
+before_script: "bundle install"
+suppress_history: false
+windows:
+- layout: tiled
+  options: {}
+  panes:
+  - shell_command:
+    - "sleep 1"
+    - "bundler exec jekyll serve --watch --config _config.yml,_config_dev.yaml"
+  - focus: "true"
+    shell_command:
+    - "git status"
