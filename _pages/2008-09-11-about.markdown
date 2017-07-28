@@ -7,11 +7,6 @@ meta_type: profile
 
 ---
 
-![portrait][portrait]
-{:.side-note}
-
-I am a [Digital Humanist][dh][^dh] -- which for me means that I get to play with technology in order to make it useful for research in the humanities. I work at the [Department of Digital Humanities][kcldh] at [King's College London][kcl].
-
 <address class='side-note' markdown="1">
 
 ###### Contact
@@ -20,43 +15,39 @@ I am a [Digital Humanist][dh][^dh] -- which for me means that I get to play with
 
 </address>
 
-I have a newly minted PhD in Image Analysis from [University College London][ucl], where I worked with my supervisors [Melissa Terras][] from the [Department of Information Studies][dis] and [UCL Centre for Digital Humanities][ucldh] and [Adam Gibson][] from the [Department of Medical Physics][medphys]. My dissertation dealt with the application of an imaging method – Multispectral Imaging – to the recovery of writing from damaged cultural heritage documents. The title of my dissertation is: *Evaluating Multispectral Imaging Processing Methodologies for Analysing Cultural Heritage Documents*.
+I'm Alejandro Giacometti. I work at [EDITED], where I use data science to organise the world`s fashion retail data. 
 
-I also did an MA in [Humanities Computing][huco] with [Stan Ruecker][] at the [University of Alberta][uofa].  My research centred around a rich-prospect interface: the Texttiles Browser, an experiment in leveraging available metadata to visualise and browse medium-sized text collections. My [thesis][mathesis] title is: *The Texttiles browser: an experiment in rich-prospect browsing for text collections*.
+I was a New York [Insight] fellow in 2015. I spent three months learning how to apply skills from science and academia to problems in industry. During the programme, I worked on a small project for monitoring brand presence on twitter using topic modelling. You can find a description of that project in [here][wth].
 
-My research interests are imaging and digitisation of cultural heritage material, in particular the use of image processing and analysis to enhance recovery. I am also interested in design, visualisation and interfaces to explore humanities datasets.
+I am also a Digital Humanist -- which for me means that I get to play with technology in order to make it useful for the humanities. I worked with some of the best people in the field in the [Department of Digital Humanities][kcldh] at [King's College London][kcl], in the [UCL Centre for Digital Humanities][ucldh] at [University College London][ucl], and [Huco] at [University of Alberta][uofa].
 
-I grew up in Ecuador, I went to university in the US and have lived in Canada, Romania and the UK. I have a degree in Computer Science[^saintas], one in Humanities Computing and another one in Medical Physics. The themes on this site might touch upon any of the variety of topics that I'm interested in.
+I have a in Image Analysis from [University College London][ucl]. I was supervised by  [Melissa Terras][] from the [Department of Information Studies][dis] and [UCL Centre for Digital Humanities][ucldh] and [Adam Gibson][] from the [Department of Medical Physics][medphys]. My dissertation dealt with the application of an imaging method – Multispectral Imaging – to the recovery of writing from damaged cultural heritage documents. You can find a more detailed description of my PhD work [here][chd].
 
-You can follow me on [@janrito][twitter] on twitter or find me on [@alejandrogiacometti][instagram] on instagram and [@janrito][github] on github.
+I grew up in Ecuador, I studied in the US, Canada and the UK, lived for a short while in Romania, and currently live in London. I speak Spanish, English and a bit of Romanian.
 
-
-
-[portrait]: /images/portrait.jpeg
-
-[^dh]:  
-    Digital Humanities is an academic discipline which has had an extremely difficult time defining itself. In fact, every single digital humanities conference, event, workshop, colloquium, interview and informal discussion over coffee which I have attended has inevitably included a lengthy session on what Digital Humanities means.
-
-    I am not interested in that discussion any more because; it prevents me from getting on to do more interesting stuff.
-
-[^saintas]:
-    I have a Bachelor of Arts in Computer Science from Saint Anselm College. Saint A's is a beautiful liberal arts college in New England. It's campus is featured on the media sometimes as the debates for the New Hampshire presidential primaries are often held there.
+I very ocassionally tweet, but you can follow me at [@janrito][twitter]. Instead, I often post photos in instagram via [@alejandrogiacometti][instagram]. You can also find me on github at [@janrito][github].
 
 
-[dh]: http://en.wikipedia.org/wiki/Digital_humanities "Digital Humanities"
+[wth]: {% post_url 2015-03-17-what-the-hashtag %}
+[chd]: {% post_url 2014-11-04-cultural-heritage-destruction-my-phd-work-explained %}
+
+[Adam Gibson]: http://www.ucl.ac.uk/medphys/contacts/people/agibson "Adam Gibson"
+[dis]: http://www.infostudies.ucl.ac.uk/ "Department of Information Studies at University College London"
+[edited]: //edited.com
+[github]: http://github.com/janrito "@janrito at Github"
+[huco]: https://www.ualberta.ca/interdisciplinary-studies/humanities-computing "Humanities Computing at University of Alberta"
+[insight]: //insightdatascience.com/
+[instagram]: http://instagram.com/alejandrogiacometti "@alejandrogiacometti at instagram"
 [kcl]: http://www.kcl.ac.uk "King's College London"
 [kcldh]: http://www.kcl.ac.uk/artshums/depts/ddh/index.aspx "Department of Digital Humanities at King's College London"
-[ucl]: http://www.ucl.ac.uk "University College London"
-[Melissa Terras]: http://www.ucl.ac.uk/infostudies/melissa-terras/ "Melissa Terras"
-[dis]: http://www.infostudies.ucl.ac.uk/ "Department of Information Studies at University College London"
-[Adam Gibson]: http://www.ucl.ac.uk/medphys/staff/people/agibson/www/index "Adam Gibson"
-[medphys]: http://www.ucl.ac.uk/medphys/ "Department of Medical Physics"
-[ucldh]: http://www.ucl.ac.uk/dh/ "UCL Centre for Digital Humanities"
-[huco]: http://huco.ualberta.ca/ "Humanities Computing at University of Alberta"
-[Stan Ruecker]: http://www.ualberta.ca/~sruecker/ "Stan Ruecker"
-[uofa]: http://www.ualberta.ca "University of Alberta"
 [mathesis]: http://repository.library.ualberta.ca/dspace/handle/10048/437
-
+[medphys]: http://www.ucl.ac.uk/medphys/ "Department of Medical Physics"
+[Melissa Terras]: http://www.ucl.ac.uk/infostudies/melissa-terras/ "Melissa Terras"
+[Stan Ruecker]: http://www.ualberta.ca/~sruecker/ "Stan Ruecker"
 [twitter]: http://twitter.com/janrito "@janrito at Twitter"
-[github]: http://github.com/janrito "@janrito at Github"
-[instagram]: http://instagram.com/alejandrogiacometti "@alejandrogiacometti at instagram"
+[ucl]: http://www.ucl.ac.uk "University College London"
+[ucldh]: http://www.ucl.ac.uk/dh/ "UCL Centre for Digital Humanities"
+[uofa]: http://www.ualberta.ca "University of Alberta"
+
+[wth]: {% post_url 2015-03-17-what-the-hashtag %}
+[chd]: {% post_url 2014-11-04-cultural-heritage-destruction-my-phd-work-explained %}
