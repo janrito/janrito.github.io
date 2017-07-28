@@ -15,10 +15,13 @@ permalink: /:year-:month-:day/:title/
 n_recent_posts: 4
 author: "Alejandro Giacometti"
 location: "London, UK"
-description: >
-  This is the personal site of Alejandro Giacometti,
-  a Digital Humanities researcher, currently lives in London.
+description: Alejandro Giacometti
 meta_image: "/images/portrait.jpeg"
+collections:
+  posts:
+    output: true
+  pages:
+    output: true
 
 defaults:
   -
@@ -34,11 +37,12 @@ defaults:
       path: "" # empty string for all files
       type: "posts"
     values:
-      layout: "blog"
+      layout: "post"
       meta_type: "article"
   -
     scope:
-      path: "page/"
+      path: ""
+      type: "pages"
     values:
       layout: "page" # overrides previous default layout
       meta_type: "website"

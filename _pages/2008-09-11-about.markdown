@@ -1,13 +1,8 @@
 ---
-layout: page
 date: 2008-09-11 03:42:40+00:00
-comments: false
-type: pages
 title: About
 permalink: about/
 redirect_from: /a/
-translations:
-    es: /acerca-de/
 meta_type: profile
 
 ---
