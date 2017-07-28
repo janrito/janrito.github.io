@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Archive
+title: Articles
 permalink: /
 redirect_from:
   - /category/blog.html
