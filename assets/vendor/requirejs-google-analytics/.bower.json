@@ -27,6 +27,5 @@
   },
   "_source": "https://github.com/thomaswelton/requirejs-google-analytics.git",
   "_target": "~0.1.11",
-  "_originalSource": "requirejs-google-analytics",
-  "_direct": true
+  "_originalSource": "requirejs-google-analytics"
 }
