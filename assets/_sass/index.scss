@@ -128,6 +128,19 @@ figure {
   .title {
     font-style: italic;
   }
+
+  time {
+    @extend .button;
+    height: 2.56rem;
+    line-height: 2.56rem;
+    font-size: 1rem;
+    font-weight: 100;
+    padding: 0 1rem;
+    margin-right: 1rem;
+    background-color: lighten($base07, 2%);
+    border-color: lighten($base07, 1%);
+    color: lighten($base04, 5%);
+  }
 }
 
 .caption, figure figcaption {

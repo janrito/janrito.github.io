@@ -4,10 +4,12 @@
   {{ mini_about | markdownify }}
 
   <p>
-    <span class="title">{{page.title}}</span>
-    was published on
     <time datetime="{{page.date | date_to_xmlschema }}">
       {{ page.date | date_to_string }}
     </time>
+
+    <span class="title">{{page.title}}</span>
+
+
   </p>
 </footer>
