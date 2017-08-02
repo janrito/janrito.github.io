@@ -1,8 +1,5 @@
-@import 'color';
-$font-family-sans-serif:  'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-serif:       Lora, Georgia, "Times New Roman", Times, serif;
-$font-family-monospace:   'Adobe Source Code Pro', Menlo, Monaco, Consolas, "Courier New", monospace;
-$font-family-base:        $font-family-serif;
+@import "color";
+@import "typography";
 
 // settings
 // @import 'settings';
@@ -20,27 +17,17 @@ $font-family-base:        $font-family-serif;
 $fa-font-path: '../vendor/font-awesome/fonts';
 @import '../vendor/font-awesome/scss/font-awesome';
 
-// modules
-// @import 'functions';
-// @import 'general';
-// @import 'main';
-// @import 'footer';
-// @import 'page';
-// @import 'post';
-// @import 'search';
-
 // // syntax highlighting CSS
 // @import 'syntax';
 
 //modules
 @import 'navigation';
 
-
 body {
   font-family: $font-family-base;
   font-weight: normal;
   background-color: $color-initial;
-  color: $base04;
+  color: $color-quaternary;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -139,7 +126,7 @@ figure {
     margin-right: 1rem;
     background-color: lighten($base07, 2%);
     border-color: lighten($base07, 1%);
-    color: lighten($base04, 5%);
+    color: lighten($color-quaternary, 5%);
   }
 }
 
