@@ -15,7 +15,6 @@ exclude:
   - README.md
   - bower.json
   - cache.manifest
-  - assets/vendor/bulma/CHANGELOG.md
 highlighter: rouge
 timezone: "Europe/London"
 permalink: /:year-:month-:day/:title/
