@@ -1,4 +1,5 @@
-baseurl: "http://alejandro.giacometti.me"
+url: "http://alejandro.giacometti.me"
+baseurl: ""
 name: AG
 markdown: kramdown
 sass:
@@ -8,7 +9,13 @@ gems:
 - jekyll-mentions
 - jekyll-redirect-from
 - jekyll-sitemap
-exclude: [Gemfile, Gemfile.lock, README.md, bower.json, cache.manifest, ]
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - bower.json
+  - cache.manifest
+  - assets/vendor/bulma/CHANGELOG.md
 highlighter: rouge
 timezone: "Europe/London"
 permalink: /:year-:month-:day/:title/
