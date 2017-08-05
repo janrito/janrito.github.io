@@ -15,11 +15,11 @@ meta_type: profile
 
 </address>
 
-I'm Alejandro Giacometti. I work at [EDITED], where I use data science to organise the world`s fashion retail data. 
+I'm Alejandro Giacometti. I work at [EDITED], where I use data science to organise the world's fashion retail data. 
 
 I was a New York [Insight] fellow in 2015. I spent three months learning how to apply skills from science and academia to problems in industry. During the programme, I worked on a small project for monitoring brand presence on twitter using topic modelling. You can find a description of that project in [here][wth].
 
-I am also a Digital Humanist -- which for me means that I get to play with technology in order to make it useful for the humanities. I worked with some of the best people in the field in the [Department of Digital Humanities][kcldh] at [King's College London][kcl], in the [UCL Centre for Digital Humanities][ucldh] at [University College London][ucl], and [Huco] at [University of Alberta][uofa].
+I am also a Digital Humanist -- I get to play with technology in order to make it useful for the humanities. I worked with some of the best people in the field in the [Department of Digital Humanities][kcldh] at [King's College London][kcl], in the [UCL Centre for Digital Humanities][ucldh] at [University College London][ucl], and [Huco] at [University of Alberta][uofa].
 
 I have a in Image Analysis from [University College London][ucl]. I was supervised by  [Melissa Terras][] from the [Department of Information Studies][dis] and [UCL Centre for Digital Humanities][ucldh] and [Adam Gibson][] from the [Department of Medical Physics][medphys]. My dissertation dealt with the application of an imaging method – Multispectral Imaging – to the recovery of writing from damaged cultural heritage documents. You can find a more detailed description of my PhD work [here][chd].
 
