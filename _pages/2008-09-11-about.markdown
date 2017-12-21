@@ -7,13 +7,8 @@ meta_type: profile
 
 ---
 
-<address class='side-note' markdown="1">
-
-###### Contact
-
-[alejandro@giacometti.me](mailto:alejandro.giacometti.me)  
-
-</address>
+Email me at [alejandro@giacometti.me](mailto:alejandro.giacometti.me). You can follow me on twitter at [@janrito][twitter], though I only ocassionally tweet. Instead, I often post photos in instagram at [@alejandrogiacometti][instagram]. You can also find me on github at [@janrito][github]. 
+{:.side-note}
 
 I'm Alejandro Giacometti. I work at [EDITED], where I use data science to organise the world's fashion retail data. 
 
@@ -21,11 +16,9 @@ I was a New York [Insight] fellow in 2015. I spent three months learning how to 
 
 I am also a Digital Humanist -- I get to play with technology in order to make it useful for the humanities. I worked with some of the best people in the field in the [Department of Digital Humanities][kcldh] at [King's College London][kcl], in the [UCL Centre for Digital Humanities][ucldh] at [University College London][ucl], and [Huco] at [University of Alberta][uofa].
 
-I have a in Image Analysis from [University College London][ucl]. I was supervised by  [Melissa Terras][] from the [Department of Information Studies][dis] and [UCL Centre for Digital Humanities][ucldh] and [Adam Gibson][] from the [Department of Medical Physics][medphys]. My dissertation dealt with the application of an imaging method – Multispectral Imaging – to the recovery of writing from damaged cultural heritage documents. You can find a more detailed description of my PhD work [here][chd].
+I have a PhD in Image Analysis from [University College London][ucl]. I was supervised by  [Melissa Terras][] from the [Department of Information Studies][dis] and [UCL Centre for Digital Humanities][ucldh] and [Adam Gibson][] from the [Department of Medical Physics][medphys]. My dissertation dealt with the application of an imaging method – Multispectral Imaging – to the recovery of writing from damaged cultural heritage documents. You can find a more detailed description of my PhD work [here][chd].
 
 I grew up in Ecuador, I studied in the US, Canada and the UK, lived for a short while in Romania, and currently live in London. I speak Spanish, English and a bit of Romanian.
-
-I very ocassionally tweet, but you can follow me at [@janrito][twitter]. Instead, I often post photos in instagram via [@alejandrogiacometti][instagram]. You can also find me on github at [@janrito][github].
 
 
 [wth]: {% post_url 2015-03-17-what-the-hashtag %}
