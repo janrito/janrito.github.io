@@ -25,9 +25,9 @@ $fa-font-path: '../vendor/font-awesome/fonts';
 
 body {
   font-family: $font-family-base;
-  font-weight: normal;
+  font-weight: 200;
   background-color: $color-initial;
-  color: $color-quaternary;
+  color: $base02;
 }
 
 h1, h2, h3, h4, h5, h6 {
