@@ -1,9 +1,9 @@
 <div class="row">
-  <aside class="col col-sm-12 col-lg-8">
+  <aside class="col col-12 col-lg-8">
     {% include contact_list.html %}
   </aside>
 
-  <aside class="colophon col col-sm-12 col-lg-4">
+  <aside class="colophon col col-12 col-lg-4">
     {% capture colophon %}{% include colophon.md %}{% endcapture %}
     {{ colophon | markdownify }}
   </aside>

@@ -8,7 +8,7 @@ layout: internal
   <section>
     {% for post in entries limit: site.n_recent_posts%}
     <div class="row">
-      <article class="col col-sm-12">
+      <article class="col col-12">
         <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
         {% if post.description %}
           {{ post.description | markdownify}}
@@ -34,7 +34,7 @@ layout: internal
     {% if mod == '0' or forloop.first %}
     <div class="row">
     {% endif %}
-      <article class="col col-sm-12 col-lg-6">
+      <article class="col col-12 col-lg-6">
         <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
         {% if post.description %}
           {{ post.description | markdownify}}
