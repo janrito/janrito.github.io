@@ -1,0 +1,53 @@
+.page-content, .post-content {
+
+  > p,
+  > blockquote,
+  > ol,
+  > ul,
+  > dl,
+  > hr,
+  > figure,
+  > h1,
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > h6,
+  > .footnotes
+  {
+
+
+    @include media-breakpoint-down(md) {
+      max-width: 100%
+    }
+    @include media-breakpoint-up(lg) {
+      max-width: 66.67%;
+      margin-right: ($grid-gutter-width / 2);
+
+    }
+
+
+    &.wide {
+      max-width: 100%;
+    }
+
+    &.side-note {
+
+      @include media-breakpoint-down(md) {
+        max-width: 100%;
+      }
+
+      @include media-breakpoint-up(lg) {
+        float: right;
+        max-width: 33.33%;
+        margin-left: ($grid-gutter-width / 2);
+        clear: right;
+      }
+    }
+    > img,
+    > a > img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+}

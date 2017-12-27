@@ -18,26 +18,33 @@ $base0d: hsl(200, 65%, 41%);  /* #257fad; */
 $base0e: hsl(240, 35%, 57%);  /* #6b6bb8; */
 $base0f: hsl(290, 65%, 50%);  /* #b72dd2; */
 
+
+$blue:    $base0d;
+$indigo:  #6610f2 !default;
+$purple:  $base0e; // violet
+$pink:    $base0f; // magenta
 $red:     $base08;
 $orange:  $base09;
 $yellow:  $base0a;
 $green:   $base0b;
+$teal:    #20c997 !default;
 $cyan:    $base0c;
-$blue:    $base0d;
-$violet:  $base0e;
-$magenta: $base0f;
 
-$color-initial: $base07;
-$color-primary: $violet;
-$color-secondary: $base03;
-$color-tertiary: $base06;
-$color-quaternary: $base04;
-$color-quinary: $base05;
+$gray-100: #f8f9fa !default;
+$gray-200: $base07;
+$gray-300: $base06;
+$gray-400: $base05;
+$gray-500: $base04;
+$gray-600: $base03;
+$gray-700: $base02;
+$gray-800: $base01;
+$gray-900: $base00;
 
-// $color-initial: #fff !default;
-// $color-primary: #9b4dca !default;
-// $color-secondary: #606c76 !default;
-// $color-tertiary: #f4f5f6 !default;
-// $color-quaternary: #d1d1d1 !default;
-// $color-quinary: #e1e1e1 !default;
-
+$primary:       $purple;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-200;
+$dark:          $gray-800;

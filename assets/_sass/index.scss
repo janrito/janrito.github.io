@@ -10,24 +10,30 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin,latin-ext);
 @import url(//fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900);
 
-// import milligram
-@import '../vendor/normalize.css/normalize.css';
-@import '../vendor/milligram-scss/dist/milligram';
+// // import milligram
+// @import '../vendor/normalize.css/normalize.css';
+// @import '../vendor/milligram-scss/dist/milligram';
 
-$fa-font-path: '../vendor/font-awesome/fonts';
-@import '../vendor/font-awesome/scss/font-awesome';
+// bootstrap
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+$fa-font-path: "../../node_modules/font-awesome/fonts";
+@import "../../node_modules/font-awesome/scss/font-awesome";
 
 // // syntax highlighting CSS
 // @import 'syntax';
 
 //modules
-@import 'navigation';
+@import "navigation";
+@import "text-flow";
 
 body {
   font-family: $font-family-base;
   font-weight: 200;
-  background-color: $color-initial;
-  color: $base02;
+  background-color: $gray-200;
+  color: $gray-700;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -39,15 +45,15 @@ blockquote {
   border: none;
   padding-left: 0;
   padding-right: 0;
-  font-size: 2rem;
-  line-height: 2.56rem;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
   font-style: italic;
   font-weight: 100;
 
   footer {
     margin-left: 2rem;
-    font-size: 1.6rem;
-    line-height: 2.56rem;
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
     font-style: normal;
     font-weight: 100;
     &:before {
@@ -64,13 +70,8 @@ figure {
   margin-right: 0;
 }
 
+
 .archive, .page, .post {
-  max-width: 100%;
-  @media (min-width: 80.0rem) {
-    max-width: 80rem;
-  }
-
-
   header h1 {
     font-family: 'Open Sans Condensed';
     font-weight: 700;
@@ -80,24 +81,21 @@ figure {
     font-weight: 700;
   }
 
-  article h3 {
-    font-size: 1.6rem;
+  h3.archive-title {
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
     font-weight: 100;
-  }
-  p, blockquote, ol, ul, hr, figure {
-    @media (min-width: 55.0rem) {
-      max-width: 55rem;
-    }
+    color: $gray-500;
   }
 
-  .wide {
-    max-width: 100%;
+  article h3 {
+    font-weight: 100;
   }
 }
 
 .side-about, .post-meta {
-  font-size: 1.4rem;
-  line-height: 2.56rem;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
   font-family: $font-family-sans-serif;
   font-weight: 100;
   img {
@@ -117,54 +115,40 @@ figure {
   }
 
   time {
-    @extend .button;
+    // @extend .button;
     height: 2.56rem;
-    line-height: 2.56rem;
-    font-size: 1rem;
     font-weight: 100;
     padding: 0 1rem;
     margin-right: 1rem;
-    background-color: lighten($base07, 2%);
-    border-color: lighten($base07, 1%);
-    color: lighten($color-quaternary, 5%);
+    background-color: lighten($gray-200, 2%);
+    border-color: lighten($gray-200, 1%);
+    color: lighten($gray-500, 5%);
   }
 }
 
 .caption, figure figcaption {
   font-family: $font-family-sans-serif;
-  font-size: 1.2rem;
-  line-height: 2.56rem;
-  font-weight: light;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
+  font-weight: 100;
   > img {
-    padding-bottom: 1.6rem;
+    padding-bottom: 1.5rem;
   }
 }
+
 .side-note {
   font-family: $font-family-sans-serif;
-  font-size: 1.2rem;
-  line-height: 2.56rem;
-  font-weight: light;
-  clear: right;
-  display: block;
-
-  @media (min-width: 55.0rem) {
-    float: right;
-    width: 25rem;
-    margin-left: 2rem;
-  }
-
-
-  img {
-    display: block;
-  }
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
+  font-weight: 100;
 
   > img {
-    margin-bottom: 1.6rem;
+    margin-bottom: 1.5rem;
   }
 }
 
 .footnotes ol {
-  border-top: 0.1rem solid $color-tertiary;
+  border-top: 0.1rem solid $gray-300;
   margin-top: 3.0rem;
   padding-top: 3.0rem;
 }
@@ -172,8 +156,8 @@ figure {
 .colophon, .footnotes {
   font-family: $font-family-sans-serif;
   p, ol {
-    font-size: 1.2rem;
-    line-height: 2.56rem;
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
   }
 }
 
@@ -182,9 +166,9 @@ ol, ul {
 }
 
 p.reference {
-  font-size: 1.4rem;
-  line-height: 2.56rem;
-  padding-left: 2rem;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
+  margin-left: 2rem;
   text-indent: -2rem;
 }
 
