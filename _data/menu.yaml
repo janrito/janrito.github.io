@@ -1,8 +1,8 @@
-- name: AG
+- name: ag
   url: /
 
-- name: About
+- name: about
   url: /about/
 
-- name: Publications
+- name: publications
   url: /publications/
