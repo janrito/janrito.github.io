@@ -4,11 +4,11 @@ layout: internal
 {% assign entries=site.posts %}
 
 <section class="archive">
-  <h2>{{page.title}}</h2>
+  <h3 class="archive-title">{{page.title}}</h3>
   <section>
     {% for post in entries limit: site.n_recent_posts%}
     <div class="row">
-      <article class="column">
+      <article class="col col-sm-12">
         <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
         {% if post.description %}
           {{ post.description | markdownify}}
@@ -26,7 +26,7 @@ layout: internal
   <hr />
 
   <section>
-    <h3>Older {{ page.title }}</h3>
+    <h3 class="archive-title">Older {{ page.title }}</h3>
 
     {% for post in entries offset: site.n_recent_posts %}
     {% capture mod %}{{ forloop.index0 | modulo:2 }}{% endcapture %}
@@ -34,7 +34,7 @@ layout: internal
     {% if mod == '0' or forloop.first %}
     <div class="row">
     {% endif %}
-      <article class="column column-50">
+      <article class="col col-sm-12 col-lg-6">
         <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
         {% if post.description %}
           {{ post.description | markdownify}}

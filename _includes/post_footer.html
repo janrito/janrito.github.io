@@ -1,15 +1,19 @@
 
 <footer class="post-meta">
-  {% capture mini_about %}{% include mini_about.md %}{% endcapture %}
-  {{ mini_about | markdownify }}
+  <div>
+    <p>
+      <time datetime="{{page.date | date_to_xmlschema }}">
+        {{ page.date | date_to_string }}
+      </time>
 
-  <p>
-    <time datetime="{{page.date | date_to_xmlschema }}">
-      {{ page.date | date_to_string }}
-    </time>
+      <span class="title">{{page.title}}</span>
+    </p>
+  </div>
+  <div class="d-lg-none">
+    FIX THIS
+    {% capture mini_about %}{% include mini_about.md %}{% endcapture %}
+    {{ mini_about | markdownify }}
+  </div>
 
-    <span class="title">{{page.title}}</span>
 
-
-  </p>
 </footer>
