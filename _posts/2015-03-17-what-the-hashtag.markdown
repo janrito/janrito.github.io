@@ -85,13 +85,13 @@ We [begin](/) by looking at the brands that the app is tracking. The size of the
 <div class="row" markdown="1">
 
 ![][uber_col1]
-{:.column }
+{:.col .col-4 }
 
 ![][uber_col2]
-{:.column }
+{:.col .col-4 }
 
 ![][uber_col3]
-{:.column }
+{:.col .col-4 }
 
 </div>
 
@@ -188,17 +188,22 @@ The analysis shows that the distribution of important terms in the 6 topics foun
 Another question is whether the number of topics is appropriate for the corpus. This is particularly difficult with these types of applications because the number of articles and the types of articles can vary widely as they are being collected live. In the current version of the application I decided to limit the data two the first two weeks, mostly for practical purposes: I could not handle more data. This meant that the decision in the number of clusters was a little easier. One common heuristic used in clustering is the *elbow* method. This method suggests that the appropriate number of clusters is where adding more clusters stops adding explanatory value to the model. This occurs when there is a drop in the explained variation given by a new cluster.
 
 <figure class="framed wide" markdown="1">
+
+<div class="row" markdown="1">
+
 ![][apple_topics]
-{: .col-xs-6 }
+{: .col .col-6 }
 
 ![][facebook_topics]
-{: .col-xs-6 }
+{: .col .col-6 }
 
 ![][google_topics]
-{: .col-xs-6 }
+{: .col .col-6 }
 
 ![][uber_topics]
-{: .col-xs-6 }
+{: .col .col-6 }
+
+</div>
 
 The number of clusters was chosen so as to explain the biggest amount the variation in the corpus without adding too much complexity to the model.
 {:.caption}

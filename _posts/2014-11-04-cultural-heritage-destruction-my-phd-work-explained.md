@@ -5,7 +5,7 @@ title: "Cultural Heritage Destruction: <wbr>My&nbsp;PhD&nbsp;Work Explained"
 date: 2014-11-04 12:00:00
 redirect_from:
   - /2014-11-04/my-phd-work-for-non-experts/
-description:  The use of multispectral imaging and methods of image analytics within the cultural heritage sector
+description:  The use of multispectral imaging in cultural heritage and methods of image processing to recover writing from damaged manuscripts. 
 ---
 
 
