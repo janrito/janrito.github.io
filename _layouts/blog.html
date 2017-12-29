@@ -7,18 +7,22 @@ layout: internal
   <h3 class="archive-title">{{page.title}}</h3>
   <section>
     {% for post in entries limit: site.n_recent_posts%}
+    {% if mod == '0' or forloop.first %}
     <div class="row">
-      <article class="col col-12">
-        <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+    {% endif %}
+      <article class="col col-12 col-lg-6">
+        <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
         {% if post.description %}
           {{ post.description | markdownify}}
         {% else %}
           <p>
-            {{ post.content | markdownify | strip_html | truncatewords: 30 }}
+            {{ post.content | markdownify | strip_html | truncatewords: 20 }}
           </p>
         {% endif %}
       </article>
+    {% if mod == '1' or forloop.last %}
     </div>
+    {% endif %}
 
     {% endfor %}
   </section>
@@ -35,14 +39,8 @@ layout: internal
     <div class="row">
     {% endif %}
       <article class="col col-12 col-lg-6">
-        <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-        {% if post.description %}
-          {{ post.description | markdownify}}
-        {% else %}
-          <p>
-            {{ post.content | markdownify | strip_html | truncatewords: 20 }}
-          </p>
-        {% endif %}
+        <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+
       </article>
     {% if mod == '1' or forloop.last %}
     </div>
