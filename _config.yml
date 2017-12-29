@@ -20,7 +20,7 @@ exclude:
 highlighter: rouge
 timezone: "Europe/London"
 permalink: /:year-:month-:day/:title/
-n_recent_posts: 4
+n_recent_posts: 6
 author: "Alejandro Giacometti"
 location: "London, UK"
 description: Alejandro Giacometti
