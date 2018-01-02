@@ -107,7 +107,7 @@ figure {
   img {
     float: left;
     margin-right: 2rem;
-    max-height: 12.8rem; // five lines
+    max-height: 15rem; // five lines
 
   }
   .title {
@@ -116,10 +116,10 @@ figure {
 
   time {
     // @extend .button;
-    height: 2.56rem;
+    height: 3rem;
     font-weight: 100;
-    padding: 0 1rem;
-    margin-right: 1rem;
+    padding: 0 1.5rem;
+    margin-right: 1.5rem;
     background-color: lighten($gray-200, 2%);
     border-color: lighten($gray-200, 1%);
     color: lighten($gray-500, 5%);
@@ -149,7 +149,7 @@ figure {
 
 .footnotes ol {
   border-top: 0.1rem solid $gray-300;
-  margin-top: 3.0rem;
+  margin-top: 2.9rem;
   padding-top: 3.0rem;
 }
 
