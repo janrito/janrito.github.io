@@ -1,5 +1,5 @@
-@import "color";
-@import "typography";
+@import "color_variables";
+@import "typography_variables";
 
 // settings
 // @import 'settings';
@@ -28,16 +28,13 @@ $fa-font-path: "../../node_modules/font-awesome/fonts";
 //modules
 @import "navigation";
 @import "text-flow";
+@import "typography";
 
 body {
   font-family: $font-family-base;
   font-weight: 200;
   background-color: $gray-200;
   color: $gray-700;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: $font-family-sans-serif;
 }
 
 blockquote {
