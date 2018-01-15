@@ -69,6 +69,10 @@ figure {
 
 
 .archive, .page, .post {
+
+  margin-top: 1rem * $line-height-base;
+  margin-bottom: 1rem * $line-height-base;
+
   header h1 {
     font-family: 'Open Sans Condensed';
     font-weight: 700;
@@ -78,6 +82,12 @@ figure {
     font-weight: 700;
   }
 
+  article h3, article h4 {
+    font-weight: 200;
+  }
+}
+
+.archive {
   h3.archive-title {
     font-size: $font-size-sm;
     line-height: $line-height-sm;
@@ -85,8 +95,29 @@ figure {
     color: $gray-500;
   }
 
-  article h3, article h4 {
-    font-weight: 200;
+  h4.post-title {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+  }
+
+  .article-box-large, .article-box-small {
+    margin-bottom: 1rem * $line-height-base;
+  }
+
+  .article-box-large {
+    .post-title {
+      font-weight: 600;
+
+      &::after {
+        font-family: 'Open Sans Condensed';
+        color: $primary;
+        content: "\00a0/";
+      }
+    }
+  }
+
+  .post-title,.post-description, .post-description > p {
+    display: inline;
   }
 }
 
@@ -97,29 +128,43 @@ figure {
   font-weight: 100;
   img {
     vertical-align: baseline;
+    max-height: $line-height-base * 10rem;
+    max-width: 100%;
   }
 }
 
 .post-meta {
+  margin-top: ($line-height-base * $font-size-base);
+  &::before {
+    width: ($line-height-base * $font-size-base * 3);
+    content: '';
+    display: inline-block;
+    height: 1px;
+    margin: 0 0 ($line-height-base * $font-size-base * 0.5)  0;
+    background-color: $gray-500;
+  }
+
   img {
     float: left;
     margin-right: 2rem;
-    max-height: 15rem; // five lines
+    max-height: $line-height-base * 10rem;
 
   }
   .title {
     font-style: italic;
+    font-size: $font-size-xsm;
+    line-height: $line-height-xsm;
+    color: $gray-500;
   }
 
   time {
-    // @extend .button;
-    height: 3rem;
     font-weight: 100;
-    padding: 0 1.5rem;
-    margin-right: 1.5rem;
-    background-color: lighten($gray-200, 2%);
-    border-color: lighten($gray-200, 1%);
-    color: lighten($gray-500, 5%);
+    font-size: $font-size-xsm;
+    line-height: $line-height-xsm;
+
+    &::after {
+      content: " |"
+    }
   }
 }
 
@@ -129,7 +174,7 @@ figure {
   line-height: $line-height-sm;
   font-weight: 100;
   > img {
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem * $line-height-base;
   }
 }
 
@@ -151,6 +196,7 @@ figure {
 }
 
 .colophon, .footnotes {
+  color: $gray-500;
   font-family: $font-family-sans-serif;
   p, ol {
     font-size: $font-size-xsm;

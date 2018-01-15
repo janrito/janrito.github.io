@@ -10,15 +10,15 @@ layout: internal
     {% if mod == '0' or forloop.first %}
     <div class="row">
     {% endif %}
-      <article class="col col-12 col-lg-6">
-        <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-        {% if post.description %}
-          {{ post.description | markdownify}}
-        {% else %}
-          <p>
+      <article class="article-box-large col col-12 col-lg-6">
+        <h4 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+        <div class="post-description">
+          {% if post.description %}
+            {{ post.description | markdownify}}
+          {% else %}
             {{ post.content | markdownify | strip_html | truncatewords: 20 }}
-          </p>
-        {% endif %}
+          {% endif %}
+        </div>
       </article>
     {% if mod == '1' or forloop.last %}
     </div>
@@ -38,9 +38,10 @@ layout: internal
     {% if mod == '0' or forloop.first %}
     <div class="row">
     {% endif %}
-      <article class="col col-12 col-lg-6">
-        <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-
+      <article class="article-box-small col col-12 col-lg-6">
+        <h4 class="post-title">
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </h4>
       </article>
     {% if mod == '1' or forloop.last %}
     </div>
