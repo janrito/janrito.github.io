@@ -7,7 +7,7 @@ sass:
     - /assets/_sass
     # - node_modules
   style: :compressed
-plugins:
+plug_ins:
 - jekyll-mentions
 - jekyll-redirect-from
 - jekyll-sitemap
