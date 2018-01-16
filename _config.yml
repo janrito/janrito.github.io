@@ -14,7 +14,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - bower.json
+  - yarn.lock
+  - package.json
   - cache.manifest
   - node_modules
 highlighter: rouge
