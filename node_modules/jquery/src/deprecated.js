@@ -1,7 +1,9 @@
 define( [
 	"./core",
-	"./traversing"
-], function( jQuery ) {
+	"./core/nodeName"
+], function( jQuery, nodeName ) {
+
+"use strict";
 
 jQuery.fn.extend( {
 
@@ -24,11 +26,15 @@ jQuery.fn.extend( {
 	}
 } );
 
-// The number of elements contained in the matched element set
-jQuery.fn.size = function() {
-	return this.length;
+jQuery.holdReady = function( hold ) {
+	if ( hold ) {
+		jQuery.readyWait++;
+	} else {
+		jQuery.ready( true );
+	}
 };
-
-jQuery.fn.andSelf = jQuery.fn.addBack;
+jQuery.isArray = Array.isArray;
+jQuery.parseJSON = JSON.parse;
+jQuery.nodeName = nodeName;
 
 } );
