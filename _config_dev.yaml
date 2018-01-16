@@ -1,5 +1,6 @@
-baseurl: ""
 sass:
-  sass_dir: assets/_sass
+  load_paths:
+    - assets/_sass
+    - node_modules
   style: :expanded
 keep_files: ['images',]

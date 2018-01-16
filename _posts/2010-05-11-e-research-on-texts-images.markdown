@@ -5,14 +5,6 @@ layout: post
 redirect_from: /2010/05/e-research-on-texts-images/
 title: e-Research on Texts & Images
 wordpress_id: 478
-categories:
-  - articles
-tags:
-  - British Academy
-  - conference
-  - london
-  - report
-  - Digital Humanities
 ---
 
 I am at the [British Academy](http://www.britac.ac.uk/) attending a workshop organised by the [Oxford e-Research Centre](http://www.oerc.ox.ac.uk/).

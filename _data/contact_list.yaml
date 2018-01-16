@@ -2,13 +2,13 @@
   url: /
   icon: home
 
-- title: Archive
-  url: /archive/
-  icon: archive
+- title: About
+  url: /about/
+  icon: user-o
 
-- title: Search
-  url: /search/
-  icon: search
+- title: Publications
+  url: /publications/
+  icon: file-text-o
 
 - bar
 

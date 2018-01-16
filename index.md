@@ -1,20 +1,9 @@
 ---
-layout: frontpage
-title: Alejandro Giacometti
-lang: en
+layout: blog
+title: Articles
 permalink: /
-body_class: frontpage
-meta_type: profile
+redirect_from:
+  - /category/blog.html
+  - /about/category/blog.html
+  - /projects/
 ---
-
-![portrait][portrait]
-
-# [Alejandro Giacometti](about) <small>| PhD</small>
-
-I apply technology to interesting humanities problems.
-{:.lead}
-
-
-[articles]: /articles/
-[about]: /about/
-[portrait]: /images/portrait.jpeg

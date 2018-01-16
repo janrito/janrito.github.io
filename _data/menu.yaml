@@ -1,0 +1,8 @@
+- name: AG
+  url: /
+
+- name: About
+  url: /about/
+
+- name: Publications
+  url: /publications/

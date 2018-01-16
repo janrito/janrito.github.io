@@ -1,13 +1,11 @@
-<div class="footer-container">
-  <aside>
+<div class="row">
+  <aside class="col col-12 col-lg-8">
     {% include contact_list.html %}
   </aside>
 
-  {% assign lang=page.lang | default: 'en' %}
-
-  {% if site.data.postfooter[lang] %}
-  <aside class="colophon">
-    {{ site.data.colophon[lang] | markdownify }}
+  <aside class="colophon col col-12 col-lg-4">
+    {% capture colophon %}{% include colophon.md %}{% endcapture %}
+    {{ colophon | markdownify }}
   </aside>
-  {% endif %}
+
 </div>

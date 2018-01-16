@@ -1,0 +1,41 @@
+// Typography
+$font-family-sans-serif:    BlinkMacSystemFont, -apple-system, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-serif:         Lora, Georgia, "Times New Roman", Times, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-monospace:     "Adobe Source Code Pro", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+$font-family-base: $font-family-serif;
+
+$font-size-base: 1rem;
+$line-height-base: 1.5;
+
+$-font-xsm-factor: .75;
+$-font-sm-factor: .875;
+$-font-lg-factor: 1.25;
+
+$-font-h1-factor: 3;
+$-font-h2-factor: 2.5;
+$-font-h3-factor: 1.75;
+$-font-h4-factor: 1.4;
+
+$font-size-lg: ($font-size-base * $-font-lg-factor);
+$font-size-sm: ($font-size-base * $-font-sm-factor);
+$font-size-xsm: ($font-size-base * $-font-xsm-factor);
+
+$line-height-lg: ($line-height-base / $-font-lg-factor);
+$line-height-sm: ($line-height-base / $-font-sm-factor);
+$line-height-xsm: ($line-height-base / $-font-xsm-factor);
+
+$h1-font-size: ($font-size-base * $-font-h1-factor);
+$h2-font-size: ($font-size-base * $-font-h2-factor);
+$h3-font-size: ($font-size-base * $-font-h3-factor);
+$h4-font-size: ($font-size-base * $-font-h4-factor);
+$h5-font-size: $font-size-lg;
+$h6-font-size: $font-size-base;
+
+
+$line-height-h1: ($line-height-base / $-font-h1-factor) * 2;
+$line-height-h2: ($line-height-base / $-font-h2-factor) * 2;
+$line-height-h3: ($line-height-base / $-font-h3-factor) * 1.5;
+$line-height-h4: ($line-height-base / $-font-h4-factor) * 1.5;
+$line-height-h5: $line-height-lg;
+$line-height-h6: $line-height-base;

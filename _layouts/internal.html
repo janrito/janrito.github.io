@@ -2,18 +2,28 @@
 layout: default
 ---
 
-  <nav class="main-navigation" role="navigation">
-    {% include navigation.html %}
-  </nav>
-
   <div class="container">
-    <main>
-      {{ content }}
-    </main>
+    <div class="row">
+      <aside class="main-aside col col-12 col-lg-3">
+        {% include navigation.html %}
+
+        <div class="side-about mini-about d-none d-lg-block">
+          {% capture mini_about %}{% include mini_about.md %}{% endcapture %}
+          {{ mini_about | markdownify }}
+        </div>
+
+      </aside>
+
+      <main class="column col col-12 col-lg-9">
+        {{ content }}
+      </main>
+    </div>
+
+    <hr />
+    <div class="row">
+      <footer class="main-footer col col-12 col-lg-9 offset-lg-3">
+        {% include footer.html %}
+      </footer>
+    </div>
   </div>
 
-  <div class="footer-wrapper">
-    <footer class="main-footer container">
-      {% include footer.html %}
-    </footer>
-  </div>

@@ -1,31 +1,23 @@
-nav.main-navigation {
-  @extend .navbar;
-  @extend .navbar-default;
-
-  @extend %sans-serif;
-
-  font-size: $font-size-small;
-  font-weight: 200;
-
-  .nav-container {
-    @extend .container;
-
-    .main-navigation,
-    .language-navigation {
-      @extend .nav, .navbar-nav;
-    }
-
-    .language-navigation {
-      @extend .navbar-right;
-    }
-
-  }
+.navigation {
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
+  margin-top: 1.5rem;
 }
+.contact-list, .navigation {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-left: 0;
 
 
-.navbar-brand {
-  font-size: $font-size-small;
-  font-weight: 400;
-  letter-spacing: .05em;
-  text-transform: uppercase;
+  li {
+    display: flex;
+    margin: 0 .5rem;
+
+    a.disabled {
+      color: $gray-500;
+    }
+  }
 }
