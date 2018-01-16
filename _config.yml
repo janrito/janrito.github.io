@@ -5,7 +5,6 @@ markdown: kramdown
 sass:
   load_paths:
     - /assets/_sass
-    # - node_modules
   style: :compressed
 plug_ins:
 - jekyll-mentions
@@ -17,6 +16,7 @@ exclude:
   - README.md
   - bower.json
   - cache.manifest
+  - node_modules
 highlighter: rouge
 timezone: "Europe/London"
 permalink: /:year-:month-:day/:title/
