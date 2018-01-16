@@ -1,24 +1,14 @@
-require(['config'], function (config) {
+SystemJS.import('bootstrap').then(
+  function (bootstrap) {
 
-  // setup google analytics
-  require([
-    'GA'
-    ], function (GA) {
+    SystemJS.import('ga').then(
+      function (ga) {
+        ga('create', 'UA-3614475-10', 'auto');
+        ga('send', 'pageview');
+        console.log('analytics is loaded');
+      }
+    );
 
-      GA.ready(function (ga) {
-          // GA is fully loaded
-          console.log('analytics is loaded');
-      });
-  });
-
-
-  // Main
-  require([
-    'jquery',
-    ], function ($,) {
-      $( document ).ready(function() {
-        console.log('hello');
-      });
-  });
-
-});
+    console.log('hello!');
+  }
+);

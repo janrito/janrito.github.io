@@ -1,22 +1,33 @@
-//The build will inline common dependencies into this file.
-//For any third party dependencies, like jQuery, place them in the lib folder.
-//Configure loading modules from the lib directory,
-//except for 'app' ones, which are in a sibling
-//directory.
-requirejs.config({
-  config: {
-    'GA': {
-      'id' : 'UA-3614475-10'
+SystemJS.config({
+  baseURL: '/assets/',
+  map: {
+    "jQuery": "vendor/jquery/dist/jquery.min.js",
+    "Popper": "vendor/popper.js/dist/umd/popper.min.js",
+    "bootstrap": "vendor/bootstrap/dist/js/bootstrap.bundle.min.js",
+    "ga": "//www.google-analytics.com/analytics.js"
+  },
+  meta: {
+    'jQuery': {
+      format: 'global',
+      exports: 'jQuery',
+    },
+    'Popper': {
+      format: 'global',
+      exports: 'Popper',
+    },
+    'bootstrap': {
+      format: 'global',
+      exports: 'bootstrap',
+      globals: {
+        'jQuery': 'jQuery',
+        'Popper': 'Popper'
+      },
+      deps: ['jQuery', 'Popper'],
+    },
+    'ga': {
+      exports: 'ga',
+      format: 'global'
     }
   },
 
-  baseUrl: "/assets",
-  urlArgs: "bust=" + (new Date()).getTime(),
-  paths: {
-    "jquery": "vendor/jquery/dist/jquery.min",
-
-    // Google Analytics
-    'EventEmitter': 'vendor/event-emitter/dist/EventEmitter',
-    'GA': 'vendor/requirejs-google-analytics/dist/GoogleAnalytics',
-  },
 });
