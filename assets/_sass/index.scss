@@ -127,10 +127,15 @@ figure {
   font-family: $font-family-sans-serif;
   font-weight: 100;
   img {
-    vertical-align: baseline;
+    vertical-align: top;
     max-height: $line-height-base * 10rem;
     max-width: 100%;
   }
+}
+
+hr {
+  height: .1rem;
+  margin-bottom: .9rem;
 }
 
 .post-meta {
@@ -139,8 +144,8 @@ figure {
     width: ($line-height-base * $font-size-base * 3);
     content: '';
     display: inline-block;
-    height: 1px;
-    margin: 0 0 ($line-height-base * $font-size-base * 0.5)  0;
+    height: 0.06rem;
+    margin: 0 0 .94rem  0;
     background-color: $gray-500;
   }
 
