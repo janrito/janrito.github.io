@@ -1,18 +1,11 @@
 @import "color_variables";
 @import "typography_variables";
 
-// settings
-// @import 'settings';
-
 // import fonts
 @import url(//fonts.googleapis.com/css?family=Lora);
 @import url(//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400&subset=latin,latin-ext);
 @import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin,latin-ext);
 @import url(//fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900);
-
-// // import milligram
-// @import '../vendor/normalize.css/normalize.css';
-// @import '../vendor/milligram-scss/dist/milligram';
 
 // bootstrap
 @import "../../node_modules/bootstrap/scss/functions";
@@ -22,13 +15,19 @@
 $fa-font-path: "../vendor/font-awesome/fonts";
 @import "../../node_modules/font-awesome/scss/font-awesome";
 
-// // syntax highlighting CSS
-// @import 'syntax';
+// syntax highlighting CSS
+@import 'syntax';
 
 //modules
 @import "navigation";
 @import "text-flow";
 @import "typography";
+
+
+// // testing grid
+// body {
+//     background-image: url("//basehold.it/i/24/000000"); // with Hex colour
+// }
 
 body {
   font-family: $font-family-base;
