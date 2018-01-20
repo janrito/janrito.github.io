@@ -135,8 +135,8 @@ figure {
 }
 
 hr {
-  height: .05rem;
-  margin-bottom: .95rem;
+  height: .065rem;
+  margin-bottom: .935rem;
   margin-top: .5rem;
   border: none;
   background: lighten($gray-400, 20%);
@@ -148,8 +148,8 @@ hr {
     width: ($line-height-base * $font-size-base * 3);
     content: '';
     display: inline-block;
-    height: 0.06rem;
-    margin: 0 0 .94rem  0;
+    height: 0.065rem;
+    margin: 0 0 .935rem  0;
     background-color: $gray-500;
   }
 
