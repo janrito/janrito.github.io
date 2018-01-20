@@ -144,6 +144,8 @@ hr {
 
 .post-meta {
   margin-top: ($line-height-base * $font-size-base);
+  clear: both;
+
   &::before {
     width: ($line-height-base * $font-size-base * 3);
     content: '';
