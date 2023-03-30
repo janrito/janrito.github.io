@@ -1,7 +1,14 @@
-_site/
+# ruby
 Gemfile.lock
-.sass-cache/
-*.sublime-workspace
-.jekyll-metadata
 
+# rbenv
+.ruby-version
+
+# build files
+.jekyll-metadata
+.sass-cache/
+_site/
+
+# editors
+*.sublime-workspace
 .vscode
