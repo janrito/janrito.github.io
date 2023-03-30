@@ -24,6 +24,9 @@ $fa-font-path: "../vendor/font-awesome/fonts";
 @import "typography";
 
 
+@import "highlight-theme";
+
+
 // // testing grid
 // body {
 //     background-image: url("//basehold.it/i/24/000000"); // with Hex colour
@@ -255,4 +258,9 @@ dl {
     top: 0;
     border: none;
   }
+}
+
+pre {
+  border-top: 0.1rem solid $gray-300;
+  padding: 1rem 0.5rem;
 }

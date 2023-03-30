@@ -1,15 +1,19 @@
-url: "http://alejandro.giacometti.me"
-baseurl: ""
+url: 'http://alejandro.giacometti.me'
+baseurl: ''
 name: AG
 markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+  syntax_highlighter: rouge
 sass:
   load_paths:
     - /assets/_sass
   style: :compressed
 plug_ins:
-- jekyll-mentions
-- jekyll-redirect-from
-- jekyll-sitemap
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-sitemap
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -19,42 +23,39 @@ exclude:
   - cache.manifest
   - node_modules
 highlighter: rouge
-timezone: "Europe/London"
+timezone: 'Europe/London'
 permalink: /:year-:month-:day/:title/
 n_recent_posts: 6
-author: "Alejandro Giacometti"
-location: "London, UK"
+author: 'Alejandro Giacometti'
+location: 'London, UK'
 description: Alejandro Giacometti
-meta_image: "/images/portrait.jpeg"
+meta_image: '/images/portrait.jpeg'
 collections:
   posts:
     output: true
   pages:
     output: true
 defaults:
-  -
-    scope:
-      path: ""
+  - scope:
+      path: ''
     values:
       lang: en
-      meta_type: "website"
-      author: "Alejandro Giacometti"
+      meta_type: 'website'
+      author: 'Alejandro Giacometti'
       js_main: 'main'
-  -
-    scope:
-      path: "" # empty string for all files
-      type: "posts"
-    values:
-      layout: "post"
-      meta_type: "article"
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page" # overrides previous default layout
-      meta_type: "website"
   - scope:
-      path: "assets/"
+      path: '' # empty string for all files
+      type: 'posts'
+    values:
+      layout: 'post'
+      meta_type: 'article'
+  - scope:
+      path: ''
+      type: 'pages'
+    values:
+      layout: 'page' # overrides previous default layout
+      meta_type: 'website'
+  - scope:
+      path: 'assets/'
     values:
       sitemap: false
