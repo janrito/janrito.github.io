@@ -13,7 +13,7 @@ Public facing site. Nth iteration.
 
    - `Gemfile` should include the appropriate packages:
 
-     ```
+     ```sh
      source 'https://rubygems.org'
      gem 'github-pages', group: :jekyll_plugins
      ```
