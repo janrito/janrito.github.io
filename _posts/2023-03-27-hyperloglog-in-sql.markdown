@@ -6,6 +6,8 @@ title: Hyperloglog in PostgreSQL
 description: Writing a Hyperloglog custom aggregate to perform fast cardinality approximations in PostgreSQL without using an extension
 ---
 
+I wrote a version of HyperLogLog cardinality approximation in SQL and PL/pgSQL. It can be faster than using `COUNT(DISTINCT...)` under the right circumstances and can be used with any Postgres database – even RDS – without elevated privileges.
+
 Yeah, yeah, yeah... This is too long, can you _[just show me the code!](#just-show-me-the-code)_
 {:.side-note}
 
