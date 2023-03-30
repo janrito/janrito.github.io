@@ -4,43 +4,39 @@ title: About
 permalink: about/
 redirect_from: /a/
 meta_type: profile
-
 ---
 
-Email me at [alejandro@giacometti.me](mailto:alejandro.giacometti.me). You can follow me on twitter at [@janrito][twitter], though I only ocassionally tweet. Instead, I often post photos in instagram at [@alejandrogiacometti][instagram]. You can also find me on github at [@janrito][github]. 
+Email me at [alejandro@giacometti.me](mailto:alejandro.giacometti.me). You can follow me on twitter at [@janrito][twitter], though I only ocassionally tweet. Instead, I often post photos in instagram at [@alejandrogiacometti][instagram]. You can also find me on github at [@janrito][github].
 {:.side-note}
 
-I'm Alejandro Giacometti. I work at [EDITED], where I use data science to organise the world's fashion retail data. 
+I'm Alejandro Giacometti. I am the Head of ML at [Beauhurst], we provide high-quality UK private company data for investment and research.
+
+Previously, I worked at [EDITED], they use ML to organise the world's fashion retail data.
 
 I was a New York [Insight] fellow in 2015. I spent three months learning how to apply skills from science and academia to problems in industry. During the programme, I worked on a small project for monitoring brand presence on twitter using topic modelling. You can find a description of that project in [here][wth].
 
 I am also a Digital Humanist -- I get to play with technology in order to make it useful for the humanities. I worked with some of the best people in the field in the [Department of Digital Humanities][kcldh] at [King's College London][kcl], in the [UCL Centre for Digital Humanities][ucldh] at [University College London][ucl], and [Huco] at [University of Alberta][uofa].
 
-I have a PhD in Image Analysis from [University College London][ucl]. I was supervised by  [Melissa Terras][] from the [Department of Information Studies][dis] and [UCL Centre for Digital Humanities][ucldh] and [Adam Gibson][] from the [Department of Medical Physics][medphys]. My dissertation dealt with the application of an imaging method – Multispectral Imaging – to the recovery of writing from damaged cultural heritage documents. You can find a more detailed description of my PhD work [here][chd].
+I have a PhD in Image Analysis from [University College London][ucl]. I was supervised by [Melissa Terras][] from the [Department of Information Studies][dis] and [UCL Centre for Digital Humanities][ucldh] and [Adam Gibson][] from the [Department of Medical Physics][medphys]. My dissertation dealt with the application of an imaging method – Multispectral Imaging – to the recovery of writing from damaged cultural heritage documents. You can find a more detailed description of my PhD work [here][chd].
 
 I grew up in Ecuador, I studied in the US, Canada and the UK, lived for a short while in Romania, and currently live in London. I speak Spanish, English and a bit of Romanian.
 
-
 [wth]: {% post_url 2015-03-17-what-the-hashtag %}
 [chd]: {% post_url 2014-11-04-cultural-heritage-destruction-my-phd-work-explained %}
 
-[Adam Gibson]: http://www.ucl.ac.uk/medphys/contacts/people/agibson "Adam Gibson"
-[dis]: http://www.infostudies.ucl.ac.uk/ "Department of Information Studies at University College London"
+[adam gibson]: http://www.ucl.ac.uk/medphys/contacts/people/agibson 'Adam Gibson'
+[dis]: http://www.infostudies.ucl.ac.uk/ 'Department of Information Studies at University College London'
+[beauhurst]: https://www.beauhurst.com/
 [edited]: //edited.com
-[github]: http://github.com/janrito "@janrito at Github"
-[huco]: https://www.ualberta.ca/interdisciplinary-studies/humanities-computing "Humanities Computing at University of Alberta"
+[github]: http://github.com/janrito '@janrito at Github'
+[huco]: https://www.ualberta.ca/interdisciplinary-studies/humanities-computing 'Humanities Computing at University of Alberta'
 [insight]: //insightdatascience.com/
-[instagram]: http://instagram.com/alejandrogiacometti "@alejandrogiacometti at instagram"
+[instagram]: http://instagram.com/alejandrogiacometti '@alejandrogiacometti at instagram'
 [kcl]: http://www.kcl.ac.uk "King's College London"
 [kcldh]: http://www.kcl.ac.uk/artshums/depts/ddh/index.aspx "Department of Digital Humanities at King's College London"
-[mathesis]: http://repository.library.ualberta.ca/dspace/handle/10048/437
-[medphys]: http://www.ucl.ac.uk/medphys/ "Department of Medical Physics"
-[Melissa Terras]: http://www.ucl.ac.uk/infostudies/melissa-terras/ "Melissa Terras"
-[Stan Ruecker]: http://www.ualberta.ca/~sruecker/ "Stan Ruecker"
-[twitter]: http://twitter.com/janrito "@janrito at Twitter"
-[ucl]: http://www.ucl.ac.uk "University College London"
-[ucldh]: http://www.ucl.ac.uk/dh/ "UCL Centre for Digital Humanities"
-[uofa]: http://www.ualberta.ca "University of Alberta"
-
-[wth]: {% post_url 2015-03-17-what-the-hashtag %}
-[chd]: {% post_url 2014-11-04-cultural-heritage-destruction-my-phd-work-explained %}
+[medphys]: http://www.ucl.ac.uk/medphys/ 'Department of Medical Physics'
+[melissa terras]: http://www.ucl.ac.uk/infostudies/melissa-terras/ 'Melissa Terras'
+[twitter]: http://twitter.com/janrito '@janrito at Twitter'
+[ucl]: http://www.ucl.ac.uk 'University College London'
+[ucldh]: http://www.ucl.ac.uk/dh/ 'UCL Centre for Digital Humanities'
+[uofa]: http://www.ualberta.ca 'University of Alberta'
