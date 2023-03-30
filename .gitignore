@@ -3,3 +3,5 @@ Gemfile.lock
 .sass-cache/
 *.sublime-workspace
 .jekyll-metadata
+
+.vscode
