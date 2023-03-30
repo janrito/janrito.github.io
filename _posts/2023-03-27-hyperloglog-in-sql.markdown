@@ -3,10 +3,10 @@ author: Alejandro Giacometti
 date: 2023-03-30 00:00:00+00:00
 layout: post
 title: Hyperloglog in PostgreSQL
-description: Writing a hyperloglog custom aggregate to peform fast cardinality approximations in PostgreSQL without using an extension
+description: Writing a Hyperloglog custom aggregate to perform fast cardinality approximations in PostgreSQL without using an extension
 ---
 
-Yeah, yeah, yeah... This is too long, can you _[just show me the code](#just-show-me-the-code)_!
+Yeah, yeah, yeah... This is too long, can you _[just show me the code!](#just-show-me-the-code)_
 {:.side-note}
 
 [Hyperloglog](https://en.wikipedia.org/wiki/HyperLogLog) is an algorithm for estimating the cardinality of a dataset. It is often used to answer questions such as - _How many of our users are active per day?_
@@ -21,28 +21,28 @@ from user_session
 group by created_on
 ```
 
-The problem with a query like this is that in order to count the number of unique users active in a day, the database will need to keep a record of every unique user id in the dataset for every day in question before counting them. Imagine running this over a few hundred thousand users for a few weeks. Very quickly you are talking about millions of records.
+The problem with a query like this is that counting the number of unique users active in a day, the database will need to keep a record of every unique user id in the dataset for every day in question before counting them. Imagine running this over a few hundred thousand users for a few weeks. Very quickly you are talking about millions of records.
 
-Next, you might want ot ask a slightly related question – _How many of our users visit one of our ten top features per day?_
+Next, you might want to ask a slightly related question – _How many of our users visit one of our ten top features per day?_
 
-You can see how these queries, and the related records that we must keep track of can quickly grow out of hand. The answers to those questions will become harder and slower to calculate.
+You can see how the related records that we must keep track of can quickly grow out of hand. The answers to those questions will become harder and slower to calculate.
 
-Hyperloglog is a way of answering these sort of questions with an estimate, without having to keep track of all these records.
+Hyperloglog is a way of answering these questions with an estimate, without having to keep track of all these records.
 
-The hyperloglog algorithm works based on the observation that in a uniformly distributed sequence of binary numbers, a maximum sequence of $n$ zeroes estimates the cardinality of the sequence to be $2^n$. This is great. It means that in order to estimate how many unique users are active in our platform in any given day, we only need to find the user id with the longest sequence of zeroes as a prefix. Interestingly, in order to compute it, we only need to keep track of one number: the longest observed sequence of zeroes.
+The Hyperloglog algorithm works based on the observation that in a uniformly distributed sequence of binary numbers, a maximum sequence of $n$ zeroes estimates the cardinality of the sequence to be $2^n$. This is great. It means that to estimate how many unique users are active on our platform on any given day, we only need to find the user id with the longest sequence of zeroes as a prefix. Interestingly, to compute it, we only need to keep track of one number: the longest observed sequence of zeroes.
 
-One issue with this estimate is that it suffers from high variance due to outliers. An improved estimate can be obtained by dividing the sequence in buckets based on a prefix of the numbers in the sequence and keeping track of the maximum sequence of zeroes observed for each bucket. The sequence for each bucket can be used to produce an estimate and those estimates can be averaged for a final improved approximation of the real count.
+One issue with this estimate is that it suffers from high variance due to outliers. An improved estimate can be obtained by dividing the sequence into buckets based on a prefix of the numbers in the sequence and keeping track of the maximum sequence of zeroes observed for each bucket. The sequence for each bucket can be used to produce an estimate and those estimates can be averaged for a final improved approximation of the real count.
 
-The Hyperloglog algorithm actually includes a few more steps – it uses a series of clever tricks to make the estimate more accurate. To understanding it in detail, read the [original paper](http://algo.inria.fr/flajolet/Publications/FlMa85.pdf), the [wikipedia article](https://en.wikipedia.org/wiki/HyperLogLog), or a [other](https://stackoverflow.com/questions/12327004/how-does-the-hyperloglog-algorithm-work)
-very accessible [explanation](https://towardsdatascience.com/hyperloglog-a-simple-but-powerful-algorithm-for-data-scientists-aed50fe47869)'s elsewhere.
+The Hyperloglog algorithm includes a few more steps – it uses a series of clever tricks to make the estimate more accurate. To understand it in detail, read the [original paper](http://algo.inria.fr/flajolet/Publications/FlMa85.pdf), the [Wikipedia article](https://en.wikipedia.org/wiki/Hyperloglog), or [other](https://stackoverflow.com/questions/12327004/how-does-the-Hyperloglog-algorithm-work)
+very accessible [explanation](https://towardsdatascience.com/hyperloglog-a-simple-but-powerful-algorithm-for-data-scientists-aed50fe47869)s elsewhere.
 
-Many analytics platforms make use of the hyperloglog algorithm internally (or an improved hyperloglog++). It is natively supported by [Elasticsearch](https://engineering.fb.com/2018/12/13/data-infrastructure/hyperloglog/), [Redis](https://redis.io/docs/data-types/hyperloglogs/), [Presto](https://engineering.fb.com/2018/12/13/data-infrastructure/hyperloglog/), [BigQuery](https://cloud.google.com/bigquery/docs/reference/standard-sql/hll_functions) & [Snowflake](https://docs.snowflake.com/en/user-guide/querying-approximate-cardinality). [Postgres-hll][postgres-hll] from [citusdata](https://www.citusdata.com/blog/2017/06/30/efficient-rollup-with-hyperloglog-on-postgres/) is an extension to Postgres that can compute the estimate. Unfortunately it is not included in the list of amazon [RDS trusted extensions](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html#PostgreSQL.Concepts.General.Extensions.Trusted).
+Many analytics platforms make use of the Hyperloglog algorithm internally (or an improved Hyperloglog++). It is natively supported by [Elasticsearch](https://engineering.fb.com/2018/12/13/data-infrastructure/hyperloglog/), [Redis](https://redis.io/docs/data-types/hyperloglogs/), [Presto](https://engineering.fb.com/2018/12/13/data-infrastructure/hyperloglog/), [BigQuery](https://cloud.google.com/bigquery/docs/reference/standard-sql/hll_functions) & [Snowflake](https://docs.snowflake.com/en/user-guide/querying-approximate-cardinality). [Postgres-hll][postgres-hll] from [citusdata](https://www.citusdata.com/blog/2017/06/30/efficient-rollup-with-hyperloglog-on-postgres/) is an extension to Postgres that can compute the estimate. Unfortunately, it is not included in the list of amazon [RDS trusted extensions](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html#PostgreSQL.Concepts.General.Extensions.Trusted).
 
 [postgres-hll]: https://github.com/citusdata/postgresql-hll
 
-It looks like if we want to use hyperloglog in RDS our only option is to write a version of the algorithm in pure SQL. Fortunately, the internet delivers, and there have been a [few](https://www.sisense.com/blog/hyperloglog-in-pure-sql/) [attempts](https://towardsdatascience.com/hyperloglog-implemented-using-sql-d516fc4828ce) at doing this as well. There is even an attempt write an extension to the [Django ORM](https://www.agiliq.com/blog/2017/12/adventures-in-advanced-django-orm-with-hyperloglog/).
+It looks like if we want to use Hyperloglog in RDS our only option is to write a version of the algorithm in pure SQL. Fortunately, the internet delivers, and there have been a [few](https://www.sisense.com/blog/hyperloglog-in-pure-sql/) [attempts](https://towardsdatascience.com/hyperloglog-implemented-using-sql-d516fc4828ce) at doing this as well. There is even an attempt to write an extension to the [Django ORM](https://www.agiliq.com/blog/2017/12/adventures-in-advanced-django-orm-with-hyperloglog/).
 
-These are great! They do what we want and reading the SQL queries is straightforward. However, the query is quite a mouthful. I would love to be able to use it in a lot of different places. Copy-pasting this query many times makes me very nervous. Wouldn't it be nice if we could write a query like:
+These are great! They do what we want and reading the SQL queries is straightforward. However, the query is quite a mouthful. I would love to be able to use it in a lot of different places. Copy-pasting this query many times makes me very nervous. Wouldn't it be nice if we could write a query like this:
 
 ```sql
 select
@@ -52,19 +52,19 @@ from user_session
 group by created_on
 ```
 
-Can we turn these SQL implementations of hyperloglog into a custom postgres function? Let's give it a try!
+Can we turn these SQL implementations of Hyperloglog into a custom Postgres function? Let's give it a try!
 
 ## Inside Postgres
 
-The postgres documentation is terse, and I am definitely a beginner – the first thing I found out is that a we need to create is a [custom aggregate](https://www.postgresql.org/docs/current/sql-createaggregate.html). There are two parts to an aggregate an `sfunc` and a `finalfunc`
+The Postgres documentation is terse, and I am a beginner – the first thing I found out is that we need to create a [custom aggregate](https://www.postgresql.org/docs/current/sql-createaggregate.html). There are two parts to an aggregate an `sfunc` and a `finalfunc`
 
 An `sfunc` is a state transition function that takes the saved state and consumes a new input row. It then outputs a transformed state, ready for the next input.
 
-A `finalfunc` takes the final state and makes any necessary calculations in order to produce the desired aggregate.
+A `finalfunc` takes the final state and makes any necessary calculations to produce the desired aggregate.
 
-So, we can split our hyperloglog algorithm into two parts, we need:
+So, we can split our Hyperloglog algorithm into two parts, we need:
 
-1. a bucketing function that hashes each input and saves the state the current buckets and maximum observed sequence of zeros for each bucket. and
+1. a bucketing function that hashes each input and saves the state of the current buckets and the maximum observed sequence of zeros for each bucket. and
 2. a function that uses the buckets once we have consumed every row and calculates the cardinality estimate.
 
 We can start by creating a type to represent our state:
@@ -106,11 +106,11 @@ select array(
 $$;
 ```
 
-There are two parts to this: first we calculate the bucket number and significant digit sequence for the current row, and then we join that with our current state. We use a full outer join on the bucket number in order to keep every previously observed bucket and any new bucket.
+There are two parts to this: first we calculate the bucket number and significant digit sequence for the current row, and then we join that with our current state. We use a full outer join on the bucket number to keep every previously observed bucket and any new bucket.
 
-We use the `UNNEST` function in order to use our array in a query like a table. And we then cast our new state into an array of `bucketed_result`s. The function returns the result of the last query.
+We use the `UNNEST` function to use our array in a query like a table. And we then cast our new state into an array of `bucketed_result`s. The function returns the result of the last query.
 
-We then need a method for using the `bucketed_result[]` state and calculate the hyperloglog approximation:
+We then need a method for using the `bucketed_result[]` state and to calculate the final Hyperloglog approximation:
 
 ```sql
 create or replace function
@@ -144,7 +144,7 @@ from counted_data
 $$;
 ```
 
-This is where the clever math tricks happen in order to make an accurate approximation. For our purposes, the important bits are that this function takes our state array of type `bucketed_result[]` and produces a `numeric` approximation.
+This is where clever math tricks happen to arrive at an accurate approximation. For our purposes, the important bits are that this function takes our state array of type `bucketed_result[]` and produces a `numeric` approximation.
 
 We can now put the two pieces together and create a custom aggregate:
 
@@ -159,7 +159,7 @@ approx_distinct_count(varchar) (
 );
 ```
 
-That's it! We'll need to cast the `user_id` to a `varchar` because that's the only type that our custom aggregation takes, but, it should produce accurate estimates. But, we can now call our new aggregate:
+That's it! We'll need to cast the `user_id` to `varchar` because that's the only type that our custom aggregation takes, but, it should produce accurate estimates. But, we can now call our new aggregate:
 
 ```sql
 select
@@ -192,7 +192,7 @@ select
 from GENERATE_SERIES(1, 25000);
 ```
 
-This should insert a million random user sessions for 5 days after Monday Jan 2nd and twenty five thousand sessions on the weekend. Let's first check that our approximations are accurate:
+This should insert a million random user sessions for 5 days after Monday, Jan 2nd and twenty-five thousand sessions on the weekend. Let's first check that our approximations are accurate:
 
 ```sql
 select
@@ -213,7 +213,7 @@ group by created_on;
 (7 rows)
 ```
 
-Hey, that's pretty good! The numbers are not exact, but they are pretty close. Certainly close enough for a lot of use-cases.
+Hey, that's pretty good! The numbers are not exact, but they are pretty close. Certainly close enough for a lot of use cases.
 
 ## But, is it fast?
 
@@ -265,9 +265,9 @@ Uff! That is painful to see. That is two orders of magnitude slower. It is going
 
 ## Can we speed it up?
 
-The first thing to notice is that the bucketing function needs to be applied sequentially to every row in our dataset. This means we cannot take advantage of parallelism. Fortunately, we can add another function called a `combinefunc` to our aggregate in order to enable parallel execution.
+The first thing to notice is that the bucketing function needs to be applied sequentially to every row in our dataset. This means we cannot take advantage of parallelism. Fortunately, we can add another function called a `combinefunc` to our aggregate to enable parallel execution.
 
-A `combinefunc` takes two distinct states, potentially produced by consuming independent sections of the sequence, and combines them into a single state. This enables postgres to divide the sequence into any number of sections and process each row in those section concurrently and then combine the results together before calculating the final approximation.
+A `combinefunc` takes two distinct states, potentially produced by consuming independent sections of the sequence, and combines them into a single state. This enables Postgres to divide the sequence into any number of sections and process each row in those sections concurrently and then combine the results before calculating the final approximation.
 
 ```sql
 create or replace function
@@ -290,7 +290,7 @@ select array(
 $$;
 ```
 
-Similar to the bucketing function, we unnest each state and perform a full outer join. This time, however, we are are ensuring we keep any `bucket_num` in either the left or the right state alongside the longest observed `bucket_hash` for each bucket.
+Similar to the bucketing function, we unnest each state and perform a full outer join. This time, however, we ensure that we keep any `bucket_num` in either the left or the right state alongside the longest observed `bucket_hash` for each bucket.
 
 We can add it to the aggregate with:
 
@@ -306,7 +306,7 @@ approx_distinct_count(varchar) (
 );
 ```
 
-Even if the method is not very fast, this should perform faster because postgres can make use of more than one core of the machine at a time. So, how much does this speed our query up?
+Even if the method is not very fast, this should perform faster because Postgres can make use of more than one core of the machine at a time. So, how much does this speed our query up?
 
 ```sql
 select
@@ -330,7 +330,7 @@ Time: 42966.308 ms (00:42.966)
 
 Well, we have gone from a horrific 120 seconds to 40, which is an improvement. The truth is, however, we are very far away from the promise of a fast approximation.
 
-At this stage, I was a little puzzled. Still, I thought – the bucketing functions rely on a full outer joins. We are horizontally joining the two states. This might be slow, so I tried replacing them with union queries:
+At this stage, I was a little puzzled. Still, I thought – the bucketing functions rely on full outer joins. We are horizontally joining the two states. This might be slow, so I tried replacing them with union queries:
 
 ```sql
 create or replace function
@@ -389,21 +389,23 @@ My colleague [Elliott](https://github.com/elliott-omosheye) was interested in th
 
 1. The aggregation state looks like a hash table. Postgres has native support for JSON types – Elliot used a JSON dictionary to keep track of the state rather than an array of a custom type.
 
-2. The bucket function is doing some computation in order to to extract the most significant bit from the hash. Elliot noticed that we are only interested in finding the smallest hash in a bucket. We can delay that computation to the end and it only needs to happen on the 512 bucket hashes rather than every single record.
+2. The bucket function is doing some computation to extract the most significant bit from the hash. Elliot noticed that we are only interested in finding the smallest hash in a bucket. We can delay that computation to the end and it only needs to happen on the 512 bucketed hashes rather than every single record.
 
-3. I had assumed that writing native SQL was going to get us to the fastest solution, because we can rely on postgres to run any optimisations to the queries. Elliott, however, used [PL/pgSQL](https://www.postgresql.org/docs/current/plpgsql-overview.html#PLPGSQL-ADVANTAGES) to manipulate JSON, and it did pretty well. It looks like, in this particular case, avoiding a join for every iteration might yield a faster result – even if we are using a procedural language.
+3. I had assumed that writing native SQL was going to get us to the fastest solution because we can rely on Postgres to run any optimisations to the queries. Elliott, however, used [PL/pgSQL](https://www.postgresql.org/docs/current/plpgsql-overview.html#PLPGSQL-ADVANTAGES) to manipulate JSON, and it did pretty well. It looks like, in this particular case, avoiding a join for every iteration might yield a faster result – even if we are using a procedural language.
 
 We started talking about the problem and decided to incorporate those ideas with a couple of modifications:
 
-1. We don't really need to use JSON. The state array is indexed on 512 numbers, so we only really need to keep the hash and the index of that hash.
+1. We don't need to use JSON. The state array is indexed on 512 numbers, so we only really need to keep the hash and the index of that hash.
 
 2. We can directly modify the state instead of recreating it in every iteration. I noticed the following quote in the `create aggregate` documentation:
+
    > Ordinarily, PostgreSQL functions are expected to be true functions that do not modify their input values. However, an aggregate transition function, when used in the context of an aggregate, is allowed to cheat and modify its transition-state argument in place. This can provide substantial performance benefits compared to making a fresh copy of the transition state each time.
+   >
    > -- [CREATE AGGREGATE > Notes](https://www.postgresql.org/docs/current/sql-createaggregate.html)
 
-## Improved version (now with less SQL)
+## Moving away from SQL
 
-Let's start with the bucket function:
+We can improve the performance - let's start with the bucket function:
 
 ```sql
 create or replace function
@@ -425,9 +427,9 @@ end
 $$;
 ```
 
-This is an entirely different language, but it is pretty straightforward. We hash the input once and find the bit sequence we want to keep and the `bucket_key` index. We also preemptively retrieve the current hash for that index in order to compare it to the one produced by the current input.
+This is an entirely different language, but it is pretty straightforward. We hash the input once and find the bit sequence we want to keep and the `bucket_key` index. We also preemptively retrieve the current hash for that index to compare it to the one produced by the current input.
 
-Next we replace the hash if the new one is smaller in the existing state object. Either way, we return the existing state.
+Next, we replace the hash if the new one is smaller in the existing state object. Either way, we return the existing state.
 
 Next, for `bucket_combine` we need to join together two integer array states:
 
@@ -451,7 +453,7 @@ $$;
 
 A useful trick used in this function is that the `UNNEST` function can natively expose the indices of an array, using `with ordinality` – similar to an `enumerate` function in python. This allows the combination of the right and left states to happen on the index of each array. The join also magically keeps track of those indices when rebuilding the array, even though it is not present in the select clause.
 
-Next, we incorporate the significant bit computation on the hll function:
+Next, we incorporate the significant bit computation on the `hll` function:
 
 ```sql
 create or replace function
@@ -547,17 +549,17 @@ Time: 822.028 ms
 
 Amazing! Less than a second!
 
-Our approximations run faster than counting the distinct values. It is written in SQL + PL/pgSQL, so it can be added to any postgres database, even without administrative privileges.
+Our approximations run faster than counting the distinct values. It is written in SQL + PL/pgSQL, so it can be added to any Postgres database, even without administrative privileges.
 
 It is also worth considering that our synthetic data is a bit contrived – there are no other columns or tables, there is nothing else in the database, we are counting every single row, and the database is doing nothing else.
 
-Hyperloglog is good not just because it is fast, but because it uses a tiny amount of memory. In our final implementation, the state is just an array of 512 integers. However, the performance will very much depend on the type and amount of data that you need to count. I expect that the native `COUNT(DISTINCT ...)` is well optimised and will perform better even for medium sized datasets.
+Hyperloglog is good not just because it is fast, but because it uses a tiny amount of memory. In our final implementation, the state is just an array of 512 integers. However, the performance will very much depend on the type and amount of data that you need to count. I expect that the native `COUNT(DISTINCT ...)` is well-optimised and will perform better even for medium-sized datasets.
 
 I have not tested [postgres-hll], however, I suspect that it will significantly outperform this implementation. This version does run on RDS though!
 
 ### Just show me the code
 
-The snippet below defines a postgres custom aggregate `approx_distinct_count(...)` that can be used whenever you might use `COUNT(DISTINCT ...)`.
+The snippet below defines a Postgres custom aggregate `approx_distinct_count(...)` that can be used whenever you might use `COUNT(DISTINCT ...)`.
 
 ```sql
 create or replace function
